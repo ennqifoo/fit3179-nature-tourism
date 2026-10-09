@@ -1,0 +1,25 @@
+region,year,trips,change_pct
+North West,2019,590.3,19.5
+North West,2024,705.6,19.5
+Lakes,2019,829.1,17.3
+Lakes,2024,972.7,17.3
+Goulburn,2019,689.7,16.8
+Goulburn,2024,805.8,16.8
+Capital Country,2019,1733.6,16.7
+Capital Country,2024,2023.1,16.7
+Gippsland,2019,1436.1,14.1
+Gippsland,2024,1638.4,14.1
+Whitsundays,2019,631.1,12.4
+Whitsundays,2024,709.1,12.4
+Hobart and the South,2019,1747.0,-9.7
+Hobart and the South,2024,1578.1,-9.7
+Great Ocean Road,2019,2775.6,-11.2
+Great Ocean Road,2024,2465.3,-11.2
+Gladstone,2019,563.3,-11.7
+Gladstone,2024,497.2,-11.7
+Fleurieu Peninsula,2019,869.5,-19.6
+Fleurieu Peninsula,2024,698.6,-19.6
+Eyre Peninsula,2019,559.6,-21.1
+Eyre Peninsula,2024,441.7,-21.1
+Flinders Ranges and Outback,2019,882.4,-25.0
+Flinders Ranges and Outback,2024,662.2,-25.0

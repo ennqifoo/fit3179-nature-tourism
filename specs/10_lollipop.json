@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 420,
+  "title": {
+    "text": "Tasmania's North West and Victoria's Lakes lead the regional rebound",
+    "subtitle": "Top 15 regional destinations by change in overnight trips, 2024 vs 2019 (%)",
+    "anchor": "start"
+  },
+  "data": { "url": "data/region_change_top15.csv" },
+  "transform": [
+    {
+      "window": [{ "op": "rank", "as": "r" }],
+      "sort": [{ "field": "change_pct", "order": "descending" }]
+    },
+    { "calculate": "datum.r<=2", "as": "hl" }
+  ],
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "sort": { "field": "change_pct", "op": "max", "order": "descending" },
+      "title": null,
+      "axis": { "labelLimit": 220 }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "rule", "strokeWidth": 2 },
+      "encoding": {
+        "x": { "datum": 0 },
+        "x2": { "field": "change_pct" },
+        "color": {
+          "condition": { "test": "datum.hl", "value": "#d4a017" },
+          "value": "#bdbdbd"
+        }
+      }
+    },
+    {
+      "mark": { "type": "circle", "size": 150, "opacity": 1 },
+      "encoding": {
+        "x": {
+          "field": "change_pct",
+          "type": "quantitative",
+          "title": "Change in trips, 2019 to 2024 (%)"
+        },
+        "color": {
+          "condition": { "test": "datum.hl", "value": "#d4a017" },
+          "value": "#bdbdbd"
+        },
+        "tooltip": [
+          { "field": "region" },
+          { "field": "state" },
+          { "field": "trips_2019", "title": "2019 ('000)" },
+          { "field": "trips_2024", "title": "2024 ('000)" },
+          { "field": "change_pct", "title": "Change (%)" }
+        ]
+      }
+    },
+    {
+      "mark": { "type": "text", "align": "left", "dx": 10, "fontSize": 11 },
+      "encoding": {
+        "x": { "field": "change_pct", "type": "quantitative" },
+        "text": {
+          "field": "change_pct",
+          "type": "quantitative",
+          "format": "+.1f"
+        }
+      }
+    }
+  ],
+  "config": { "view": { "stroke": null }, "axis": { "grid": false } }
+}
