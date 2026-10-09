@@ -1,73 +1,339 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
-  "height": 340,
-  "title": {
-    "text": "Only Queensland is back above 2019 levels",
-    "subtitle": "Overnight trips by Australian residents, indexed (2019 = 100), by destination state",
-    "anchor": "start"
-  },
-  "data": {"url": "data/nvs_state_trips.csv"},
-  "transform": [
-    {"calculate": "datum.state=='QLD' ? 'hero' : datum.state=='NT' ? 'second' : 'rest'", "as": "grp"}
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "title": {
+  "text": "How far has each state recovered from COVID-19?",
+  "subtitle": [
+   "Overnight trips by Australian residents, indexed (2019 = 100). Choose a trip purpose, hover a line, and drag the strip below to zoom.",
+   "Series break in 2014 (new survey method): compare with care before then."
   ],
-  "layer": [
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/nvs_state_purpose.csv"
+ },
+ "params": [
+  {
+   "name": "purpose",
+   "value": "Total",
+   "bind": {
+    "input": "select",
+    "name": "Trip purpose: ",
+    "options": [
+     "Total",
+     "Holiday or leisure",
+     "Visiting friends and relatives",
+     "Business",
+     "Other"
+    ]
+   }
+  }
+ ],
+ "vconcat": [
+  {
+   "width": "container",
+   "height": 320,
+   "transform": [
     {
-      "mark": {"type": "line", "strokeWidth": 1.5},
-      "encoding": {
-        "x": {"field": "year", "type": "quantitative", "axis": {"format": "d", "title": null, "tickCount": 8}},
-        "y": {"field": "index_2019", "type": "quantitative", "title": "Trips index (2019 = 100)", "scale": {"zero": false}},
-        "detail": {"field": "state"},
-        "color": {
-          "condition": [
-            {"test": "datum.grp=='hero'", "value": "#08519c"},
-            {"test": "datum.grp=='second'", "value": "#6baed6"}
-          ],
-          "value": "#bdbdbd"
-        },
-        "opacity": {"condition": {"test": "datum.grp=='rest'", "value": 0.8}, "value": 1},
-        "strokeWidth": {"condition": {"test": "datum.grp=='rest'", "value": 1.5}, "value": 3}
-      }
+     "filter": "datum.purpose == purpose && datum.state != 'AUS'"
     },
     {
-      "data": {"values": [{"y": 100}]},
-      "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#555"},
-      "encoding": {"y": {"field": "y", "type": "quantitative"}}
-    },
-    {
-      "transform": [{"filter": "datum.year==2024"}],
-      "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 12, "fontWeight": "bold"},
-      "encoding": {
-        "x": {"field": "year", "type": "quantitative"},
-        "y": {"field": "index_2019", "type": "quantitative"},
-        "text": {"field": "state"},
-        "color": {
-          "condition": [
-            {"test": "datum.grp=='hero'", "value": "#08519c"},
-            {"test": "datum.grp=='second'", "value": "#6baed6"}
-          ],
-          "value": "#757575"
-        }
-      }
-    },
-    {
-      "data": {"values": [{"year": 2020, "index_2019": 46.9, "t": "COVID-19 border closures: trips fall by up to 53%"}]},
-      "mark": {"type": "text", "align": "left", "dx": 8, "dy": 14, "fontSize": 11, "color": "#333"},
-      "encoding": {
-        "x": {"field": "year", "type": "quantitative"},
-        "y": {"field": "index_2019", "type": "quantitative"},
-        "text": {"field": "t"}
-      }
-    },
-    {
-      "data": {"values": [{"year": 2024, "index_2019": 83.5, "t": "NT lags at 83.5"}]},
-      "mark": {"type": "text", "align": "right", "dx": -6, "dy": 14, "fontSize": 11, "color": "#3182bd"},
-      "encoding": {
-        "x": {"field": "year", "type": "quantitative"},
-        "y": {"field": "index_2019", "type": "quantitative"},
-        "text": {"field": "t"}
-      }
+     "calculate": "datum.grp=='rest' ? datum.state : datum.state + ' ' + format(datum.index_2019,'.0f')",
+     "as": "lbl"
     }
-  ],
-  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+   ],
+   "layer": [
+    {
+     "params": [
+      {
+       "name": "pick",
+       "select": {
+        "type": "point",
+        "fields": [
+         "state"
+        ],
+        "on": "mouseover",
+        "clear": "mouseout"
+       }
+      }
+     ],
+     "mark": {
+      "type": "line",
+      "point": {
+       "size": 25
+      },
+      "clip": true
+     },
+     "encoding": {
+      "x": {
+       "field": "year",
+       "type": "quantitative",
+       "scale": {
+        "domain": {
+         "param": "brush"
+        }
+       },
+       "axis": {
+        "format": "d",
+        "title": null,
+        "tickCount": 8
+       }
+      },
+      "y": {
+       "field": "index_2019",
+       "type": "quantitative",
+       "title": "Trips index (2019 = 100)",
+       "scale": {
+        "zero": false
+       }
+      },
+      "detail": {
+       "field": "state"
+      },
+      "color": {
+       "condition": [
+        {
+         "test": "datum.grp=='hero'",
+         "value": "#08519c"
+        },
+        {
+         "test": "datum.grp=='second'",
+         "value": "#6baed6"
+        },
+        {
+         "param": "pick",
+         "empty": false,
+         "value": "#525252"
+        }
+       ],
+       "value": "#bdbdbd"
+      },
+      "opacity": {
+       "condition": [
+        {
+         "param": "pick",
+         "empty": false,
+         "value": 1
+        },
+        {
+         "test": "datum.grp=='rest'",
+         "value": 0.8
+        }
+       ],
+       "value": 1
+      },
+      "strokeWidth": {
+       "condition": [
+        {
+         "param": "pick",
+         "empty": false,
+         "value": 4
+        },
+        {
+         "test": "datum.grp=='rest'",
+         "value": 1.5
+        }
+       ],
+       "value": 3
+      },
+      "tooltip": [
+       {
+        "field": "state",
+        "title": "State"
+       },
+       {
+        "field": "purpose",
+        "title": "Purpose"
+       },
+       {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+       },
+       {
+        "field": "trips_000",
+        "type": "quantitative",
+        "title": "Trips ('000)",
+        "format": ",.0f"
+       },
+       {
+        "field": "index_2019",
+        "type": "quantitative",
+        "title": "Index (2019 = 100)"
+       }
+      ]
+     }
+    },
+    {
+     "data": {
+      "values": [
+       {
+        "y": 100
+       }
+      ]
+     },
+     "mark": {
+      "type": "rule",
+      "strokeDash": [
+       4,
+       4
+      ],
+      "color": "#555"
+     },
+     "encoding": {
+      "y": {
+       "field": "y",
+       "type": "quantitative"
+      }
+     }
+    },
+    {
+     "data": {
+      "values": [
+       {
+        "year": 2020,
+        "t": "COVID-19 border closures"
+       }
+      ]
+     },
+     "mark": {
+      "type": "text",
+      "align": "left",
+      "dx": 6,
+      "dy": 10,
+      "fontSize": 11,
+      "color": "#333",
+      "baseline": "top",
+      "y": 0,
+      "clip": true
+     },
+     "encoding": {
+      "x": {
+       "field": "year",
+       "type": "quantitative",
+       "scale": {
+        "domain": {
+         "param": "brush"
+        }
+       },
+       "axis": {
+        "format": "d",
+        "title": null,
+        "tickCount": 8
+       }
+      },
+      "text": {
+       "field": "t"
+      }
+     }
+    },
+    {
+     "transform": [
+      {
+       "filter": "datum.year==2024"
+      }
+     ],
+     "mark": {
+      "type": "text",
+      "align": "left",
+      "dx": 6,
+      "fontSize": 12,
+      "fontWeight": "bold",
+      "clip": false
+     },
+     "encoding": {
+      "x": {
+       "field": "year",
+       "type": "quantitative",
+       "scale": {
+        "domain": {
+         "param": "brush"
+        }
+       },
+       "axis": {
+        "format": "d",
+        "title": null,
+        "tickCount": 8
+       }
+      },
+      "y": {
+       "field": "index_2019",
+       "type": "quantitative"
+      },
+      "text": {
+       "field": "lbl"
+      },
+      "color": {
+       "condition": [
+        {
+         "test": "datum.grp=='hero'",
+         "value": "#08519c"
+        },
+        {
+         "test": "datum.grp=='second'",
+         "value": "#6baed6"
+        }
+       ],
+       "value": "#757575"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "width": "container",
+   "height": 60,
+   "transform": [
+    {
+     "filter": "datum.purpose == purpose && datum.state == 'AUS'"
+    }
+   ],
+   "params": [
+    {
+     "name": "brush",
+     "select": {
+      "type": "interval",
+      "encodings": [
+       "x"
+      ]
+     }
+    }
+   ],
+   "mark": {
+    "type": "area",
+    "color": "#c6dbef",
+    "line": {
+     "color": "#6baed6"
+    }
+   },
+   "encoding": {
+    "x": {
+     "field": "year",
+     "type": "quantitative",
+     "axis": {
+      "format": "d",
+      "title": "Drag on this strip to zoom the chart above (all of Australia, trips '000)",
+      "tickCount": 8
+     }
+    },
+    "y": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "axis": {
+      "tickCount": 3,
+      "grid": false,
+      "title": null,
+      "format": "~s"
+     }
+    }
+   }
+  }
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "grid": false
+  }
+ }
 }
