@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 300,
+  "title": {
+    "text": "Queensland grew most, Northern Territory fell most",
+    "subtitle": "Change in overnight trips, year ending June 2026 vs June 2025 (%)",
+    "anchor": "start"
+  },
+  "data": {"url": "data/dots_state_change.csv"},
+  "transform": [
+    {"window": [{"op": "rank", "as": "r"}], "sort": [{"field": "change_pct", "order": "descending"}]},
+    {"calculate": "datum.r==1||datum.r==8", "as": "hl"}
+  ],
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {"field": "state", "type": "nominal", "sort": "-x", "title": null},
+        "x": {"field": "change_pct", "type": "quantitative", "title": "Change in trips (%)"},
+        "color": {"condition": {"test": "datum.hl", "value": "#e6550d"}, "value": "#bdbdbd"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 11},
+      "encoding": {
+        "y": {"field": "state", "type": "nominal", "sort": "-x"},
+        "x": {"field": "change_pct", "type": "quantitative"},
+        "text": {"field": "change_pct", "type": "quantitative", "format": "+.1f"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}

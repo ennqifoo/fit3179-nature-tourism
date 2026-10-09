@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 340,
+  "title": {
+    "text": "Only Queensland is back above 2019 levels",
+    "subtitle": "Overnight trips by Australian residents, indexed (2019 = 100), by destination state",
+    "anchor": "start"
+  },
+  "data": {"url": "data/nvs_state_trips.csv"},
+  "transform": [
+    {"calculate": "datum.state=='QLD' ? 'hero' : datum.state=='NT' ? 'second' : 'rest'", "as": "grp"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 1.5},
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative", "axis": {"format": "d", "title": null, "tickCount": 8}},
+        "y": {"field": "index_2019", "type": "quantitative", "title": "Trips index (2019 = 100)", "scale": {"zero": false}},
+        "detail": {"field": "state"},
+        "color": {
+          "condition": [
+            {"test": "datum.grp=='hero'", "value": "#08519c"},
+            {"test": "datum.grp=='second'", "value": "#6baed6"}
+          ],
+          "value": "#bdbdbd"
+        },
+        "opacity": {"condition": {"test": "datum.grp=='rest'", "value": 0.8}, "value": 1},
+        "strokeWidth": {"condition": {"test": "datum.grp=='rest'", "value": 1.5}, "value": 3}
+      }
+    },
+    {
+      "data": {"values": [{"y": 100}]},
+      "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#555"},
+      "encoding": {"y": {"field": "y", "type": "quantitative"}}
+    },
+    {
+      "transform": [{"filter": "datum.year==2024"}],
+      "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 12, "fontWeight": "bold"},
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "index_2019", "type": "quantitative"},
+        "text": {"field": "state"},
+        "color": {
+          "condition": [
+            {"test": "datum.grp=='hero'", "value": "#08519c"},
+            {"test": "datum.grp=='second'", "value": "#6baed6"}
+          ],
+          "value": "#757575"
+        }
+      }
+    },
+    {
+      "data": {"values": [{"year": 2020, "index_2019": 46.9, "t": "COVID-19 border closures: trips fall by up to 53%"}]},
+      "mark": {"type": "text", "align": "left", "dx": 8, "dy": 14, "fontSize": 11, "color": "#333"},
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "index_2019", "type": "quantitative"},
+        "text": {"field": "t"}
+      }
+    },
+    {
+      "data": {"values": [{"year": 2024, "index_2019": 83.5, "t": "NT lags at 83.5"}]},
+      "mark": {"type": "text", "align": "right", "dx": -6, "dy": 14, "fontSize": 11, "color": "#3182bd"},
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "index_2019", "type": "quantitative"},
+        "text": {"field": "t"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}
