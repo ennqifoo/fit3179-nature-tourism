@@ -7,7 +7,7 @@ const charts = {
   vis06: "specs/06_proportional_symbol_map.json",
   vis07: "specs/07_dot_map.json",
   vis08: "specs/08_cartogram.json",
-  vis09: "specs/09_slide.json",
+  vis09: "specs/09_slope.json",
   vis10: "specs/10_lollipop.json",
   vis11: "specs/11_connected_dot.json",
   vis12: "specs/12_heatmap.json",
@@ -16,10 +16,19 @@ const charts = {
 };
 
 Object.entries(charts).forEach(([id, spec]) => {
+  const el = document.getElementById(id);
+
+  // draw the chart; show the real error if it fails
   vegaEmbed("#" + id, spec, { actions: false }).catch((err) => {
     console.error(spec, err);
-    document.getElementById(id).innerHTML =
+    el.innerHTML =
       '<div class="placeholder">Chart ' + id.replace("vis", "") +
       " could not load (" + spec + ")<br><small>" + err.message + "</small></div>";
   });
+
+  // link to the JSON spec under each chart
+  const link = document.createElement("p");
+  link.className = "spec-link";
+  link.innerHTML = '<a href="' + spec + '" target="_blank" rel="noopener">View Vega-Lite spec (JSON)</a>';
+  el.after(link);
 });
