@@ -18,8 +18,8 @@ const charts = {
 Object.entries(charts).forEach(([id, spec]) => {
   const el = document.getElementById(id);
 
-  // draw the chart; show the real error if it fails
-  vegaEmbed("#" + id, spec, { actions: false }).catch((err) => {
+  // actions menu is shown by default (the "..." button), like the course samples
+  vegaEmbed("#" + id, spec).catch((err) => {
     console.error(spec, err);
     el.innerHTML =
       '<div class="placeholder">Chart ' + id.replace("vis", "") +
