@@ -1,0 +1,130 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 300,
+ "title": {
+  "text": "The Northern Territory's visitors peak in the dry season; Tasmania's in summer",
+  "subtitle": "Overnight trips by quarter as an index of each state's own 5-quarter average (=100), June 2025 \u2013 June 2026",
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/dots_quarter_trips.csv"
+ },
+ "encoding": {
+  "x": {
+   "field": "quarter",
+   "type": "ordinal",
+   "sort": {
+    "field": "qorder"
+   },
+   "title": null,
+   "axis": {
+    "labelAngle": 0,
+    "orient": "top"
+   }
+  },
+  "y": {
+   "field": "state",
+   "type": "nominal",
+   "sort": [
+    "NT",
+    "TAS",
+    "SA",
+    "WA",
+    "QLD",
+    "VIC",
+    "NSW",
+    "ACT"
+   ],
+   "title": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "color": {
+     "field": "index",
+     "type": "quantitative",
+     "scale": {
+      "scheme": "yelloworangered",
+      "domain": [
+       65,
+       135
+      ]
+     },
+     "legend": {
+      "title": "Index (state avg = 100)",
+      "orient": "bottom",
+      "gradientLength": 260
+     }
+    },
+    "opacity": {
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 1
+     },
+     "value": 0.9
+    },
+    "tooltip": [
+     {
+      "field": "state",
+      "title": "State"
+     },
+     {
+      "field": "quarter",
+      "title": "Quarter"
+     },
+     {
+      "field": "trips_000",
+      "title": "Trips ('000)",
+      "format": ",.0f"
+     },
+     {
+      "field": "index",
+      "title": "Index"
+     }
+    ]
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "state",
+       "quarter"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
+  },
+  {
+   "mark": {
+    "type": "text",
+    "fontSize": 11
+   },
+   "encoding": {
+    "text": {
+     "field": "index",
+     "type": "quantitative",
+     "format": ".0f"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.index>118",
+      "value": "white"
+     },
+     "value": "#333"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 320,
+ "title": {
+  "text": "Northern Territory visitors now spend the most per trip, and 24% more than a year ago",
+  "subtitle": "Regional spend per overnight trip ($), year ending June 2025 vs June 2026 (spend \u00f7 trips)",
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/dots_spend_per_trip.csv"
+ },
+ "transform": [
+  {
+   "calculate": "datum.state=='NT' ? 'hl' : 'other'",
+   "as": "grp"
+  }
+ ],
+ "encoding": {
+  "y": {
+   "field": "state",
+   "type": "nominal",
+   "sort": {
+    "field": "spt_2026",
+    "order": "descending"
+   },
+   "title": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "rule",
+    "strokeWidth": 3
+   },
+   "encoding": {
+    "x": {
+     "field": "spt_2025",
+     "type": "quantitative",
+     "title": "Spend per overnight trip ($)",
+     "scale": {
+      "zero": false,
+      "domain": [
+       700,
+       1900
+      ]
+     }
+    },
+    "x2": {
+     "field": "spt_2026"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.grp=='hl'",
+      "value": "#00838f"
+     },
+     "value": "#cccccc"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "point",
+    "filled": false,
+    "size": 130,
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "x": {
+     "field": "spt_2025",
+     "type": "quantitative"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.grp=='hl'",
+      "value": "#00838f"
+     },
+     "value": "#8a8a8a"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 130,
+    "opacity": 1
+   },
+   "params": [
+    {
+     "name": "pick",
+     "select": {
+      "type": "point",
+      "fields": [
+       "state"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ],
+   "encoding": {
+    "x": {
+     "field": "spt_2026",
+     "type": "quantitative"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.grp=='hl'",
+      "value": "#00838f"
+     },
+     "value": "#37474f"
+    },
+    "size": {
+     "condition": {
+      "param": "pick",
+      "empty": false,
+      "value": 260
+     },
+     "value": 130
+    },
+    "tooltip": [
+     {
+      "field": "state",
+      "title": "State"
+     },
+     {
+      "field": "spt_2025",
+      "title": "2025 ($/trip)",
+      "format": ","
+     },
+     {
+      "field": "spt_2026",
+      "title": "2026 ($/trip)",
+      "format": ","
+     },
+     {
+      "field": "change_pct",
+      "title": "Change (%)"
+     }
+    ]
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 12,
+    "fontSize": 11
+   },
+   "encoding": {
+    "x": {
+     "field": "spt_2026",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "change_pct",
+     "type": "quantitative",
+     "format": "+.1f"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.grp=='hl'",
+      "value": "#00838f"
+     },
+     "value": "#6b6b6b"
+    }
+   }
+  }
+ ]
+}
