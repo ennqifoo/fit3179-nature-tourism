@@ -1,0 +1,201 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 520,
+ "title": {
+  "text": "Desert and outback regions are furthest behind their 2019 levels",
+  "subtitle": [
+   "Overnight trips by Australian residents, by tourism region, as a % of the 2019 level. Drag the slider to change the year.",
+   "In 2024, 29 of 72 regions with data are above 2019. Kakadu (NT) is at 59% and Alice Springs at 67%."
+  ],
+  "anchor": "start"
+ },
+ "params": [
+  {
+   "name": "Year_selection",
+   "value": 2024,
+   "bind": {
+    "input": "range",
+    "min": 2014,
+    "max": 2024,
+    "step": 1,
+    "name": "Year: "
+   }
+  }
+ ],
+ "projection": {
+  "type": "conicEqualArea",
+  "parallels": [
+   -18,
+   -36
+  ],
+  "rotate": [
+   -134,
+   0
+  ]
+ },
+ "layer": [
+  {
+   "data": {
+    "url": "data/regions.topojson",
+    "format": {
+     "type": "topojson",
+     "feature": "regions"
+    }
+   },
+   "mark": {
+    "type": "geoshape",
+    "fill": "#e0e0e0",
+    "stroke": "white",
+    "strokeWidth": 0.5
+   },
+   "encoding": {
+    "tooltip": [
+     {
+      "field": "properties.name",
+      "type": "nominal",
+      "title": "Region (no data published)"
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "url": "data/regions_year.csv"
+   },
+   "transform": [
+    {
+     "filter": "datum.year == Year_selection"
+    },
+    {
+     "lookup": "name",
+     "from": {
+      "data": {
+       "url": "data/regions.topojson",
+       "format": {
+        "type": "topojson",
+        "feature": "regions"
+       }
+      },
+      "key": "properties.name"
+     },
+     "as": "geo"
+    }
+   ],
+   "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+   },
+   "encoding": {
+    "shape": {
+     "field": "geo",
+     "type": "geojson"
+    },
+    "color": {
+     "field": "index_2019",
+     "type": "quantitative",
+     "title": "Trips as % of 2019",
+     "scale": {
+      "type": "threshold",
+      "domain": [
+       50,
+       75,
+       100,
+       115
+      ],
+      "range": [
+       "#8c510a",
+       "#d8b365",
+       "#f6e8c3",
+       "#80cdc1",
+       "#01665e"
+      ]
+     },
+     "legend": {
+      "orient": "bottom-left",
+      "symbolType": "square"
+     }
+    },
+    "stroke": {
+     "condition": {
+      "param": "hover",
+      "empty": false,
+      "value": "#000"
+     },
+     "value": "white"
+    },
+    "strokeWidth": {
+     "condition": {
+      "param": "hover",
+      "empty": false,
+      "value": 2
+     },
+     "value": 0.5
+    },
+    "tooltip": [
+     {
+      "field": "name",
+      "type": "nominal",
+      "title": "Region"
+     },
+     {
+      "field": "state",
+      "type": "nominal",
+      "title": "State"
+     },
+     {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year"
+     },
+     {
+      "field": "trips_000",
+      "type": "quantitative",
+      "title": "Trips ('000)",
+      "format": ",.0f"
+     },
+     {
+      "field": "index_2019",
+      "type": "quantitative",
+      "title": "% of 2019 level",
+      "format": ".0f"
+     }
+    ]
+   },
+   "params": [
+    {
+     "name": "hover",
+     "select": {
+      "type": "point",
+      "fields": [
+       "name"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
+  },
+  {
+   "data": {
+    "url": "data/states.topojson",
+    "format": {
+     "type": "topojson",
+     "feature": "states"
+    }
+   },
+   "mark": {
+    "type": "geoshape",
+    "fill": null,
+    "stroke": "#555",
+    "strokeWidth": 0.8
+   }
+  }
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  }
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 520,
+ "title": {
+  "text": "Sydney and Melbourne dominate; the Gold Coast and Tropical North Queensland lead the regional gateways",
+  "subtitle": "Overnight trips by international visitors to the top 20 regions, year ending June 2026 (circle area = trips)",
+  "anchor": "start"
+ },
+ "projection": {
+  "type": "conicEqualArea",
+  "parallels": [
+   -18,
+   -36
+  ],
+  "rotate": [
+   -134,
+   0
+  ]
+ },
+ "layer": [
+  {
+   "data": {
+    "url": "data/states.topojson",
+    "format": {
+     "type": "topojson",
+     "feature": "states"
+    }
+   },
+   "mark": {
+    "type": "geoshape",
+    "fill": "#ececec",
+    "stroke": "white",
+    "strokeWidth": 0.8
+   }
+  },
+  {
+   "data": {
+    "url": "data/ivs_top20.csv"
+   },
+   "transform": [
+    {
+     "calculate": "datum.capital==1 ? 'Capital city region' : 'Regional / nature gateway'",
+     "as": "kind"
+    }
+   ],
+   "mark": {
+    "type": "circle",
+    "opacity": 0.75,
+    "stroke": "white",
+    "strokeWidth": 1
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "size": {
+     "field": "trips_2026",
+     "type": "quantitative",
+     "title": "Trips ('000)",
+     "scale": {
+      "domain": [
+       0,
+       4000
+      ],
+      "range": [
+       0,
+       5000
+      ]
+     },
+     "legend": {
+      "orient": "bottom-left",
+      "values": [
+       100,
+       500,
+       1000,
+       3000
+      ]
+     }
+    },
+    "color": {
+     "field": "kind",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Capital city region",
+       "Regional / nature gateway"
+      ],
+      "range": [
+       "#969696",
+       "#c51b7d"
+      ]
+     },
+     "legend": {
+      "orient": "bottom-left"
+     }
+    },
+    "order": {
+     "field": "trips_2026",
+     "sort": "descending"
+    },
+    "tooltip": [
+     {
+      "field": "region",
+      "title": "Region"
+     },
+     {
+      "field": "state",
+      "title": "State"
+     },
+     {
+      "field": "trips_2026",
+      "title": "Trips ('000)",
+      "format": ",.0f"
+     },
+     {
+      "field": "nights_2026",
+      "title": "Nights ('000)",
+      "format": ",.0f"
+     },
+     {
+      "field": "spend_2026",
+      "title": "Spend ($M)",
+      "format": ",.0f"
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "url": "data/ivs_top20.csv"
+   },
+   "transform": [
+    {
+     "filter": "datum.rank<=7"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 4,
+    "dy": -2,
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "color": "#333"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "region"
+    }
+   }
+  }
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  }
+ }
+}
