@@ -198,13 +198,13 @@
      },
      "mark": {
       "type": "text",
-      "align": "left",
-      "dx": 6,
-      "dy": 10,
+      "align": "right",
+      "dx": -6,
+      "dy": -6,
       "fontSize": 11,
       "color": "#333",
-      "baseline": "top",
-      "y": 0,
+      "baseline": "bottom",
+      "y": "height",
       "clip": true
      },
      "encoding": {

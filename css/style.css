@@ -8,7 +8,7 @@ body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);backgroun
 
 /* hero */
 .band{background:#1b4332;color:#f1ede0;padding:36px 24px 28px}
-.band-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:end}
+.band-inner{max-width:1760px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:end}
 .eyebrow{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin:0 0 6px}
 .band h1{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;margin:0}
 .band .sub{margin:.5rem 0 0;font-size:1.15rem;opacity:.9}
@@ -17,8 +17,8 @@ body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);backgroun
 .stat b{display:block;font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:1.7rem;line-height:1.1}
 .stat span{font-size:.85rem;opacity:.85}
 
-main,footer{max-width:1280px;margin:0 auto;padding:0 24px}
-.intro{margin:22px 0 0;font-size:1.08rem;max-width:900px}
+main,footer{max-width:1760px;margin:0 auto;padding:0 32px}
+.intro{margin:22px 0 0;font-size:1.1rem;max-width:1100px}
 
 /* sections */
 section.act{margin:34px 0 0}
@@ -28,7 +28,7 @@ h2 .num{display:inline-grid;place-items:center;width:34px;height:34px;border-rad
 
 /* grids: no big gaps, charts fill their cell */
 .row{display:grid;gap:18px;margin-bottom:18px;align-items:stretch}
-.row.main-side{grid-template-columns:2fr 1fr}
+.row.main-side{grid-template-columns:3fr 1fr}
 .row.two{grid-template-columns:1fr 1fr}
 .row.three{grid-template-columns:repeat(3,1fr)}
 
