@@ -16,7 +16,7 @@ const charts = {
 };
 
 // One typographic voice for every chart (matches the page body font)
-const FONT = "Source Sans 3, system-ui, sans-serif";
+const FONT = "\"Source Sans 3\", system-ui, sans-serif";  // family name with spaces/digits must be quoted for canvas
 const chartConfig = {
   font: FONT,
   title: { font: FONT, fontSize: 18, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 13.5, subtitleColor: "#616e7c", subtitlePadding: 4 },
