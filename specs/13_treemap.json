@@ -1,0 +1,154 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 400,
+ "autosize": {
+  "type": "fit-x",
+  "contains": "padding"
+ },
+ "title": {
+  "text": "Accommodation, flights and eating out take 58% of visitor spending",
+  "subtitle": "Domestic overnight trip expenditure by item, year ending June 2026 (rectangle area = $ spent)",
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/dots_spend_items.csv"
+ },
+ "params": [
+  {
+   "name": "hv",
+   "select": {
+    "type": "point",
+    "fields": [
+     "item"
+    ],
+    "on": "mouseover",
+    "clear": "mouseout"
+   }
+  }
+ ],
+ "transform": [
+  {
+   "calculate": "datum.item=='Accommodation' ? 'hero' : (datum.item=='Domestic airfares' ? 'second' : 'rest')",
+   "as": "grp"
+  },
+  {
+   "calculate": "datum.item+' '+format(datum.share,'.0f')+'%'",
+   "as": "lbl"
+  }
+ ],
+ "layer": [
+  {
+   "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 3
+   },
+   "encoding": {
+    "x": {
+     "field": "x0",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       100
+      ]
+     },
+     "axis": null
+    },
+    "x2": {
+     "field": "x1"
+    },
+    "y": {
+     "field": "y0",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       60
+      ],
+      "reverse": true
+     },
+     "axis": null
+    },
+    "y2": {
+     "field": "y1"
+    },
+    "color": {
+     "condition": [
+      {
+       "test": "datum.grp=='hero'",
+       "value": "#c2185b"
+      },
+      {
+       "test": "datum.grp=='second'",
+       "value": "#e57fa6"
+      }
+     ],
+     "value": "#d9d9d9"
+    },
+    "opacity": {
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 1
+     },
+     "value": 0.9
+    },
+    "tooltip": [
+     {
+      "field": "item",
+      "title": "Item"
+     },
+     {
+      "field": "spend_m",
+      "title": "Spend ($M)",
+      "format": ","
+     },
+     {
+      "field": "share",
+      "title": "Share (%)"
+     }
+    ]
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "fontSize": 12,
+    "fontWeight": "bold",
+    "limit": 150
+   },
+   "transform": [
+    {
+     "filter": "datum.show_label==1"
+    }
+   ],
+   "encoding": {
+    "x": {
+     "field": "cx",
+     "type": "quantitative"
+    },
+    "y": {
+     "field": "cy",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lbl"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.grp=='hero'||datum.grp=='second'",
+      "value": "white"
+     },
+     "value": "#222"
+    }
+   }
+  }
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  }
+ }
+}

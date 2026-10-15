@@ -1,0 +1,179 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 330,
+ "title": {
+  "text": "Nearly half of all trips are holidays",
+  "subtitle": "Share of overnight trips by reason, year ending June 2026",
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/dots_reason.csv"
+ },
+ "params": [
+  {
+   "name": "hv",
+   "select": {
+    "type": "point",
+    "fields": [
+     "reason"
+    ],
+    "on": "mouseover",
+    "clear": "mouseout"
+   }
+  }
+ ],
+ "layer": [
+  {
+   "mark": {
+    "type": "arc",
+    "innerRadius": 75,
+    "outerRadius": 135,
+    "stroke": "white",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "theta": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "stack": true
+    },
+    "order": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "sort": "descending"
+    },
+    "color": {
+     "field": "reason",
+     "type": "nominal",
+     "sort": [
+      "Holiday",
+      "Visiting friends and relatives",
+      "Business",
+      "Other"
+     ],
+     "scale": {
+      "domain": [
+       "Holiday",
+       "Visiting friends and relatives",
+       "Business",
+       "Other"
+      ],
+      "range": [
+       "#3949ab",
+       "#9fa8da",
+       "#bdbdbd",
+       "#e0e0e0"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "right"
+     }
+    },
+    "opacity": {
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 1
+     },
+     "value": 0.9
+    },
+    "tooltip": [
+     {
+      "field": "reason",
+      "title": "Reason"
+     },
+     {
+      "field": "trips_000",
+      "title": "Trips ('000)",
+      "format": ","
+     },
+     {
+      "field": "share",
+      "title": "Share (%)"
+     }
+    ]
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "radius": 105,
+    "fontSize": 13,
+    "fontWeight": "bold"
+   },
+   "transform": [
+    {
+     "filter": "datum.share>5"
+    }
+   ],
+   "encoding": {
+    "theta": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "stack": true
+    },
+    "order": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "sort": "descending"
+    },
+    "text": {
+     "field": "share",
+     "type": "quantitative",
+     "format": ".0f"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.reason=='Holiday'",
+      "value": "white"
+     },
+     "value": "#222"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "t": "112.5M",
+      "s": "trips"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 24,
+    "fontWeight": "bold",
+    "dy": -8,
+    "color": "#222"
+   },
+   "encoding": {
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "t": "overnight trips"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 12,
+    "dy": 14,
+    "color": "#666"
+   },
+   "encoding": {
+    "text": {
+     "field": "t"
+    }
+   }
+  }
+ ]
+}

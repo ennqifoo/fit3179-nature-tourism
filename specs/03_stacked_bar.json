@@ -1,0 +1,165 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 170,
+ "autosize": {
+  "type": "fit-x",
+  "contains": "padding"
+ },
+ "title": {
+  "text": "International visitors now sleep in rented homes more than in friends' homes",
+  "subtitle": [
+   "Share of international visitor nights by accommodation type, years ending June (100% stacked)"
+  ],
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/ivs_accommodation.csv"
+ },
+ "transform": [
+  {
+   "calculate": "indexof([\"Rented house or apartment\", \"Friends' or relatives' home\", \"Hotels and motels\", \"All other types\"],datum.type)",
+   "as": "ord"
+  }
+ ],
+ "params": [
+  {
+   "name": "hv",
+   "select": {
+    "type": "point",
+    "fields": [
+     "type"
+    ],
+    "on": "mouseover",
+    "clear": "mouseout"
+   }
+  }
+ ],
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "stroke": "white",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "y": {
+     "field": "year",
+     "type": "nominal",
+     "sort": {
+      "field": "yorder"
+     },
+     "title": null
+    },
+    "x": {
+     "field": "share",
+     "type": "quantitative",
+     "stack": "zero",
+     "title": "Share of visitor nights (%)",
+     "scale": {
+      "domain": [
+       0,
+       100
+      ]
+     }
+    },
+    "order": {
+     "field": "ord",
+     "type": "quantitative"
+    },
+    "color": {
+     "field": "type",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Rented house or apartment",
+       "Friends' or relatives' home",
+       "Hotels and motels",
+       "All other types"
+      ],
+      "range": [
+       "#2e7d32",
+       "#a5d6a7",
+       "#9e9e9e",
+       "#d9d9d9"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "bottom"
+     }
+    },
+    "opacity": {
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 1
+     },
+     "value": 0.92
+    },
+    "tooltip": [
+     {
+      "field": "type",
+      "title": "Type"
+     },
+     {
+      "field": "year",
+      "title": "Year"
+     },
+     {
+      "field": "share",
+      "title": "Share (%)"
+     },
+     {
+      "field": "nights_000",
+      "title": "Nights ('000)",
+      "format": ","
+     }
+    ]
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "fontSize": 12,
+    "fontWeight": "bold"
+   },
+   "transform": [
+    {
+     "filter": "datum.share>8"
+    }
+   ],
+   "encoding": {
+    "y": {
+     "field": "year",
+     "type": "nominal",
+     "sort": {
+      "field": "yorder"
+     }
+    },
+    "x": {
+     "field": "share",
+     "type": "quantitative",
+     "stack": "zero",
+     "bandPosition": 0.5
+    },
+    "order": {
+     "field": "ord",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "share",
+     "type": "quantitative",
+     "format": ".0f"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.type=='Rented house or apartment'",
+      "value": "white"
+     },
+     "value": "#222"
+    }
+   }
+  }
+ ]
+}
