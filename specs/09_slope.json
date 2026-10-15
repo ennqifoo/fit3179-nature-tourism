@@ -1,78 +1,183 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
-  "height": 460,
-  "title": {
-    "text": "Regional winners and losers, 2019 vs 2024",
-    "subtitle": "Overnight trips ('000). The 6 biggest gainers and 6 biggest decliners among regional destinations with 500k+ trips in 2019",
-    "anchor": "start"
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 330,
+ "title": {
+  "text": [
+   "Nearly half of all trips are holidays"
+  ],
+  "subtitle": [
+   "Share of overnight trips by reason, year ending June 2026"
+  ],
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/dots_reason.csv"
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "arc",
+    "innerRadius": 75,
+    "outerRadius": 135,
+    "stroke": "white",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "theta": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "stack": true
+    },
+    "order": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "sort": "descending"
+    },
+    "color": {
+     "field": "reason",
+     "type": "nominal",
+     "sort": [
+      "Holiday",
+      "Visiting friends and relatives",
+      "Business",
+      "Other"
+     ],
+     "scale": {
+      "domain": [
+       "Holiday",
+       "Visiting friends and relatives",
+       "Business",
+       "Other"
+      ],
+      "range": [
+       "#3949ab",
+       "#9fa8da",
+       "#bdbdbd",
+       "#e0e0e0"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "right"
+     }
+    },
+    "opacity": {
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 1
+     },
+     "value": 0.9
+    },
+    "tooltip": [
+     {
+      "field": "reason",
+      "title": "Reason"
+     },
+     {
+      "field": "trips_000",
+      "title": "Trips ('000)",
+      "format": ","
+     },
+     {
+      "field": "share",
+      "title": "Share (%)"
+     }
+    ]
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "reason"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
   },
-  "data": { "url": "data/region_slope.csv" },
-  "transform": [
+  {
+   "mark": {
+    "type": "text",
+    "radius": 105,
+    "fontSize": 13,
+    "fontWeight": "bold"
+   },
+   "transform": [
     {
-      "calculate": "datum.region=='Flinders Ranges and Outback' ? 'fall' : datum.region=='North West' ? 'rise' : 'rest'",
-      "as": "grp"
-    },
-    {
-      "calculate": "datum.region + ' (' + (datum.change_pct>0?'+':'') + datum.change_pct + '%)'",
-      "as": "lbl"
+     "filter": "datum.share>5"
     }
-  ],
-  "layer": [
-    {
-      "mark": { "type": "line", "point": { "filled": true, "size": 50 } },
-      "encoding": {
-        "x": {
-          "field": "year",
-          "type": "ordinal",
-          "axis": { "title": null, "labelFontSize": 13, "labelAngle": 0 },
-          "scale": { "padding": 0.9 }
-        },
-        "y": {
-          "field": "trips",
-          "type": "quantitative",
-          "title": "Overnight trips ('000)",
-          "scale": { "zero": false }
-        },
-        "detail": { "field": "region" },
-        "color": {
-          "condition": [
-            { "test": "datum.grp=='fall'", "value": "#cb181d" },
-            { "test": "datum.grp=='rise'", "value": "#252525" }
-          ],
-          "value": "#bdbdbd"
-        },
-        "strokeWidth": {
-          "condition": { "test": "datum.grp=='rest'", "value": 1.3 },
-          "value": 3
-        },
-        "tooltip": [
-          { "field": "region" },
-          { "field": "year", "type": "ordinal" },
-          { "field": "trips", "title": "Trips ('000)" },
-          { "field": "change_pct", "title": "Change (%)" }
-        ]
-      }
+   ],
+   "encoding": {
+    "theta": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "stack": true
     },
-    {
-      "transform": [{ "filter": "datum.year==2024 && datum.grp!='rest'" }],
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 10,
-        "fontSize": 12,
-        "fontWeight": "bold"
-      },
-      "encoding": {
-        "x": { "field": "year", "type": "ordinal" },
-        "y": { "field": "trips", "type": "quantitative" },
-        "text": { "field": "lbl" },
-        "color": {
-          "condition": { "test": "datum.grp=='fall'", "value": "#cb181d" },
-          "value": "#252525"
-        }
-      }
+    "order": {
+     "field": "trips_000",
+     "type": "quantitative",
+     "sort": "descending"
+    },
+    "text": {
+     "field": "share",
+     "type": "quantitative",
+     "format": ".0f"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.reason=='Holiday'",
+      "value": "white"
+     },
+     "value": "#222"
     }
-  ],
-  "config": { "view": { "stroke": null }, "axis": { "grid": false } }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "t": "112.5M",
+      "s": "trips"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 24,
+    "fontWeight": "bold",
+    "dy": -8,
+    "color": "#222"
+   },
+   "encoding": {
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "t": "overnight trips"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 12,
+    "dy": 14,
+    "color": "#666"
+   },
+   "encoding": {
+    "text": {
+     "field": "t"
+    }
+   }
+  }
+ ]
 }

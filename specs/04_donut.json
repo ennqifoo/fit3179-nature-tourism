@@ -1,75 +1,91 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
- "width": "container",
- "height": 330,
+ "width": 560,
+ "height": 420,
  "title": {
-  "text": "Nearly half of all trips are holidays",
-  "subtitle": "Share of overnight trips by reason, year ending June 2026",
+  "text": [
+   "NSW is the biggest destination, but Queensland grew and",
+   "the Northern Territory shrank"
+  ],
+  "subtitle": [
+   "Dorling cartogram: circle area = overnight trips, year ending June 2026; circles sit",
+   "near each state's real position",
+   "Orange = fastest growth / fastest fall in trips versus June 2025; others grey"
+  ],
   "anchor": "start"
  },
  "data": {
-  "url": "data/dots_reason.csv"
+  "url": "data/dots_state_dorling.csv"
+ },
+ "transform": [
+  {
+   "calculate": "datum.r_px*datum.r_px*4",
+   "as": "sz"
+  },
+  {
+   "calculate": "datum.state=='QLD'||datum.state=='NT'",
+   "as": "hl"
+  }
+ ],
+ "encoding": {
+  "x": {
+   "field": "x",
+   "type": "quantitative",
+   "scale": {
+    "domain": [
+     0,
+     560
+    ]
+   },
+   "axis": null
+  },
+  "y": {
+   "field": "y",
+   "type": "quantitative",
+   "scale": {
+    "domain": [
+     0,
+     420
+    ],
+    "reverse": true
+   },
+   "axis": null
+  }
  },
  "layer": [
   {
    "mark": {
-    "type": "arc",
-    "innerRadius": 75,
-    "outerRadius": 135,
-    "stroke": "white",
-    "strokeWidth": 2
+    "type": "circle",
+    "stroke": "#555",
+    "strokeWidth": 1,
+    "opacity": 0.9
    },
    "encoding": {
-    "theta": {
-     "field": "trips_000",
+    "size": {
+     "field": "sz",
      "type": "quantitative",
-     "stack": true
-    },
-    "order": {
-     "field": "trips_000",
-     "type": "quantitative",
-     "sort": "descending"
+     "scale": null,
+     "legend": null
     },
     "color": {
-     "field": "reason",
-     "type": "nominal",
-     "sort": [
-      "Holiday",
-      "Visiting friends and relatives",
-      "Business",
-      "Other"
-     ],
-     "scale": {
-      "domain": [
-       "Holiday",
-       "Visiting friends and relatives",
-       "Business",
-       "Other"
-      ],
-      "range": [
-       "#3949ab",
-       "#9fa8da",
-       "#bdbdbd",
-       "#e0e0e0"
-      ]
+     "condition": {
+      "test": "datum.hl",
+      "value": "#e6550d"
      },
-     "legend": {
-      "title": null,
-      "orient": "right"
-     }
+     "value": "#bdbdbd"
     },
-    "opacity": {
+    "strokeWidth": {
      "condition": {
       "param": "hv",
       "empty": false,
-      "value": 1
+      "value": 3
      },
-     "value": 0.9
+     "value": 1
     },
     "tooltip": [
      {
-      "field": "reason",
-      "title": "Reason"
+      "field": "state",
+      "title": "State"
      },
      {
       "field": "trips_000",
@@ -77,8 +93,9 @@
       "format": ","
      },
      {
-      "field": "share",
-      "title": "Share (%)"
+      "field": "change_pct",
+      "title": "Change vs June 2025 (%)",
+      "format": "+.1f"
      }
     ]
    },
@@ -88,7 +105,7 @@
      "select": {
       "type": "point",
       "fields": [
-       "reason"
+       "state"
       ],
       "on": "mouseover",
       "clear": "mouseout"
@@ -99,81 +116,43 @@
   {
    "mark": {
     "type": "text",
-    "radius": 105,
-    "fontSize": 13,
-    "fontWeight": "bold"
+    "fontWeight": "bold",
+    "fontSize": 12,
+    "color": "#222"
    },
    "transform": [
     {
-     "filter": "datum.share>5"
+     "filter": "datum.r_px>15"
     }
    ],
    "encoding": {
-    "theta": {
-     "field": "trips_000",
-     "type": "quantitative",
-     "stack": true
-    },
-    "order": {
-     "field": "trips_000",
-     "type": "quantitative",
-     "sort": "descending"
-    },
     "text": {
-     "field": "share",
-     "type": "quantitative",
-     "format": ".0f"
-    },
-    "color": {
-     "condition": {
-      "test": "datum.reason=='Holiday'",
-      "value": "white"
-     },
-     "value": "#222"
+     "field": "state"
     }
    }
   },
   {
-   "data": {
-    "values": [
-     {
-      "t": "112.5M",
-      "s": "trips"
-     }
-    ]
-   },
    "mark": {
     "type": "text",
-    "fontSize": 24,
-    "fontWeight": "bold",
-    "dy": -8,
-    "color": "#222"
+    "fontSize": 11,
+    "color": "#222",
+    "dy": -22
    },
-   "encoding": {
-    "text": {
-     "field": "t"
+   "transform": [
+    {
+     "filter": "datum.r_px<=15"
     }
-   }
-  },
-  {
-   "data": {
-    "values": [
-     {
-      "t": "overnight trips"
-     }
-    ]
-   },
-   "mark": {
-    "type": "text",
-    "fontSize": 12,
-    "dy": 14,
-    "color": "#666"
-   },
+   ],
    "encoding": {
     "text": {
-     "field": "t"
+     "field": "state"
     }
    }
   }
- ]
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  }
+ }
 }

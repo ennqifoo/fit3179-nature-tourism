@@ -1,147 +1,129 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 520,
+ "height": 360,
+ "autosize": {
+  "type": "fit-x",
+  "contains": "padding"
+ },
  "title": {
-  "text": "Desert and outback regions are furthest behind their 2019 levels",
+  "text": [
+   "Queensland climbed from 4th to 1st; the Northern Territory",
+   "slid from 6th to last"
+  ],
   "subtitle": [
-   "Overnight trips by Australian residents, by tourism region, as a % of the 2019 level. Drag the slider to change the year.",
-   "In 2024, 29 of 72 regions with data are above 2019. Kakadu (NT) is at 59% and Alice Springs at 67%."
+   "Rank of each state's trips relative to 2019 (1 = most recovered), 2020–2024"
   ],
   "anchor": "start"
  },
- "params": [
-  {
-   "name": "Year_selection",
-   "value": 2024,
-   "bind": {
-    "input": "range",
-    "min": 2014,
-    "max": 2024,
-    "step": 1,
-    "name": "Year: "
-   }
-  }
- ],
- "projection": {
-  "type": "conicEqualArea",
-  "parallels": [
-   -18,
-   -36
-  ],
-  "rotate": [
-   -134,
-   0
-  ]
+ "data": {
+  "url": "data/nvs_state_rank.csv"
  },
  "layer": [
   {
-   "data": {
-    "url": "data/regions.topojson",
-    "format": {
-     "type": "topojson",
-     "feature": "regions"
-    }
-   },
    "mark": {
-    "type": "geoshape",
-    "fill": "#e0e0e0",
-    "stroke": "white",
-    "strokeWidth": 0.5
+    "type": "line",
+    "point": {
+     "size": 90,
+     "filled": true
+    },
+    "interpolate": "monotone"
    },
    "encoding": {
-    "tooltip": [
-     {
-      "field": "properties.name",
-      "type": "nominal",
-      "title": "Region (no data published)"
-     }
-    ]
-   }
-  },
-  {
-   "data": {
-    "url": "data/regions_year.csv"
-   },
-   "transform": [
-    {
-     "filter": "datum.year == Year_selection"
-    },
-    {
-     "lookup": "name",
-     "from": {
-      "data": {
-       "url": "data/regions.topojson",
-       "format": {
-        "type": "topojson",
-        "feature": "regions"
-       }
-      },
-      "key": "properties.name"
-     },
-     "as": "geo"
-    }
-   ],
-   "mark": {
-    "type": "geoshape",
-    "stroke": "white",
-    "strokeWidth": 0.5
-   },
-   "encoding": {
-    "shape": {
-     "field": "geo",
-     "type": "geojson"
-    },
-    "color": {
-     "field": "index_2019",
+    "x": {
+     "field": "year",
      "type": "quantitative",
-     "title": "Trips as % of 2019",
      "scale": {
-      "type": "threshold",
       "domain": [
-       50,
-       75,
-       100,
-       115
-      ],
-      "range": [
-       "#8c510a",
-       "#d8b365",
-       "#f6e8c3",
-       "#80cdc1",
-       "#01665e"
+       2019.3,
+       2024.7
       ]
      },
-     "legend": {
-      "orient": "bottom-left",
-      "symbolType": "square"
+     "axis": {
+      "format": "d",
+      "values": [
+       2020,
+       2021,
+       2022,
+       2023,
+       2024
+      ],
+      "title": null,
+      "grid": false
      }
     },
-    "stroke": {
-     "condition": {
-      "param": "hover",
-      "empty": false,
-      "value": "#000"
+    "y": {
+     "field": "rank",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0.5,
+       8.5
+      ],
+      "reverse": true
      },
-     "value": "white"
+     "axis": {
+      "values": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "title": "Rank",
+      "grid": false
+     }
+    },
+    "detail": {
+     "field": "state"
+    },
+    "color": {
+     "condition": [
+      {
+       "test": "datum.state=='QLD'",
+       "value": "#08519c"
+      },
+      {
+       "test": "datum.state=='NT'",
+       "value": "#6baed6"
+      }
+     ],
+     "value": "#bdbdbd"
     },
     "strokeWidth": {
-     "condition": {
-      "param": "hover",
-      "empty": false,
-      "value": 2
-     },
-     "value": 0.5
+     "condition": [
+      {
+       "param": "hv",
+       "empty": false,
+       "value": 6
+      },
+      {
+       "test": "datum.state=='QLD'||datum.state=='NT'",
+       "value": 4
+      }
+     ],
+     "value": 2
+    },
+    "opacity": {
+     "condition": [
+      {
+       "param": "hv",
+       "empty": false,
+       "value": 1
+      },
+      {
+       "test": "datum.state=='QLD'||datum.state=='NT'",
+       "value": 1
+      }
+     ],
+     "value": 0.8
     },
     "tooltip": [
      {
-      "field": "name",
-      "type": "nominal",
-      "title": "Region"
-     },
-     {
       "field": "state",
-      "type": "nominal",
       "title": "State"
      },
      {
@@ -150,26 +132,22 @@
       "title": "Year"
      },
      {
-      "field": "trips_000",
-      "type": "quantitative",
-      "title": "Trips ('000)",
-      "format": ",.0f"
+      "field": "rank",
+      "title": "Rank"
      },
      {
       "field": "index_2019",
-      "type": "quantitative",
-      "title": "% of 2019 level",
-      "format": ".0f"
+      "title": "Index (2019=100)"
      }
     ]
    },
    "params": [
     {
-     "name": "hover",
+     "name": "hv",
      "select": {
       "type": "point",
       "fields": [
-       "name"
+       "state"
       ],
       "on": "mouseover",
       "clear": "mouseout"
@@ -178,24 +156,84 @@
    ]
   },
   {
-   "data": {
-    "url": "data/states.topojson",
-    "format": {
-     "type": "topojson",
-     "feature": "states"
-    }
-   },
    "mark": {
-    "type": "geoshape",
-    "fill": null,
-    "stroke": "#555",
-    "strokeWidth": 0.8
+    "type": "text",
+    "align": "left",
+    "dx": 10,
+    "fontWeight": "bold",
+    "fontSize": 12
+   },
+   "transform": [
+    {
+     "filter": "datum.year==2024"
+    }
+   ],
+   "encoding": {
+    "x": {
+     "field": "year",
+     "type": "quantitative"
+    },
+    "y": {
+     "field": "rank",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "state"
+    },
+    "color": {
+     "condition": [
+      {
+       "test": "datum.state=='QLD'",
+       "value": "#08519c"
+      },
+      {
+       "test": "datum.state=='NT'",
+       "value": "#6baed6"
+      }
+     ],
+     "value": "#757575"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "dx": -10,
+    "fontWeight": "bold",
+    "fontSize": 12
+   },
+   "transform": [
+    {
+     "filter": "datum.year==2020"
+    }
+   ],
+   "encoding": {
+    "x": {
+     "field": "year",
+     "type": "quantitative"
+    },
+    "y": {
+     "field": "rank",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "state"
+    },
+    "color": {
+     "condition": [
+      {
+       "test": "datum.state=='QLD'",
+       "value": "#08519c"
+      },
+      {
+       "test": "datum.state=='NT'",
+       "value": "#6baed6"
+      }
+     ],
+     "value": "#757575"
+    }
    }
   }
- ],
- "config": {
-  "view": {
-   "stroke": null
-  }
- }
+ ]
 }

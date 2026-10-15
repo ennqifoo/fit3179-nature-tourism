@@ -1,167 +1,160 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 170,
- "autosize": {
-  "type": "fit-x",
-  "contains": "padding"
- },
+ "height": 460,
  "title": {
-  "text": "International visitors now sleep in rented homes more than in friends' homes",
+  "text": [
+   "Regional winners and losers, 2019 vs 2024"
+  ],
   "subtitle": [
-   "Share of international visitor nights by accommodation type, years ending June (100% stacked)"
+   "Overnight trips ('000). The 6 biggest gainers and 6 biggest decliners among regional",
+   "destinations with 500k+ trips in 2019"
   ],
   "anchor": "start"
  },
  "data": {
-  "url": "data/ivs_accommodation.csv"
+  "url": "data/region_slope.csv"
  },
  "transform": [
   {
-   "calculate": "indexof([\"Rented house or apartment\", \"Friends' or relatives' home\", \"Hotels and motels\", \"All other types\"],datum.type)",
-   "as": "ord"
+   "calculate": "datum.region=='Flinders Ranges and Outback' ? 'fall' : datum.region=='North West' ? 'rise' : 'rest'",
+   "as": "grp"
+  },
+  {
+   "calculate": "datum.region + ' ' + (datum.change_pct>0?'+':'') + datum.change_pct + '%'",
+   "as": "lbl"
   }
  ],
  "layer": [
   {
    "mark": {
-    "type": "bar",
-    "stroke": "white",
-    "strokeWidth": 2
+    "type": "line",
+    "point": {
+     "filled": true,
+     "size": 50
+    }
    },
    "encoding": {
-    "y": {
-     "field": "year",
-     "type": "nominal",
-     "sort": [
-      "Jun 2025",
-      "Jun 2026"
-     ],
-     "title": null
-    },
     "x": {
-     "field": "share",
-     "type": "quantitative",
-     "stack": "zero",
-     "title": "Share of visitor nights (%)",
+     "field": "year",
+     "type": "ordinal",
+     "axis": {
+      "title": null,
+      "labelFontSize": 13,
+      "labelAngle": 0
+     },
      "scale": {
-      "domain": [
-       0,
-       100
-      ]
+      "padding": 0.9
      }
     },
-    "order": {
-     "field": "ord",
-     "type": "quantitative"
+    "y": {
+     "field": "trips",
+     "type": "quantitative",
+     "title": "Overnight trips ('000)",
+     "scale": {
+      "zero": false
+     }
+    },
+    "detail": {
+     "field": "region"
     },
     "color": {
-     "field": "type",
-     "type": "nominal",
-     "scale": {
-      "domain": [
-       "Rented house or apartment",
-       "Friends' or relatives' home",
-       "Hotels and motels",
-       "All other types"
-      ],
-      "range": [
-       "#2e7d32",
-       "#a5d6a7",
-       "#9e9e9e",
-       "#d9d9d9"
-      ]
-     },
-     "legend": {
-      "title": null,
-      "orient": "bottom"
-     }
+     "condition": [
+      {
+       "test": "datum.grp=='fall'",
+       "value": "#cb181d"
+      },
+      {
+       "test": "datum.grp=='rise'",
+       "value": "#252525"
+      }
+     ],
+     "value": "#bdbdbd"
     },
-    "opacity": {
+    "strokeWidth": {
      "condition": {
-      "param": "hv",
-      "empty": false,
-      "value": 1
+      "test": "datum.grp=='rest'",
+      "value": 1.3
      },
-     "value": 0.92
+     "value": 3
     },
     "tooltip": [
      {
-      "field": "type",
-      "title": "Type"
+      "field": "region"
      },
      {
       "field": "year",
-      "title": "Year"
+      "type": "ordinal"
      },
      {
-      "field": "share",
-      "title": "Share (%)"
+      "field": "trips",
+      "title": "Trips ('000)"
      },
      {
-      "field": "nights_000",
-      "title": "Nights ('000)",
-      "format": ","
+      "field": "change_pct",
+      "title": "Change (%)"
      }
     ]
-   },
-   "params": [
-    {
-     "name": "hv",
-     "select": {
-      "type": "point",
-      "fields": [
-       "type"
-      ],
-      "on": "mouseover",
-      "clear": "mouseout"
-     }
-    }
-   ]
+   }
   },
   {
+   "transform": [
+    {
+     "filter": "datum.year==2024 && datum.grp!='rest'"
+    }
+   ],
    "mark": {
     "type": "text",
+    "align": "left",
+    "dx": 10,
     "fontSize": 12,
     "fontWeight": "bold"
    },
-   "transform": [
-    {
-     "filter": "datum.share>8"
-    }
-   ],
    "encoding": {
-    "y": {
-     "field": "year",
-     "type": "nominal",
-     "sort": [
-      "Jun 2025",
-      "Jun 2026"
-     ]
-    },
     "x": {
-     "field": "share",
-     "type": "quantitative",
-     "stack": "zero",
-     "bandPosition": 0.5
+     "field": "year",
+     "type": "ordinal"
     },
-    "order": {
-     "field": "ord",
+    "y": {
+     "field": "trips",
      "type": "quantitative"
     },
     "text": {
-     "field": "share",
-     "type": "quantitative",
-     "format": ".0f"
+     "field": "lbl"
     },
     "color": {
      "condition": {
-      "test": "datum.type=='Rented house or apartment'",
-      "value": "white"
+      "test": "datum.grp=='fall'",
+      "value": "#cb181d"
      },
-     "value": "#222"
+     "value": "#252525"
+    },
+    "dy": {
+     "condition": {
+      "test": "datum.grp=='rise'",
+      "value": -9
+     },
+     "value": 9
     }
    }
   }
- ]
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "grid": false
+  }
+ },
+ "autosize": {
+  "type": "fit-x",
+  "contains": "padding"
+ },
+ "padding": {
+  "right": 120,
+  "left": 5,
+  "top": 5,
+  "bottom": 5
+ }
 }

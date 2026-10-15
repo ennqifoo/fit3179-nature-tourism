@@ -1,151 +1,136 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 520,
+ "height": 300,
  "title": {
-  "text": "Four in five regional nature trips go to NSW, Victoria and Queensland; the Northern Territory has only 7 dots",
-  "subtitle": "Each dot = 100,000 overnight trips by Australian residents to a regional destination in 2024 (capital-city regions excluded). Dots are placed randomly inside each region.",
+  "text": [
+   "The Northern Territory's visitors peak in the dry season;",
+   "Tasmania's in summer"
+  ],
+  "subtitle": [
+   "Overnight trips by quarter as an index of each state's own 5-quarter average (=100),",
+   "June 2025 – June 2026"
+  ],
   "anchor": "start"
  },
- "params": [
-  {
-   "name": "state_pick",
-   "value": "All",
-   "bind": {
-    "input": "select",
-    "name": "State: ",
-    "options": [
-     "All",
-     "NSW",
-     "VIC",
-     "QLD",
-     "SA",
-     "WA",
-     "TAS",
-     "NT",
-     "ACT"
-    ]
+ "data": {
+  "url": "data/dots_quarter_trips.csv"
+ },
+ "encoding": {
+  "x": {
+   "field": "quarter",
+   "type": "ordinal",
+   "sort": {
+    "field": "qorder"
+   },
+   "title": null,
+   "axis": {
+    "labelAngle": 0,
+    "orient": "top"
    }
+  },
+  "y": {
+   "field": "state",
+   "type": "nominal",
+   "sort": [
+    "NT",
+    "TAS",
+    "SA",
+    "WA",
+    "QLD",
+    "VIC",
+    "NSW",
+    "ACT"
+   ],
+   "title": null
   }
- ],
- "projection": {
-  "type": "conicEqualArea",
-  "parallels": [
-   -18,
-   -36
-  ],
-  "rotate": [
-   -134,
-   0
-  ]
  },
  "layer": [
   {
-   "data": {
-    "url": "data/regions.topojson",
-    "format": {
-     "type": "topojson",
-     "feature": "regions"
-    }
-   },
    "mark": {
-    "type": "geoshape",
-    "fill": "#ececec",
+    "type": "rect",
     "stroke": "white",
-    "strokeWidth": 0.4
-   }
-  },
-  {
-   "data": {
-    "url": "data/states.topojson",
-    "format": {
-     "type": "topojson",
-     "feature": "states"
-    }
-   },
-   "mark": {
-    "type": "geoshape",
-    "fill": null,
-    "stroke": "#777",
-    "strokeWidth": 0.6
-   }
-  },
-  {
-   "data": {
-    "url": "data/dots_trips_2024.csv"
-   },
-   "transform": [
-    {
-     "filter": "state_pick == 'All' || datum.state == state_pick"
-    }
-   ],
-   "mark": {
-    "type": "circle",
-    "size": 22,
-    "opacity": 0.75,
-    "color": "#6a3d9a"
+    "strokeWidth": 2
    },
    "encoding": {
-    "longitude": {
-     "field": "lon",
-     "type": "quantitative"
+    "color": {
+     "field": "index",
+     "type": "quantitative",
+     "scale": {
+      "scheme": "yelloworangered",
+      "domain": [
+       65,
+       135
+      ]
+     },
+     "legend": {
+      "title": "Index (state avg = 100)",
+      "orient": "bottom",
+      "gradientLength": 260
+     }
     },
-    "latitude": {
-     "field": "lat",
-     "type": "quantitative"
+    "opacity": {
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 1
+     },
+     "value": 0.9
     },
     "tooltip": [
-     {
-      "field": "region",
-      "title": "Region"
-     },
      {
       "field": "state",
       "title": "State"
      },
      {
-      "field": "region_trips_2024_000",
-      "title": "Region trips 2024 ('000)",
+      "field": "quarter",
+      "title": "Quarter"
+     },
+     {
+      "field": "trips_000",
+      "title": "Trips ('000)",
       "format": ",.0f"
+     },
+     {
+      "field": "index",
+      "title": "Index"
      }
     ]
-   }
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "state",
+       "quarter"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
   },
   {
-   "data": {
-    "values": [
-     {
-      "lon": 124,
-      "lat": -40.5,
-      "t": "\u25cf  = 100,000 overnight trips"
-     }
-    ]
-   },
    "mark": {
     "type": "text",
-    "align": "left",
-    "fontSize": 12,
-    "color": "#6a3d9a",
-    "fontWeight": "bold"
+    "fontSize": 11
    },
    "encoding": {
-    "longitude": {
-     "field": "lon",
-     "type": "quantitative"
-    },
-    "latitude": {
-     "field": "lat",
-     "type": "quantitative"
-    },
     "text": {
-     "field": "t"
+     "field": "index",
+     "type": "quantitative",
+     "format": ".0f"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.index>118",
+      "value": "white"
+     },
+     "value": "#333"
     }
    }
   }
- ],
- "config": {
-  "view": {
-   "stroke": null
-  }
- }
+ ]
 }

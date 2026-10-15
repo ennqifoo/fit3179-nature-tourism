@@ -1,107 +1,180 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
- "width": 560,
- "height": 420,
+ "width": "container",
+ "height": 520,
  "title": {
-  "text": "NSW is the biggest destination, but Queensland grew and the Northern Territory shrank",
+  "text": [
+   "Desert and outback regions are furthest behind their 2019",
+   "levels"
+  ],
   "subtitle": [
-   "Dorling cartogram: circle area = overnight trips, year ending June 2026; circles sit near each state's real position",
-   "Orange = fastest growth / fastest fall in trips versus June 2025; others grey"
+   "Overnight trips by Australian residents, by tourism region, as a % of the 2019 level.",
+   "Drag the slider to change the year.",
+   "In 2024, 29 of 72 regions with data are above 2019. Kakadu (NT) is at 59% and Alice",
+   "Springs at 67%."
   ],
   "anchor": "start"
  },
- "data": {
-  "url": "data/dots_state_dorling.csv"
- },
- "transform": [
+ "params": [
   {
-   "calculate": "datum.r_px*datum.r_px*4",
-   "as": "sz"
-  },
-  {
-   "calculate": "datum.state=='QLD'||datum.state=='NT'",
-   "as": "hl"
+   "name": "Year_selection",
+   "value": 2024,
+   "bind": {
+    "input": "range",
+    "min": 2014,
+    "max": 2024,
+    "step": 1,
+    "name": "Year: "
+   }
   }
  ],
- "encoding": {
-  "x": {
-   "field": "x",
-   "type": "quantitative",
-   "scale": {
-    "domain": [
-     0,
-     560
-    ]
-   },
-   "axis": null
-  },
-  "y": {
-   "field": "y",
-   "type": "quantitative",
-   "scale": {
-    "domain": [
-     0,
-     420
-    ],
-    "reverse": true
-   },
-   "axis": null
-  }
+ "projection": {
+  "type": "conicEqualArea",
+  "parallels": [
+   -18,
+   -36
+  ],
+  "rotate": [
+   -134,
+   0
+  ]
  },
  "layer": [
   {
+   "data": {
+    "url": "data/regions.topojson",
+    "format": {
+     "type": "topojson",
+     "feature": "regions"
+    }
+   },
    "mark": {
-    "type": "circle",
-    "stroke": "#555",
-    "strokeWidth": 1,
-    "opacity": 0.9
+    "type": "geoshape",
+    "fill": "#e0e0e0",
+    "stroke": "white",
+    "strokeWidth": 0.5
    },
    "encoding": {
-    "size": {
-     "field": "sz",
-     "type": "quantitative",
-     "scale": null,
-     "legend": null
+    "tooltip": [
+     {
+      "field": "properties.name",
+      "type": "nominal",
+      "title": "Region (no data published)"
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "url": "data/regions_year.csv"
+   },
+   "transform": [
+    {
+     "filter": "datum.year == Year_selection"
+    },
+    {
+     "lookup": "name",
+     "from": {
+      "data": {
+       "url": "data/regions.topojson",
+       "format": {
+        "type": "topojson",
+        "feature": "regions"
+       }
+      },
+      "key": "properties.name"
+     },
+     "as": "geo"
+    }
+   ],
+   "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+   },
+   "encoding": {
+    "shape": {
+     "field": "geo",
+     "type": "geojson"
     },
     "color": {
-     "condition": {
-      "test": "datum.hl",
-      "value": "#e6550d"
+     "field": "index_2019",
+     "type": "quantitative",
+     "title": "Trips as % of 2019",
+     "scale": {
+      "type": "threshold",
+      "domain": [
+       50,
+       75,
+       100,
+       115
+      ],
+      "range": [
+       "#8c510a",
+       "#d8b365",
+       "#f6e8c3",
+       "#80cdc1",
+       "#01665e"
+      ]
      },
-     "value": "#bdbdbd"
+     "legend": {
+      "orient": "bottom-left",
+      "symbolType": "square"
+     }
+    },
+    "stroke": {
+     "condition": {
+      "param": "hover",
+      "empty": false,
+      "value": "#000"
+     },
+     "value": "white"
     },
     "strokeWidth": {
      "condition": {
-      "param": "hv",
+      "param": "hover",
       "empty": false,
-      "value": 3
+      "value": 2
      },
-     "value": 1
+     "value": 0.5
     },
     "tooltip": [
      {
+      "field": "name",
+      "type": "nominal",
+      "title": "Region"
+     },
+     {
       "field": "state",
+      "type": "nominal",
       "title": "State"
      },
      {
-      "field": "trips_000",
-      "title": "Trips ('000)",
-      "format": ","
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year"
      },
      {
-      "field": "change_pct",
-      "title": "Change vs June 2025 (%)",
-      "format": "+.1f"
+      "field": "trips_000",
+      "type": "quantitative",
+      "title": "Trips ('000)",
+      "format": ",.0f"
+     },
+     {
+      "field": "index_2019",
+      "type": "quantitative",
+      "title": "% of 2019 level",
+      "format": ".0f"
      }
     ]
    },
    "params": [
     {
-     "name": "hv",
+     "name": "hover",
      "select": {
       "type": "point",
       "fields": [
-       "state"
+       "name"
       ],
       "on": "mouseover",
       "clear": "mouseout"
@@ -110,39 +183,18 @@
    ]
   },
   {
-   "mark": {
-    "type": "text",
-    "fontWeight": "bold",
-    "fontSize": 12,
-    "color": "#222"
+   "data": {
+    "url": "data/states.topojson",
+    "format": {
+     "type": "topojson",
+     "feature": "states"
+    }
    },
-   "transform": [
-    {
-     "filter": "datum.r_px>15"
-    }
-   ],
-   "encoding": {
-    "text": {
-     "field": "state"
-    }
-   }
-  },
-  {
    "mark": {
-    "type": "text",
-    "fontSize": 11,
-    "color": "#222",
-    "dy": -22
-   },
-   "transform": [
-    {
-     "filter": "datum.r_px<=15"
-    }
-   ],
-   "encoding": {
-    "text": {
-     "field": "state"
-    }
+    "type": "geoshape",
+    "fill": null,
+    "stroke": "#555",
+    "strokeWidth": 0.8
    }
   }
  ],

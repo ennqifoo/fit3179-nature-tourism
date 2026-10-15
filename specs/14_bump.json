@@ -1,160 +1,106 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 360,
+ "height": 400,
  "autosize": {
   "type": "fit-x",
   "contains": "padding"
  },
  "title": {
-  "text": "Queensland climbed from 4th to 1st; the Northern Territory slid from 6th to last",
-  "subtitle": "Rank of each state's trips relative to 2019 (1 = most recovered), 2020\u20132024",
+  "text": [
+   "Accommodation, flights and eating out take 58% of visitor",
+   "spending"
+  ],
+  "subtitle": [
+   "Domestic overnight trip expenditure by item, year ending June 2026 (rectangle area = $",
+   "spent)"
+  ],
   "anchor": "start"
  },
  "data": {
-  "url": "data/nvs_state_purpose.csv"
+  "url": "data/dots_spend_items.csv"
  },
  "transform": [
   {
-   "filter": "datum.purpose=='Total' && datum.state!='AUS' && datum.year>=2020 && datum.year<=2024"
+   "calculate": "datum.item=='Accommodation' ? 'hero' : (datum.item=='Domestic airfares' ? 'second' : 'rest')",
+   "as": "grp"
   },
   {
-   "window": [
-    {
-     "op": "rank",
-     "as": "rank"
-    }
-   ],
-   "groupby": [
-    "year"
-   ],
-   "sort": [
-    {
-     "field": "index_2019",
-     "order": "descending"
-    }
-   ]
+   "calculate": "datum.item+' '+format(datum.share,'.0f')+'%'",
+   "as": "lbl"
   }
  ],
  "layer": [
   {
    "mark": {
-    "type": "line",
-    "point": {
-     "size": 90,
-     "filled": true
-    },
-    "interpolate": "monotone"
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 3
    },
    "encoding": {
     "x": {
-     "field": "year",
+     "field": "x0",
      "type": "quantitative",
      "scale": {
       "domain": [
-       2019.3,
-       2024.7
+       0,
+       100
       ]
      },
-     "axis": {
-      "format": "d",
-      "values": [
-       2020,
-       2021,
-       2022,
-       2023,
-       2024
-      ],
-      "title": null,
-      "grid": false
-     }
+     "axis": null
+    },
+    "x2": {
+     "field": "x1"
     },
     "y": {
-     "field": "rank",
+     "field": "y0",
      "type": "quantitative",
      "scale": {
       "domain": [
-       0.5,
-       8.5
+       0,
+       60
       ],
       "reverse": true
      },
-     "axis": {
-      "values": [
-       1,
-       2,
-       3,
-       4,
-       5,
-       6,
-       7,
-       8
-      ],
-      "title": "Rank",
-      "grid": false
-     }
+     "axis": null
     },
-    "detail": {
-     "field": "state"
+    "y2": {
+     "field": "y1"
     },
     "color": {
      "condition": [
       {
-       "test": "datum.state=='QLD'",
-       "value": "#08519c"
+       "test": "datum.grp=='hero'",
+       "value": "#c2185b"
       },
       {
-       "test": "datum.state=='NT'",
-       "value": "#6baed6"
+       "test": "datum.grp=='second'",
+       "value": "#e57fa6"
       }
      ],
-     "value": "#bdbdbd"
-    },
-    "strokeWidth": {
-     "condition": [
-      {
-       "param": "hv",
-       "empty": false,
-       "value": 6
-      },
-      {
-       "test": "datum.state=='QLD'||datum.state=='NT'",
-       "value": 4
-      }
-     ],
-     "value": 2
+     "value": "#d9d9d9"
     },
     "opacity": {
-     "condition": [
-      {
-       "param": "hv",
-       "empty": false,
-       "value": 1
-      },
-      {
-       "test": "datum.state=='QLD'||datum.state=='NT'",
-       "value": 1
-      }
-     ],
-     "value": 0.8
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 1
+     },
+     "value": 0.9
     },
     "tooltip": [
      {
-      "field": "state",
-      "title": "State"
+      "field": "item",
+      "title": "Item"
      },
      {
-      "field": "year",
-      "type": "ordinal",
-      "title": "Year"
+      "field": "spend_m",
+      "title": "Spend ($M)",
+      "format": ","
      },
      {
-      "field": "rank",
-      "title": "Rank"
-     },
-     {
-      "field": "index_2019",
-      "title": "Index (2019=100)"
+      "field": "share",
+      "title": "Share (%)"
      }
     ]
    },
@@ -164,7 +110,7 @@
      "select": {
       "type": "point",
       "fields": [
-       "state"
+       "item"
       ],
       "on": "mouseover",
       "clear": "mouseout"
@@ -175,82 +121,40 @@
   {
    "mark": {
     "type": "text",
-    "align": "left",
-    "dx": 10,
+    "fontSize": 13,
     "fontWeight": "bold",
-    "fontSize": 12
+    "limit": 400
    },
    "transform": [
     {
-     "filter": "datum.year==2024"
+     "filter": "datum.show_label==1"
     }
    ],
    "encoding": {
     "x": {
-     "field": "year",
+     "field": "cx",
      "type": "quantitative"
     },
     "y": {
-     "field": "rank",
+     "field": "cy",
      "type": "quantitative"
     },
     "text": {
-     "field": "state"
+     "field": "lbl"
     },
     "color": {
-     "condition": [
-      {
-       "test": "datum.state=='QLD'",
-       "value": "#08519c"
-      },
-      {
-       "test": "datum.state=='NT'",
-       "value": "#6baed6"
-      }
-     ],
-     "value": "#757575"
-    }
-   }
-  },
-  {
-   "mark": {
-    "type": "text",
-    "align": "right",
-    "dx": -10,
-    "fontWeight": "bold",
-    "fontSize": 12
-   },
-   "transform": [
-    {
-     "filter": "datum.year==2020"
-    }
-   ],
-   "encoding": {
-    "x": {
-     "field": "year",
-     "type": "quantitative"
-    },
-    "y": {
-     "field": "rank",
-     "type": "quantitative"
-    },
-    "text": {
-     "field": "state"
-    },
-    "color": {
-     "condition": [
-      {
-       "test": "datum.state=='QLD'",
-       "value": "#08519c"
-      },
-      {
-       "test": "datum.state=='NT'",
-       "value": "#6baed6"
-      }
-     ],
-     "value": "#757575"
+     "condition": {
+      "test": "datum.grp=='hero'||datum.grp=='second'",
+      "value": "white"
+     },
+     "value": "#222"
     }
    }
   }
- ]
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  }
+ }
 }
