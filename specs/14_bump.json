@@ -1,7 +1,7 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 400,
+ "height": 430,
  "autosize": {
   "type": "fit-x",
   "contains": "padding"
@@ -121,7 +121,7 @@
   {
    "mark": {
     "type": "text",
-    "fontSize": 13,
+    "fontSize": 14,
     "fontWeight": "bold",
     "limit": 400
    },

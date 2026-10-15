@@ -19,9 +19,9 @@ const charts = {
 const FONT = "Source Sans 3, system-ui, sans-serif";
 const chartConfig = {
   font: FONT,
-  title: { font: FONT, fontSize: 16, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 12, subtitleColor: "#616e7c", subtitlePadding: 4 },
-  axis: { labelFont: FONT, titleFont: FONT, labelFontSize: 11, titleFontSize: 12, labelColor: "#52606d", titleColor: "#52606d", titleFontWeight: 600 },
-  legend: { labelFont: FONT, titleFont: FONT, labelFontSize: 11, titleFontSize: 12 },
+  title: { font: FONT, fontSize: 18, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 13.5, subtitleColor: "#616e7c", subtitlePadding: 4 },
+  axis: { labelFont: FONT, titleFont: FONT, labelFontSize: 12.5, titleFontSize: 13, labelColor: "#52606d", titleColor: "#52606d", titleFontWeight: 600 },
+  legend: { labelFont: FONT, titleFont: FONT, labelFontSize: 12.5, titleFontSize: 13 },
   text: { font: FONT }
 };
 
