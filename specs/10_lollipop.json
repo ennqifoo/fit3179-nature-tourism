@@ -28,6 +28,10 @@
   {
    "calculate": "datum.r<=2",
    "as": "hl"
+  },
+  {
+   "calculate": "0",
+   "as": "zero"
   }
  ],
  "encoding": {
@@ -53,7 +57,7 @@
    },
    "encoding": {
     "x": {
-     "datum": 0,
+     "field": "zero",
      "type": "quantitative"
     },
     "x2": {
@@ -89,22 +93,27 @@
     },
     "tooltip": [
      {
-      "field": "region"
+      "field": "region",
+      "type": "nominal"
      },
      {
-      "field": "state"
+      "field": "state",
+      "type": "nominal"
      },
      {
       "field": "trips_2019",
-      "title": "2019 ('000)"
+      "title": "2019 ('000)",
+      "type": "quantitative"
      },
      {
       "field": "trips_2024",
-      "title": "2024 ('000)"
+      "title": "2024 ('000)",
+      "type": "quantitative"
      },
      {
       "field": "change_pct",
-      "title": "Change (%)"
+      "title": "Change (%)",
+      "type": "quantitative"
      }
     ]
    }
