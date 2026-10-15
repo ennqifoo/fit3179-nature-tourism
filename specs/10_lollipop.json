@@ -12,43 +12,10 @@
  },
  "transform": [
   {
-   "window": [
-    {
-     "op": "rank",
-     "as": "r"
-    }
-   ],
-   "sort": [
-    {
-     "field": "change_pct",
-     "order": "descending"
-    }
-   ]
-  },
-  {
-   "calculate": "datum.r<=2",
-   "as": "hl"
-  },
-  {
    "calculate": "0",
    "as": "zero"
   }
  ],
- "encoding": {
-  "y": {
-   "field": "region",
-   "type": "nominal",
-   "sort": {
-    "field": "change_pct",
-    "op": "max",
-    "order": "descending"
-   },
-   "title": null,
-   "axis": {
-    "labelLimit": 220
-   }
-  }
- },
  "layer": [
   {
    "mark": {
@@ -56,16 +23,42 @@
     "strokeWidth": 2
    },
    "encoding": {
+    "y": {
+     "field": "region",
+     "type": "nominal",
+     "sort": [
+      "North West",
+      "Lakes",
+      "Goulburn",
+      "Capital Country",
+      "Gippsland",
+      "Whitsundays",
+      "Southern Queensland Country",
+      "Capricorn",
+      "Mackay",
+      "Ballarat",
+      "Limestone Coast",
+      "Australia's South West",
+      "Geelong and the Bellarine",
+      "Yorke Peninsula",
+      "Outback NSW"
+     ],
+     "title": null,
+     "axis": {
+      "labelLimit": 220
+     }
+    },
     "x": {
      "field": "zero",
-     "type": "quantitative"
+     "type": "quantitative",
+     "title": "Change in trips, 2019 to 2024 (%)"
     },
     "x2": {
      "field": "change_pct"
     },
     "color": {
      "condition": {
-      "test": "datum.hl",
+      "test": "datum.change_pct>=17",
       "value": "#d4a017"
      },
      "value": "#bdbdbd"
@@ -79,14 +72,38 @@
     "opacity": 1
    },
    "encoding": {
+    "y": {
+     "field": "region",
+     "type": "nominal",
+     "sort": [
+      "North West",
+      "Lakes",
+      "Goulburn",
+      "Capital Country",
+      "Gippsland",
+      "Whitsundays",
+      "Southern Queensland Country",
+      "Capricorn",
+      "Mackay",
+      "Ballarat",
+      "Limestone Coast",
+      "Australia's South West",
+      "Geelong and the Bellarine",
+      "Yorke Peninsula",
+      "Outback NSW"
+     ],
+     "title": null,
+     "axis": {
+      "labelLimit": 220
+     }
+    },
     "x": {
      "field": "change_pct",
-     "type": "quantitative",
-     "title": "Change in trips, 2019 to 2024 (%)"
+     "type": "quantitative"
     },
     "color": {
      "condition": {
-      "test": "datum.hl",
+      "test": "datum.change_pct>=17",
       "value": "#d4a017"
      },
      "value": "#bdbdbd"
@@ -94,26 +111,28 @@
     "tooltip": [
      {
       "field": "region",
-      "type": "nominal"
+      "type": "nominal",
+      "title": "Region"
      },
      {
       "field": "state",
-      "type": "nominal"
+      "type": "nominal",
+      "title": "State"
      },
      {
       "field": "trips_2019",
-      "title": "2019 ('000)",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "2019 ('000)"
      },
      {
       "field": "trips_2024",
-      "title": "2024 ('000)",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "2024 ('000)"
      },
      {
       "field": "change_pct",
-      "title": "Change (%)",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "Change (%)"
      }
     ]
    }
@@ -126,6 +145,31 @@
     "fontSize": 11
    },
    "encoding": {
+    "y": {
+     "field": "region",
+     "type": "nominal",
+     "sort": [
+      "North West",
+      "Lakes",
+      "Goulburn",
+      "Capital Country",
+      "Gippsland",
+      "Whitsundays",
+      "Southern Queensland Country",
+      "Capricorn",
+      "Mackay",
+      "Ballarat",
+      "Limestone Coast",
+      "Australia's South West",
+      "Geelong and the Bellarine",
+      "Yorke Peninsula",
+      "Outback NSW"
+     ],
+     "title": null,
+     "axis": {
+      "labelLimit": 220
+     }
+    },
     "x": {
      "field": "change_pct",
      "type": "quantitative"
