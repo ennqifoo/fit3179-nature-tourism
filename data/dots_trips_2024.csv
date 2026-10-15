@@ -1,16 +1,869 @@
-region,state,trips_2019,trips_2024,change_pct
-North West,TAS,590.3,705.6,19.5
-Lakes,VIC,829.1,972.7,17.3
-Goulburn,VIC,689.7,805.8,16.8
-Capital Country,NSW,1733.6,2023.1,16.7
-Gippsland,VIC,1436.1,1638.4,14.1
-Whitsundays,QLD,631.1,709.1,12.4
-Southern Queensland Country,QLD,2803.1,3137.0,11.9
-Capricorn,QLD,761.4,842.0,10.6
-Mackay,QLD,1064.4,1160.8,9.1
-Ballarat,VIC,991.7,1056.4,6.5
-Limestone Coast,SA,729.6,775.0,6.2
-Australia's South West,WA,3076.3,3264.2,6.1
-Geelong and the Bellarine,VIC,1669.0,1768.2,5.9
-Yorke Peninsula,SA,585.9,611.6,4.4
-Outback NSW,NSW,661.6,687.7,3.9
+lon,lat,region,state,region_trips_2024_000
+150.203,-33.58,Blue Mountains,NSW,1265.4
+150.346,-33.506,Blue Mountains,NSW,1265.4
+149.961,-33.78,Blue Mountains,NSW,1265.4
+149.856,-34.003,Blue Mountains,NSW,1265.4
+149.945,-33.841,Blue Mountains,NSW,1265.4
+150.5,-33.067,Blue Mountains,NSW,1265.4
+150.274,-33.819,Blue Mountains,NSW,1265.4
+150.28,-33.953,Blue Mountains,NSW,1265.4
+150.128,-34.013,Blue Mountains,NSW,1265.4
+150.088,-33.341,Blue Mountains,NSW,1265.4
+149.926,-33.538,Blue Mountains,NSW,1265.4
+150.248,-33.409,Blue Mountains,NSW,1265.4
+150.538,-32.768,Blue Mountains,NSW,1265.4
+148.799,-34.461,Southern Tablelands,NSW,2023.1
+149.433,-35.125,Southern Tablelands,NSW,2023.1
+149.191,-35.812,Southern Tablelands,NSW,2023.1
+149.546,-34.967,Southern Tablelands,NSW,2023.1
+149.423,-34.12,Southern Tablelands,NSW,2023.1
+149.651,-34.61,Southern Tablelands,NSW,2023.1
+148.934,-34.384,Southern Tablelands,NSW,2023.1
+149.553,-34.191,Southern Tablelands,NSW,2023.1
+148.687,-34.618,Southern Tablelands,NSW,2023.1
+149.741,-35.737,Southern Tablelands,NSW,2023.1
+150.621,-34.527,Southern Tablelands,NSW,2023.1
+149.889,-34.223,Southern Tablelands,NSW,2023.1
+149.802,-34.727,Southern Tablelands,NSW,2023.1
+148.679,-34.766,Southern Tablelands,NSW,2023.1
+149.739,-35.738,Southern Tablelands,NSW,2023.1
+149.394,-35.08,Southern Tablelands,NSW,2023.1
+150.083,-35.234,Southern Tablelands,NSW,2023.1
+147.935,-34.199,Southern Tablelands,NSW,2023.1
+149.893,-34.205,Southern Tablelands,NSW,2023.1
+148.547,-34.676,Southern Tablelands,NSW,2023.1
+149.986,-32.11,Hunter,NSW,4465.0
+150.181,-32.297,Hunter,NSW,4465.0
+151.176,-32.144,Hunter,NSW,4465.0
+150.647,-31.926,Hunter,NSW,4465.0
+150.289,-31.975,Hunter,NSW,4465.0
+151.938,-31.753,Hunter,NSW,4465.0
+151.114,-32.77,Hunter,NSW,4465.0
+150.818,-32.39,Hunter,NSW,4465.0
+151.069,-32.509,Hunter,NSW,4465.0
+150.678,-32.716,Hunter,NSW,4465.0
+150.67,-32.485,Hunter,NSW,4465.0
+150.847,-31.908,Hunter,NSW,4465.0
+150.275,-32.354,Hunter,NSW,4465.0
+150.827,-32.228,Hunter,NSW,4465.0
+151.604,-32.921,Hunter,NSW,4465.0
+151.464,-31.739,Hunter,NSW,4465.0
+151.648,-32.515,Hunter,NSW,4465.0
+150.984,-33.018,Hunter,NSW,4465.0
+151.016,-32.036,Hunter,NSW,4465.0
+150.733,-32.446,Hunter,NSW,4465.0
+151.913,-31.789,Hunter,NSW,4465.0
+150.751,-32.336,Hunter,NSW,4465.0
+150.712,-32.038,Hunter,NSW,4465.0
+151.584,-32.683,Hunter,NSW,4465.0
+151.932,-31.856,Hunter,NSW,4465.0
+151.498,-32.541,Hunter,NSW,4465.0
+151.949,-31.705,Hunter,NSW,4465.0
+151.346,-31.981,Hunter,NSW,4465.0
+151.061,-32.871,Hunter,NSW,4465.0
+151.669,-32.956,Hunter,NSW,4465.0
+151.375,-32.72,Hunter,NSW,4465.0
+150.48,-32.352,Hunter,NSW,4465.0
+150.194,-31.922,Hunter,NSW,4465.0
+150.69,-33.049,Hunter,NSW,4465.0
+151.227,-32.949,Hunter,NSW,4465.0
+150.679,-32.215,Hunter,NSW,4465.0
+151.323,-32.078,Hunter,NSW,4465.0
+150.552,-32.015,Hunter,NSW,4465.0
+151.566,-32.85,Hunter,NSW,4465.0
+151.964,-32.066,Hunter,NSW,4465.0
+150.875,-32.192,Hunter,NSW,4465.0
+151.236,-33.08,Hunter,NSW,4465.0
+151.675,-32.706,Hunter,NSW,4465.0
+150.776,-32.049,Hunter,NSW,4465.0
+151.739,-32.385,Hunter,NSW,4465.0
+149.445,-29.135,New England North West,NSW,1748.8
+151.084,-29.689,New England North West,NSW,1748.8
+149.984,-31.394,New England North West,NSW,1748.8
+151.568,-31.055,New England North West,NSW,1748.8
+152.007,-29.803,New England North West,NSW,1748.8
+150.721,-31.025,New England North West,NSW,1748.8
+150.328,-29.391,New England North West,NSW,1748.8
+150.239,-30.402,New England North West,NSW,1748.8
+149.447,-28.699,New England North West,NSW,1748.8
+149.699,-28.829,New England North West,NSW,1748.8
+150.255,-31.217,New England North West,NSW,1748.8
+150.64,-28.836,New England North West,NSW,1748.8
+151.037,-29.943,New England North West,NSW,1748.8
+150.981,-30.596,New England North West,NSW,1748.8
+149.324,-28.716,New England North West,NSW,1748.8
+149.823,-30.471,New England North West,NSW,1748.8
+150.375,-28.981,New England North West,NSW,1748.8
+151.367,-33.283,Central Coast,NSW,1796.6
+151.364,-33.385,Central Coast,NSW,1796.6
+151.589,-33.186,Central Coast,NSW,1796.6
+151.453,-33.257,Central Coast,NSW,1796.6
+151.532,-33.165,Central Coast,NSW,1796.6
+151.477,-33.286,Central Coast,NSW,1796.6
+151.209,-33.303,Central Coast,NSW,1796.6
+151.37,-33.453,Central Coast,NSW,1796.6
+151.317,-33.1,Central Coast,NSW,1796.6
+151.136,-33.176,Central Coast,NSW,1796.6
+151.297,-33.056,Central Coast,NSW,1796.6
+151.168,-33.449,Central Coast,NSW,1796.6
+151.384,-33.356,Central Coast,NSW,1796.6
+151.226,-33.334,Central Coast,NSW,1796.6
+151.138,-33.256,Central Coast,NSW,1796.6
+151.278,-33.151,Central Coast,NSW,1796.6
+151.446,-33.419,Central Coast,NSW,1796.6
+151.362,-33.108,Central Coast,NSW,1796.6
+149.1,-33.605,Central NSW,NSW,2771.5
+149.545,-32.716,Central NSW,NSW,2771.5
+146.326,-33.425,Central NSW,NSW,2771.5
+150.036,-32.751,Central NSW,NSW,2771.5
+148.22,-32.498,Central NSW,NSW,2771.5
+148.992,-32.186,Central NSW,NSW,2771.5
+148.518,-32.74,Central NSW,NSW,2771.5
+147.629,-32.818,Central NSW,NSW,2771.5
+146.418,-33.264,Central NSW,NSW,2771.5
+149.39,-31.962,Central NSW,NSW,2771.5
+149.487,-30.926,Central NSW,NSW,2771.5
+148.67,-30.633,Central NSW,NSW,2771.5
+148.678,-31.212,Central NSW,NSW,2771.5
+149.285,-30.958,Central NSW,NSW,2771.5
+148.367,-31.42,Central NSW,NSW,2771.5
+148.069,-33.123,Central NSW,NSW,2771.5
+147.775,-32.006,Central NSW,NSW,2771.5
+147.701,-34.006,Central NSW,NSW,2771.5
+148.232,-31.176,Central NSW,NSW,2771.5
+149.306,-31.097,Central NSW,NSW,2771.5
+149.154,-31.871,Central NSW,NSW,2771.5
+148.307,-31.758,Central NSW,NSW,2771.5
+149.173,-33.962,Central NSW,NSW,2771.5
+148.297,-31.002,Central NSW,NSW,2771.5
+148.302,-30.864,Central NSW,NSW,2771.5
+148.568,-30.6,Central NSW,NSW,2771.5
+148.663,-32.372,Central NSW,NSW,2771.5
+148.481,-31.363,Central NSW,NSW,2771.5
+140.67,-35.818,Limestone Coast,SA,775.0
+140.593,-36.092,Limestone Coast,SA,775.0
+140.948,-38.012,Limestone Coast,SA,775.0
+140.174,-36.218,Limestone Coast,SA,775.0
+140.042,-36.261,Limestone Coast,SA,775.0
+140.694,-37.158,Limestone Coast,SA,775.0
+140.237,-36.343,Limestone Coast,SA,775.0
+140.847,-35.759,Limestone Coast,SA,775.0
+139.374,-34.937,"Murray River, Lakes and Coorong",SA,381.9
+139.609,-35.062,"Murray River, Lakes and Coorong",SA,381.9
+139.553,-34.534,"Murray River, Lakes and Coorong",SA,381.9
+139.715,-35.884,"Murray River, Lakes and Coorong",SA,381.9
+134.713,-32.73,Eyre Peninsula,SA,441.7
+132.441,-31.895,Eyre Peninsula,SA,441.7
+134.432,-32.741,Eyre Peninsula,SA,441.7
+135.749,-34.185,Eyre Peninsula,SA,441.7
+138.58,-35.232,Fleurieu Peninsula,SA,698.6
+138.924,-35.53,Fleurieu Peninsula,SA,698.6
+138.55,-35.432,Fleurieu Peninsula,SA,698.6
+138.677,-35.378,Fleurieu Peninsula,SA,698.6
+139.11,-35.406,Fleurieu Peninsula,SA,698.6
+139.062,-35.439,Fleurieu Peninsula,SA,698.6
+138.234,-35.511,Fleurieu Peninsula,SA,698.6
+139.823,-34.482,Riverland,SA,456.3
+139.387,-33.973,Riverland,SA,456.3
+140.566,-34.573,Riverland,SA,456.3
+140.156,-34.481,Riverland,SA,456.3
+140.41,-34.732,Riverland,SA,456.3
+138.045,-33.535,Yorke Peninsula,SA,611.6
+136.853,-35.243,Yorke Peninsula,SA,611.6
+137.492,-35.008,Yorke Peninsula,SA,611.6
+138.072,-33.644,Yorke Peninsula,SA,611.6
+137.916,-34.001,Yorke Peninsula,SA,611.6
+137.835,-34.171,Yorke Peninsula,SA,611.6
+131.963,-12.385,Litchfield Kakadu Arnhem,NT,196.0
+132.072,-11.342,Litchfield Kakadu Arnhem,NT,196.0
+138.905,-34.339,Barossa,SA,231.9
+138.843,-34.463,Barossa,SA,231.9
+132.162,-13.601,Katherine Daly,NT,253.6
+131.875,-16.673,Katherine Daly,NT,253.6
+130.707,-14.033,Katherine Daly,NT,253.6
+138.619,-33.899,Clare Valley,SA,217.7
+138.697,-34.183,Clare Valley,SA,217.7
+142.092,-36.212,Wimmera,VIC,272.4
+141.117,-36.093,Wimmera,VIC,272.4
+141.736,-37.082,Wimmera,VIC,272.4
+133.789,-23.797,Alice Springs,NT,229.2
+133.902,-23.815,Alice Springs,NT,229.2
+138.686,-34.941,Adelaide Hills,SA,190.8
+138.908,-35.041,Adelaide Hills,SA,190.8
+150.067,-35.787,South Coast,NSW,4493.5
+149.677,-36.708,South Coast,NSW,4493.5
+150.299,-34.799,South Coast,NSW,4493.5
+150.619,-35.12,South Coast,NSW,4493.5
+150.013,-36.399,South Coast,NSW,4493.5
+150.233,-35.425,South Coast,NSW,4493.5
+149.584,-36.239,South Coast,NSW,4493.5
+149.502,-37.216,South Coast,NSW,4493.5
+149.44,-37.294,South Coast,NSW,4493.5
+149.855,-36.381,South Coast,NSW,4493.5
+150.297,-35.039,South Coast,NSW,4493.5
+149.651,-35.986,South Coast,NSW,4493.5
+150.665,-34.728,South Coast,NSW,4493.5
+150.233,-35.662,South Coast,NSW,4493.5
+149.703,-36.49,South Coast,NSW,4493.5
+150.174,-35.082,South Coast,NSW,4493.5
+149.815,-36.011,South Coast,NSW,4493.5
+150.374,-35.302,South Coast,NSW,4493.5
+150.831,-34.275,South Coast,NSW,4493.5
+149.941,-37.053,South Coast,NSW,4493.5
+150.574,-34.355,South Coast,NSW,4493.5
+150.206,-35.773,South Coast,NSW,4493.5
+149.768,-36.586,South Coast,NSW,4493.5
+149.98,-35.974,South Coast,NSW,4493.5
+149.731,-36.412,South Coast,NSW,4493.5
+149.768,-36.126,South Coast,NSW,4493.5
+149.635,-37.106,South Coast,NSW,4493.5
+149.818,-37.43,South Coast,NSW,4493.5
+149.508,-37.205,South Coast,NSW,4493.5
+150.47,-35.326,South Coast,NSW,4493.5
+149.654,-37.316,South Coast,NSW,4493.5
+150.768,-34.708,South Coast,NSW,4493.5
+149.766,-36.043,South Coast,NSW,4493.5
+150.121,-34.857,South Coast,NSW,4493.5
+150.798,-34.74,South Coast,NSW,4493.5
+149.826,-36.307,South Coast,NSW,4493.5
+149.887,-37.338,South Coast,NSW,4493.5
+150.858,-34.343,South Coast,NSW,4493.5
+150.188,-35.364,South Coast,NSW,4493.5
+149.86,-36.186,South Coast,NSW,4493.5
+150.765,-34.34,South Coast,NSW,4493.5
+149.715,-36.576,South Coast,NSW,4493.5
+150.635,-34.422,South Coast,NSW,4493.5
+150.163,-35.05,South Coast,NSW,4493.5
+149.509,-36.426,South Coast,NSW,4493.5
+146.329,-35.798,The Murray,NSW,1245.9
+147.491,-35.647,The Murray,NSW,1245.9
+143.799,-33.166,The Murray,NSW,1245.9
+145.627,-35.225,The Murray,NSW,1245.9
+144.256,-35.408,The Murray,NSW,1245.9
+143.712,-35.237,The Murray,NSW,1245.9
+142.622,-34.318,The Murray,NSW,1245.9
+143.269,-34.771,The Murray,NSW,1245.9
+142.203,-33.622,The Murray,NSW,1245.9
+145.907,-35.519,The Murray,NSW,1245.9
+142.918,-34.087,The Murray,NSW,1245.9
+143.872,-34.353,The Murray,NSW,1245.9
+145.003,-33.747,Riverina,NSW,1261.1
+147.05,-35.155,Riverina,NSW,1261.1
+147.86,-34.884,Riverina,NSW,1261.1
+148.083,-36.287,Riverina,NSW,1261.1
+145.015,-34.293,Riverina,NSW,1261.1
+145.279,-33.285,Riverina,NSW,1261.1
+145.13,-33.309,Riverina,NSW,1261.1
+147.328,-35.463,Riverina,NSW,1261.1
+145.945,-33.947,Riverina,NSW,1261.1
+146.786,-34.426,Riverina,NSW,1261.1
+147.517,-34.776,Riverina,NSW,1261.1
+144.551,-34.812,Riverina,NSW,1261.1
+146.159,-34.366,Riverina,NSW,1261.1
+148.747,-36.732,Snowy Mountains,NSW,968.7
+149.079,-36.047,Snowy Mountains,NSW,968.7
+148.992,-36.641,Snowy Mountains,NSW,968.7
+149.079,-36.447,Snowy Mountains,NSW,968.7
+148.688,-36.604,Snowy Mountains,NSW,968.7
+148.876,-36.496,Snowy Mountains,NSW,968.7
+148.878,-36.653,Snowy Mountains,NSW,968.7
+149.567,-36.044,Snowy Mountains,NSW,968.7
+149.308,-36.529,Snowy Mountains,NSW,968.7
+148.553,-35.801,Snowy Mountains,NSW,968.7
+146.807,-20.433,Townsville,QLD,1279.3
+146.33,-21.033,Townsville,QLD,1279.3
+146.603,-19.787,Townsville,QLD,1279.3
+145.911,-19.193,Townsville,QLD,1279.3
+146.526,-19.623,Townsville,QLD,1279.3
+144.713,-19.772,Townsville,QLD,1279.3
+145.586,-19.881,Townsville,QLD,1279.3
+145.362,-20.431,Townsville,QLD,1279.3
+146.734,-20.24,Townsville,QLD,1279.3
+144.769,-19.906,Townsville,QLD,1279.3
+146.24,-20.943,Townsville,QLD,1279.3
+145.393,-20.319,Townsville,QLD,1279.3
+146.433,-20.419,Townsville,QLD,1279.3
+140.948,-21.457,Outback Queensland,QLD,1107.0
+147.064,-27.528,Outback Queensland,QLD,1107.0
+142.797,-26.781,Outback Queensland,QLD,1107.0
+147.037,-26.968,Outback Queensland,QLD,1107.0
+141.284,-27.817,Outback Queensland,QLD,1107.0
+141.251,-25.98,Outback Queensland,QLD,1107.0
+139.383,-22.006,Outback Queensland,QLD,1107.0
+147.201,-27.242,Outback Queensland,QLD,1107.0
+140.845,-25.162,Outback Queensland,QLD,1107.0
+146.941,-28.272,Outback Queensland,QLD,1107.0
+143.686,-25.929,Outback Queensland,QLD,1107.0
+153.414,-28.062,Gold Coast,QLD,4286.6
+153.243,-27.712,Gold Coast,QLD,4286.6
+153.355,-27.795,Gold Coast,QLD,4286.6
+153.461,-28.172,Gold Coast,QLD,4286.6
+153.333,-28.179,Gold Coast,QLD,4286.6
+153.229,-27.877,Gold Coast,QLD,4286.6
+153.283,-27.836,Gold Coast,QLD,4286.6
+153.308,-28.063,Gold Coast,QLD,4286.6
+153.252,-27.91,Gold Coast,QLD,4286.6
+153.257,-28.056,Gold Coast,QLD,4286.6
+153.375,-27.976,Gold Coast,QLD,4286.6
+153.376,-27.77,Gold Coast,QLD,4286.6
+153.214,-27.927,Gold Coast,QLD,4286.6
+153.346,-28.107,Gold Coast,QLD,4286.6
+153.271,-27.725,Gold Coast,QLD,4286.6
+153.259,-28.067,Gold Coast,QLD,4286.6
+153.368,-27.725,Gold Coast,QLD,4286.6
+153.323,-28.164,Gold Coast,QLD,4286.6
+153.371,-27.842,Gold Coast,QLD,4286.6
+153.39,-27.724,Gold Coast,QLD,4286.6
+153.388,-28.196,Gold Coast,QLD,4286.6
+153.262,-27.936,Gold Coast,QLD,4286.6
+153.325,-27.744,Gold Coast,QLD,4286.6
+153.204,-27.761,Gold Coast,QLD,4286.6
+153.199,-28.167,Gold Coast,QLD,4286.6
+153.291,-28.124,Gold Coast,QLD,4286.6
+153.304,-27.938,Gold Coast,QLD,4286.6
+153.25,-28.084,Gold Coast,QLD,4286.6
+153.318,-27.794,Gold Coast,QLD,4286.6
+153.262,-27.951,Gold Coast,QLD,4286.6
+153.204,-27.833,Gold Coast,QLD,4286.6
+153.456,-28.098,Gold Coast,QLD,4286.6
+153.302,-27.887,Gold Coast,QLD,4286.6
+153.259,-28.18,Gold Coast,QLD,4286.6
+153.384,-27.902,Gold Coast,QLD,4286.6
+153.279,-27.836,Gold Coast,QLD,4286.6
+153.324,-27.785,Gold Coast,QLD,4286.6
+153.195,-27.809,Gold Coast,QLD,4286.6
+153.389,-28.056,Gold Coast,QLD,4286.6
+153.363,-28.184,Gold Coast,QLD,4286.6
+153.217,-27.813,Gold Coast,QLD,4286.6
+153.34,-28.162,Gold Coast,QLD,4286.6
+153.215,-27.734,Gold Coast,QLD,4286.6
+147.652,-22.558,Mackay,QLD,1160.8
+147.24,-21.791,Mackay,QLD,1160.8
+146.515,-22.29,Mackay,QLD,1160.8
+147.561,-22.797,Mackay,QLD,1160.8
+149.286,-22.778,Mackay,QLD,1160.8
+149.391,-22.534,Mackay,QLD,1160.8
+148.723,-21.755,Mackay,QLD,1160.8
+148.144,-22.435,Mackay,QLD,1160.8
+148.613,-21.082,Mackay,QLD,1160.8
+147.627,-22.624,Mackay,QLD,1160.8
+146.94,-22.545,Mackay,QLD,1160.8
+149.162,-21.315,Mackay,QLD,1160.8
+152.045,-26.195,Sunshine Coast,QLD,4028.0
+152.534,-26.291,Sunshine Coast,QLD,4028.0
+151.867,-25.82,Sunshine Coast,QLD,4028.0
+151.977,-26.018,Sunshine Coast,QLD,4028.0
+152.975,-25.872,Sunshine Coast,QLD,4028.0
+152.628,-26.281,Sunshine Coast,QLD,4028.0
+152.872,-26.088,Sunshine Coast,QLD,4028.0
+153.05,-26.118,Sunshine Coast,QLD,4028.0
+153.094,-26.786,Sunshine Coast,QLD,4028.0
+152.664,-26.588,Sunshine Coast,QLD,4028.0
+152.908,-26.634,Sunshine Coast,QLD,4028.0
+152.855,-26.426,Sunshine Coast,QLD,4028.0
+153.073,-25.959,Sunshine Coast,QLD,4028.0
+152.887,-26.758,Sunshine Coast,QLD,4028.0
+152.22,-25.971,Sunshine Coast,QLD,4028.0
+153.049,-26.406,Sunshine Coast,QLD,4028.0
+153.121,-26.735,Sunshine Coast,QLD,4028.0
+152.853,-26.168,Sunshine Coast,QLD,4028.0
+152.353,-26.083,Sunshine Coast,QLD,4028.0
+152.05,-25.894,Sunshine Coast,QLD,4028.0
+152.198,-26.226,Sunshine Coast,QLD,4028.0
+152.316,-25.995,Sunshine Coast,QLD,4028.0
+152.761,-26.11,Sunshine Coast,QLD,4028.0
+152.786,-26.203,Sunshine Coast,QLD,4028.0
+152.037,-26.101,Sunshine Coast,QLD,4028.0
+152.716,-26.777,Sunshine Coast,QLD,4028.0
+152.094,-26.045,Sunshine Coast,QLD,4028.0
+152.453,-26.353,Sunshine Coast,QLD,4028.0
+152.982,-26.958,Sunshine Coast,QLD,4028.0
+152.148,-26.133,Sunshine Coast,QLD,4028.0
+152.966,-25.823,Sunshine Coast,QLD,4028.0
+152.258,-26.247,Sunshine Coast,QLD,4028.0
+152.274,-26.316,Sunshine Coast,QLD,4028.0
+152.453,-26.48,Sunshine Coast,QLD,4028.0
+152.332,-25.923,Sunshine Coast,QLD,4028.0
+152.094,-26.312,Sunshine Coast,QLD,4028.0
+152.758,-26.495,Sunshine Coast,QLD,4028.0
+152.847,-26.282,Sunshine Coast,QLD,4028.0
+152.353,-26.179,Sunshine Coast,QLD,4028.0
+152.419,-26.276,Sunshine Coast,QLD,4028.0
+133.024,-27.203,Flinders Ranges and Outback,SA,662.2
+139.496,-27.7,Flinders Ranges and Outback,SA,662.2
+135.079,-27.359,Flinders Ranges and Outback,SA,662.2
+135.481,-32.042,Flinders Ranges and Outback,SA,662.2
+140.18,-28.349,Flinders Ranges and Outback,SA,662.2
+138.27,-31.986,Flinders Ranges and Outback,SA,662.2
+136.157,-31.719,Flinders Ranges and Outback,SA,662.2
+149.87,-28.146,Queensland Country,QLD,3137.0
+148.086,-24.622,Queensland Country,QLD,3137.0
+149.115,-28.34,Queensland Country,QLD,3137.0
+147.22,-23.582,Queensland Country,QLD,3137.0
+147.917,-23.978,Queensland Country,QLD,3137.0
+149.795,-27.796,Queensland Country,QLD,3137.0
+148.269,-23.078,Queensland Country,QLD,3137.0
+148.557,-24.249,Queensland Country,QLD,3137.0
+150.586,-27.507,Queensland Country,QLD,3137.0
+149.115,-28.788,Queensland Country,QLD,3137.0
+150.875,-28.087,Queensland Country,QLD,3137.0
+150.625,-27.358,Queensland Country,QLD,3137.0
+150.501,-27.935,Queensland Country,QLD,3137.0
+150.29,-26.873,Queensland Country,QLD,3137.0
+148.294,-24.099,Queensland Country,QLD,3137.0
+150.457,-25.969,Queensland Country,QLD,3137.0
+148.704,-23.935,Queensland Country,QLD,3137.0
+151.062,-27.923,Queensland Country,QLD,3137.0
+150.48,-27.441,Queensland Country,QLD,3137.0
+148.673,-24.784,Queensland Country,QLD,3137.0
+150.801,-27.705,Queensland Country,QLD,3137.0
+148.139,-23.616,Queensland Country,QLD,3137.0
+148.51,-23.678,Queensland Country,QLD,3137.0
+150.061,-28.379,Queensland Country,QLD,3137.0
+151.376,-27.344,Queensland Country,QLD,3137.0
+152.347,-27.269,Queensland Country,QLD,3137.0
+148.932,-23.865,Queensland Country,QLD,3137.0
+148.036,-24.77,Queensland Country,QLD,3137.0
+149.628,-27.943,Queensland Country,QLD,3137.0
+151.949,-26.873,Queensland Country,QLD,3137.0
+149.691,-27.703,Queensland Country,QLD,3137.0
+152.073,-25.718,Fraser Coast,QLD,730.0
+152.331,-25.625,Fraser Coast,QLD,730.0
+152.674,-25.558,Fraser Coast,QLD,730.0
+152.253,-25.642,Fraser Coast,QLD,730.0
+152.207,-25.622,Fraser Coast,QLD,730.0
+153.292,-25.079,Fraser Coast,QLD,730.0
+152.474,-25.237,Fraser Coast,QLD,730.0
+150.448,-25.537,Bundaberg,QLD,706.4
+151.784,-25.418,Bundaberg,QLD,706.4
+152.406,-24.814,Bundaberg,QLD,706.4
+151.398,-25.543,Bundaberg,QLD,706.4
+151.359,-24.815,Bundaberg,QLD,706.4
+150.477,-25.539,Bundaberg,QLD,706.4
+152.002,-25.502,Bundaberg,QLD,706.4
+145.614,-41.969,West Coast,TAS,185.1
+145.268,-41.852,West Coast,TAS,185.1
+146.613,-41.449,Launceston and the North,TAS,987.3
+147.913,-39.816,Launceston and the North,TAS,987.3
+147.015,-41.132,Launceston and the North,TAS,987.3
+147.543,-41.735,Launceston and the North,TAS,987.3
+148.283,-40.366,Launceston and the North,TAS,987.3
+147.344,-41.883,Launceston and the North,TAS,987.3
+147.221,-41.801,Launceston and the North,TAS,987.3
+148.14,-40.163,Launceston and the North,TAS,987.3
+146.607,-41.713,Launceston and the North,TAS,987.3
+147.323,-41.779,Launceston and the North,TAS,987.3
+144.831,-41.235,North West,TAS,705.6
+143.936,-39.935,North West,TAS,705.6
+145.512,-41.046,North West,TAS,705.6
+145.426,-41.354,North West,TAS,705.6
+146.168,-41.528,North West,TAS,705.6
+146.069,-41.413,North West,TAS,705.6
+145.785,-41.352,North West,TAS,705.6
+147.914,-42.725,Hobart and the South,TAS,1578.1
+147.41,-42.364,Hobart and the South,TAS,1578.1
+147.049,-42.731,Hobart and the South,TAS,1578.1
+147.668,-42.815,Hobart and the South,TAS,1578.1
+146.675,-43.231,Hobart and the South,TAS,1578.1
+147.755,-42.845,Hobart and the South,TAS,1578.1
+146.282,-42.113,Hobart and the South,TAS,1578.1
+146.314,-42.32,Hobart and the South,TAS,1578.1
+147.578,-42.455,Hobart and the South,TAS,1578.1
+146.726,-43.049,Hobart and the South,TAS,1578.1
+146.565,-42.308,Hobart and the South,TAS,1578.1
+147.961,-43.16,Hobart and the South,TAS,1578.1
+146.853,-43.355,Hobart and the South,TAS,1578.1
+147.727,-43.055,Hobart and the South,TAS,1578.1
+147.107,-42.314,Hobart and the South,TAS,1578.1
+146.102,-42.068,Hobart and the South,TAS,1578.1
+147.697,-41.493,East Coast,TAS,462.0
+147.985,-41.865,East Coast,TAS,462.0
+147.9,-42.168,East Coast,TAS,462.0
+148.303,-41.585,East Coast,TAS,462.0
+147.961,-42.188,East Coast,TAS,462.0
+142.757,-18.627,Tropical North Queensland,QLD,2161.5
+140.667,-19.029,Tropical North Queensland,QLD,2161.5
+142.425,-15.915,Tropical North Queensland,QLD,2161.5
+144.584,-17.007,Tropical North Queensland,QLD,2161.5
+145.091,-16.792,Tropical North Queensland,QLD,2161.5
+145.32,-16.418,Tropical North Queensland,QLD,2161.5
+141.14,-17.746,Tropical North Queensland,QLD,2161.5
+142.507,-13.123,Tropical North Queensland,QLD,2161.5
+142.052,-12.995,Tropical North Queensland,QLD,2161.5
+138.758,-19.152,Tropical North Queensland,QLD,2161.5
+145.411,-17.42,Tropical North Queensland,QLD,2161.5
+142.873,-16.744,Tropical North Queensland,QLD,2161.5
+142.439,-15.036,Tropical North Queensland,QLD,2161.5
+140.804,-18.973,Tropical North Queensland,QLD,2161.5
+142.61,-11.086,Tropical North Queensland,QLD,2161.5
+142.342,-14.561,Tropical North Queensland,QLD,2161.5
+145.148,-17.004,Tropical North Queensland,QLD,2161.5
+144.314,-14.893,Tropical North Queensland,QLD,2161.5
+143.847,-17.305,Tropical North Queensland,QLD,2161.5
+141.868,-16.964,Tropical North Queensland,QLD,2161.5
+140.797,-18.997,Tropical North Queensland,QLD,2161.5
+142.712,-13.384,Tropical North Queensland,QLD,2161.5
+146.994,-36.795,Victoria's High Country,VIC,2438.3
+146.96,-36.885,Victoria's High Country,VIC,2438.3
+145.877,-36.429,Victoria's High Country,VIC,2438.3
+146.771,-37.043,Victoria's High Country,VIC,2438.3
+146.318,-36.977,Victoria's High Country,VIC,2438.3
+147.141,-37.223,Victoria's High Country,VIC,2438.3
+147.148,-36.896,Victoria's High Country,VIC,2438.3
+148.003,-36.567,Victoria's High Country,VIC,2438.3
+145.833,-36.621,Victoria's High Country,VIC,2438.3
+145.699,-37.454,Victoria's High Country,VIC,2438.3
+147.943,-36.283,Victoria's High Country,VIC,2438.3
+147.189,-36.251,Victoria's High Country,VIC,2438.3
+147.579,-36.017,Victoria's High Country,VIC,2438.3
+145.381,-37.409,Victoria's High Country,VIC,2438.3
+147.044,-36.406,Victoria's High Country,VIC,2438.3
+145.666,-37.39,Victoria's High Country,VIC,2438.3
+147.304,-37.164,Victoria's High Country,VIC,2438.3
+147.076,-36.881,Victoria's High Country,VIC,2438.3
+146.963,-36.449,Victoria's High Country,VIC,2438.3
+146.099,-36.342,Victoria's High Country,VIC,2438.3
+147.634,-36.625,Victoria's High Country,VIC,2438.3
+147.069,-37.235,Victoria's High Country,VIC,2438.3
+145.698,-37.412,Victoria's High Country,VIC,2438.3
+146.579,-36.713,Victoria's High Country,VIC,2438.3
+148.555,-36.958,Lakes,VIC,972.7
+147.616,-37.158,Lakes,VIC,972.7
+147.612,-37.998,Lakes,VIC,972.7
+149.244,-37.445,Lakes,VIC,972.7
+147.459,-37.91,Lakes,VIC,972.7
+148.523,-37.622,Lakes,VIC,972.7
+148.547,-37.44,Lakes,VIC,972.7
+148.484,-37.618,Lakes,VIC,972.7
+147.398,-37.67,Lakes,VIC,972.7
+148.276,-37.719,Lakes,VIC,972.7
+147.638,-20.063,Whitsundays,QLD,709.1
+147.484,-20.708,Whitsundays,QLD,709.1
+147.868,-21.172,Whitsundays,QLD,709.1
+146.977,-21.456,Whitsundays,QLD,709.1
+147.778,-21.152,Whitsundays,QLD,709.1
+147.992,-20.325,Whitsundays,QLD,709.1
+147.611,-20.507,Whitsundays,QLD,709.1
+145.948,-38.213,Gippsland,VIC,1638.4
+146.566,-37.678,Gippsland,VIC,1638.4
+146.875,-38.007,Gippsland,VIC,1638.4
+146.387,-37.639,Gippsland,VIC,1638.4
+147.017,-37.269,Gippsland,VIC,1638.4
+145.761,-37.968,Gippsland,VIC,1638.4
+146.764,-38.494,Gippsland,VIC,1638.4
+146.748,-38.414,Gippsland,VIC,1638.4
+146.113,-38.129,Gippsland,VIC,1638.4
+145.822,-38.081,Gippsland,VIC,1638.4
+146.224,-38.852,Gippsland,VIC,1638.4
+147.099,-38.439,Gippsland,VIC,1638.4
+146.121,-38.065,Gippsland,VIC,1638.4
+146.49,-38.573,Gippsland,VIC,1638.4
+146.767,-37.63,Gippsland,VIC,1638.4
+145.673,-38.292,Gippsland,VIC,1638.4
+145.013,-36.996,Goulburn,VIC,805.8
+145.43,-36.469,Goulburn,VIC,805.8
+145.792,-36.768,Goulburn,VIC,805.8
+145.166,-37.144,Goulburn,VIC,805.8
+145.416,-36.554,Goulburn,VIC,805.8
+145.259,-36.241,Goulburn,VIC,805.8
+145.388,-36.919,Goulburn,VIC,805.8
+145.141,-36.75,Goulburn,VIC,805.8
+149.961,-22.748,Capricorn Coast,QLD,842.0
+150.15,-22.376,Capricorn Coast,QLD,842.0
+150.353,-22.728,Capricorn Coast,QLD,842.0
+149.42,-22.965,Capricorn Coast,QLD,842.0
+150.743,-22.791,Capricorn Coast,QLD,842.0
+149.648,-22.726,Capricorn Coast,QLD,842.0
+149.696,-22.534,Capricorn Coast,QLD,842.0
+150.549,-23.347,Capricorn Coast,QLD,842.0
+151.145,-24.064,Gladstone,QLD,497.2
+151.113,-23.867,Gladstone,QLD,497.2
+151.24,-23.942,Gladstone,QLD,497.2
+150.953,-23.981,Gladstone,QLD,497.2
+151.794,-24.162,Gladstone,QLD,497.2
+143.446,-37.419,Greater Ballarat,VIC,1056.4
+144.128,-37.735,Greater Ballarat,VIC,1056.4
+143.654,-37.47,Greater Ballarat,VIC,1056.4
+144.272,-37.612,Greater Ballarat,VIC,1056.4
+143.418,-37.437,Greater Ballarat,VIC,1056.4
+143.258,-37.608,Greater Ballarat,VIC,1056.4
+144.439,-37.729,Greater Ballarat,VIC,1056.4
+143.225,-37.172,Greater Ballarat,VIC,1056.4
+143.865,-37.586,Greater Ballarat,VIC,1056.4
+143.36,-37.104,Greater Ballarat,VIC,1056.4
+144.122,-37.601,Greater Ballarat,VIC,1056.4
+145.517,-35.953,Central Murray,VIC,923.6
+145.004,-35.977,Central Murray,VIC,923.6
+145.74,-36.069,Central Murray,VIC,923.6
+145.602,-36.135,Central Murray,VIC,923.6
+145.136,-35.848,Central Murray,VIC,923.6
+146.093,-36.13,Central Murray,VIC,923.6
+145.247,-36.091,Central Murray,VIC,923.6
+145.608,-35.925,Central Murray,VIC,923.6
+145.754,-36.026,Central Murray,VIC,923.6
+144.436,-37.975,Geelong and the Bellarine,VIC,1768.2
+144.4,-38.038,Geelong and the Bellarine,VIC,1768.2
+143.68,-37.576,Geelong and the Bellarine,VIC,1768.2
+144.458,-38.013,Geelong and the Bellarine,VIC,1768.2
+144.032,-38.098,Geelong and the Bellarine,VIC,1768.2
+144.51,-38.187,Geelong and the Bellarine,VIC,1768.2
+144.03,-37.94,Geelong and the Bellarine,VIC,1768.2
+143.98,-37.983,Geelong and the Bellarine,VIC,1768.2
+144.077,-38.094,Geelong and the Bellarine,VIC,1768.2
+143.616,-37.859,Geelong and the Bellarine,VIC,1768.2
+143.581,-37.885,Geelong and the Bellarine,VIC,1768.2
+143.496,-37.711,Geelong and the Bellarine,VIC,1768.2
+143.587,-37.654,Geelong and the Bellarine,VIC,1768.2
+143.83,-37.662,Geelong and the Bellarine,VIC,1768.2
+144.39,-38.251,Geelong and the Bellarine,VIC,1768.2
+143.683,-38.009,Geelong and the Bellarine,VIC,1768.2
+143.775,-37.768,Geelong and the Bellarine,VIC,1768.2
+143.838,-37.868,Geelong and the Bellarine,VIC,1768.2
+144.284,-36.864,Greater Bendigo,VIC,1271.4
+144.336,-36.404,Greater Bendigo,VIC,1271.4
+144.136,-36.825,Greater Bendigo,VIC,1271.4
+143.96,-36.223,Greater Bendigo,VIC,1271.4
+144.642,-36.413,Greater Bendigo,VIC,1271.4
+143.87,-36.355,Greater Bendigo,VIC,1271.4
+144.006,-36.754,Greater Bendigo,VIC,1271.4
+144.145,-36.085,Greater Bendigo,VIC,1271.4
+144.086,-36.262,Greater Bendigo,VIC,1271.4
+144.107,-36.352,Greater Bendigo,VIC,1271.4
+143.762,-36.201,Greater Bendigo,VIC,1271.4
+143.716,-36.735,Greater Bendigo,VIC,1271.4
+144.129,-36.38,Greater Bendigo,VIC,1271.4
+142.763,-37.253,Central Highlands,VIC,525.1
+142.727,-36.709,Central Highlands,VIC,525.1
+142.955,-37.225,Central Highlands,VIC,525.1
+142.882,-37.316,Central Highlands,VIC,525.1
+143.165,-37.604,Central Highlands,VIC,525.1
+117.793,-33.762,Australia's South West,WA,3264.2
+115.425,-33.739,Australia's South West,WA,3264.2
+117.222,-33.822,Australia's South West,WA,3264.2
+116.467,-33.945,Australia's South West,WA,3264.2
+116.478,-33.87,Australia's South West,WA,3264.2
+115.965,-34.584,Australia's South West,WA,3264.2
+117.483,-34.239,Australia's South West,WA,3264.2
+115.459,-34.347,Australia's South West,WA,3264.2
+115.534,-33.632,Australia's South West,WA,3264.2
+117.67,-34.346,Australia's South West,WA,3264.2
+118.877,-34.408,Australia's South West,WA,3264.2
+117.091,-33.854,Australia's South West,WA,3264.2
+115.952,-33.481,Australia's South West,WA,3264.2
+119.066,-33.61,Australia's South West,WA,3264.2
+115.46,-34.292,Australia's South West,WA,3264.2
+116.036,-33.633,Australia's South West,WA,3264.2
+117.622,-33.785,Australia's South West,WA,3264.2
+115.903,-34.31,Australia's South West,WA,3264.2
+117.398,-34.679,Australia's South West,WA,3264.2
+115.087,-33.572,Australia's South West,WA,3264.2
+116.267,-34.011,Australia's South West,WA,3264.2
+118.059,-34.328,Australia's South West,WA,3264.2
+119.058,-34.445,Australia's South West,WA,3264.2
+117.196,-34.605,Australia's South West,WA,3264.2
+117.675,-33.575,Australia's South West,WA,3264.2
+118.636,-33.656,Australia's South West,WA,3264.2
+115.941,-34.143,Australia's South West,WA,3264.2
+116.722,-34.15,Australia's South West,WA,3264.2
+117.994,-33.723,Australia's South West,WA,3264.2
+115.907,-33.253,Australia's South West,WA,3264.2
+116.335,-34.826,Australia's South West,WA,3264.2
+118.829,-33.627,Australia's South West,WA,3264.2
+119.073,-34.361,Australia's South West,WA,3264.2
+116.155,-24.817,Australia's Coral Coast,WA,955.8
+116.247,-29.901,Australia's Coral Coast,WA,955.8
+114.169,-25.319,Australia's Coral Coast,WA,955.8
+116.097,-25.37,Australia's Coral Coast,WA,955.8
+117.272,-24.914,Australia's Coral Coast,WA,955.8
+114.997,-23.636,Australia's Coral Coast,WA,955.8
+114.513,-25.414,Australia's Coral Coast,WA,955.8
+116.477,-25.357,Australia's Coral Coast,WA,955.8
+116.481,-24.417,Australia's Coral Coast,WA,955.8
+115.794,-29.031,Australia's Coral Coast,WA,955.8
+142.19,-37.349,Western Grampians,VIC,378.4
+142.085,-36.871,Western Grampians,VIC,378.4
+142.537,-37.773,Western Grampians,VIC,378.4
+141.891,-37.252,Western Grampians,VIC,378.4
+117.459,-26.542,Australia's Golden Outback,WA,1368.6
+127.598,-30.057,Australia's Golden Outback,WA,1368.6
+121.765,-31.09,Australia's Golden Outback,WA,1368.6
+117.583,-28.527,Australia's Golden Outback,WA,1368.6
+120.072,-31.561,Australia's Golden Outback,WA,1368.6
+126.373,-30.134,Australia's Golden Outback,WA,1368.6
+128.341,-27.158,Australia's Golden Outback,WA,1368.6
+128.814,-28.868,Australia's Golden Outback,WA,1368.6
+117.419,-28.199,Australia's Golden Outback,WA,1368.6
+116.974,-33.179,Australia's Golden Outback,WA,1368.6
+126.782,-30.029,Australia's Golden Outback,WA,1368.6
+126.218,-24.067,Australia's Golden Outback,WA,1368.6
+125.071,-28.929,Australia's Golden Outback,WA,1368.6
+122.496,-33.655,Australia's Golden Outback,WA,1368.6
+128.187,-22.885,Australia's North West,WA,1474.0
+126.864,-20.203,Australia's North West,WA,1474.0
+124.085,-19.44,Australia's North West,WA,1474.0
+121.968,-19.881,Australia's North West,WA,1474.0
+125.894,-17.282,Australia's North West,WA,1474.0
+124.199,-22.577,Australia's North West,WA,1474.0
+128.765,-19.034,Australia's North West,WA,1474.0
+117.2,-21.074,Australia's North West,WA,1474.0
+122.927,-18.535,Australia's North West,WA,1474.0
+127.157,-19.384,Australia's North West,WA,1474.0
+126.09,-22.686,Australia's North West,WA,1474.0
+122.607,-19.821,Australia's North West,WA,1474.0
+115.964,-22.201,Australia's North West,WA,1474.0
+122.886,-20.887,Australia's North West,WA,1474.0
+123.296,-22.289,Australia's North West,WA,1474.0
+142.548,-37.93,Great Ocean Road,VIC,2465.3
+143.743,-38.63,Great Ocean Road,VIC,2465.3
+143.446,-38.26,Great Ocean Road,VIC,2465.3
+141.627,-38.128,Great Ocean Road,VIC,2465.3
+142.119,-38.233,Great Ocean Road,VIC,2465.3
+141.442,-37.439,Great Ocean Road,VIC,2465.3
+142.132,-38.06,Great Ocean Road,VIC,2465.3
+143.391,-38.181,Great Ocean Road,VIC,2465.3
+141.601,-37.898,Great Ocean Road,VIC,2465.3
+141.345,-37.596,Great Ocean Road,VIC,2465.3
+141.978,-38.229,Great Ocean Road,VIC,2465.3
+143.536,-38.08,Great Ocean Road,VIC,2465.3
+142.529,-38.241,Great Ocean Road,VIC,2465.3
+142.128,-37.968,Great Ocean Road,VIC,2465.3
+141.64,-38.106,Great Ocean Road,VIC,2465.3
+143.512,-38.699,Great Ocean Road,VIC,2465.3
+142.095,-38.312,Great Ocean Road,VIC,2465.3
+142.069,-38.195,Great Ocean Road,VIC,2465.3
+144.127,-38.159,Great Ocean Road,VIC,2465.3
+141.429,-37.924,Great Ocean Road,VIC,2465.3
+141.399,-37.794,Great Ocean Road,VIC,2465.3
+141.343,-38.209,Great Ocean Road,VIC,2465.3
+141.189,-37.732,Great Ocean Road,VIC,2465.3
+141.039,-38.004,Great Ocean Road,VIC,2465.3
+143.82,-38.455,Great Ocean Road,VIC,2465.3
+144.34,-29.284,Outback NSW,NSW,687.7
+147.076,-29.407,Outback NSW,NSW,687.7
+141.681,-29.579,Outback NSW,NSW,687.7
+146.257,-31.802,Outback NSW,NSW,687.7
+147.952,-30.402,Outback NSW,NSW,687.7
+142.829,-29.684,Outback NSW,NSW,687.7
+145.159,-31.368,Outback NSW,NSW,687.7
+141.568,-34.701,Mallee,VIC,872.9
+140.982,-35.611,Mallee,VIC,872.9
+141.246,-35.378,Mallee,VIC,872.9
+142.154,-34.575,Mallee,VIC,872.9
+142.065,-34.702,Mallee,VIC,872.9
+143.103,-35.441,Mallee,VIC,872.9
+142.3,-35.196,Mallee,VIC,872.9
+143.268,-35.551,Mallee,VIC,872.9
+141.047,-34.321,Mallee,VIC,872.9
+145.387,-37.955,Yarra Valley and Dandenong Ranges,VIC,792.1
+145.665,-38.0,Yarra Valley and Dandenong Ranges,VIC,792.1
+146.117,-37.732,Yarra Valley and Dandenong Ranges,VIC,792.1
+145.841,-37.758,Yarra Valley and Dandenong Ranges,VIC,792.1
+145.568,-37.88,Yarra Valley and Dandenong Ranges,VIC,792.1
+145.561,-38.217,Yarra Valley and Dandenong Ranges,VIC,792.1
+145.401,-37.674,Yarra Valley and Dandenong Ranges,VIC,792.1
+145.581,-37.899,Yarra Valley and Dandenong Ranges,VIC,792.1
+152.462,-31.668,North Coast NSW,NSW,6239.6
+152.455,-31.35,North Coast NSW,NSW,6239.6
+152.88,-28.361,North Coast NSW,NSW,6239.6
+152.401,-31.693,North Coast NSW,NSW,6239.6
+153.111,-29.668,North Coast NSW,NSW,6239.6
+153.48,-28.71,North Coast NSW,NSW,6239.6
+152.952,-29.411,North Coast NSW,NSW,6239.6
+153.145,-29.795,North Coast NSW,NSW,6239.6
+152.733,-30.154,North Coast NSW,NSW,6239.6
+153.306,-29.235,North Coast NSW,NSW,6239.6
+153.433,-29.162,North Coast NSW,NSW,6239.6
+152.667,-28.546,North Coast NSW,NSW,6239.6
+152.644,-30.279,North Coast NSW,NSW,6239.6
+152.994,-29.345,North Coast NSW,NSW,6239.6
+152.54,-30.469,North Coast NSW,NSW,6239.6
+152.495,-31.994,North Coast NSW,NSW,6239.6
+153.049,-30.175,North Coast NSW,NSW,6239.6
+152.722,-31.298,North Coast NSW,NSW,6239.6
+152.679,-31.839,North Coast NSW,NSW,6239.6
+152.561,-30.424,North Coast NSW,NSW,6239.6
+152.732,-31.287,North Coast NSW,NSW,6239.6
+153.026,-29.669,North Coast NSW,NSW,6239.6
+152.265,-29.812,North Coast NSW,NSW,6239.6
+152.405,-31.419,North Coast NSW,NSW,6239.6
+152.615,-29.039,North Coast NSW,NSW,6239.6
+152.721,-30.607,North Coast NSW,NSW,6239.6
+152.458,-29.753,North Coast NSW,NSW,6239.6
+152.638,-28.398,North Coast NSW,NSW,6239.6
+152.993,-30.182,North Coast NSW,NSW,6239.6
+152.167,-32.628,North Coast NSW,NSW,6239.6
+152.481,-31.99,North Coast NSW,NSW,6239.6
+152.917,-30.9,North Coast NSW,NSW,6239.6
+152.49,-30.459,North Coast NSW,NSW,6239.6
+153.41,-28.766,North Coast NSW,NSW,6239.6
+152.569,-28.556,North Coast NSW,NSW,6239.6
+152.419,-31.963,North Coast NSW,NSW,6239.6
+152.052,-32.566,North Coast NSW,NSW,6239.6
+152.788,-30.685,North Coast NSW,NSW,6239.6
+151.992,-32.546,North Coast NSW,NSW,6239.6
+152.991,-29.605,North Coast NSW,NSW,6239.6
+152.785,-31.113,North Coast NSW,NSW,6239.6
+153.582,-28.839,North Coast NSW,NSW,6239.6
+152.964,-28.58,North Coast NSW,NSW,6239.6
+152.678,-29.028,North Coast NSW,NSW,6239.6
+152.221,-32.42,North Coast NSW,NSW,6239.6
+152.876,-31.359,North Coast NSW,NSW,6239.6
+152.44,-29.453,North Coast NSW,NSW,6239.6
+153.203,-28.401,North Coast NSW,NSW,6239.6
+152.84,-30.578,North Coast NSW,NSW,6239.6
+153.14,-28.467,North Coast NSW,NSW,6239.6
+152.216,-32.388,North Coast NSW,NSW,6239.6
+152.023,-31.557,North Coast NSW,NSW,6239.6
+153.157,-28.722,North Coast NSW,NSW,6239.6
+153.181,-28.524,North Coast NSW,NSW,6239.6
+152.691,-31.609,North Coast NSW,NSW,6239.6
+152.636,-30.345,North Coast NSW,NSW,6239.6
+152.725,-29.904,North Coast NSW,NSW,6239.6
+152.561,-32.007,North Coast NSW,NSW,6239.6
+153.444,-28.465,North Coast NSW,NSW,6239.6
+152.735,-31.809,North Coast NSW,NSW,6239.6
+152.799,-28.964,North Coast NSW,NSW,6239.6
+152.787,-29.732,North Coast NSW,NSW,6239.6
+144.65,-37.375,Macedon,VIC,373.8
+144.687,-37.193,Macedon,VIC,373.8
+144.639,-37.554,Macedon,VIC,373.8
+144.718,-37.444,Macedon,VIC,373.8
+145.33,-38.344,Phillip Island,VIC,1014.4
+145.326,-38.346,Phillip Island,VIC,1014.4
+145.625,-38.438,Phillip Island,VIC,1014.4
+145.58,-38.415,Phillip Island,VIC,1014.4
+145.607,-38.365,Phillip Island,VIC,1014.4
+145.492,-38.444,Phillip Island,VIC,1014.4
+145.628,-38.513,Phillip Island,VIC,1014.4
+145.528,-38.488,Phillip Island,VIC,1014.4
+145.593,-38.397,Phillip Island,VIC,1014.4
+145.603,-38.651,Phillip Island,VIC,1014.4
+143.605,-36.907,Spa Country,VIC,504.1
+144.001,-37.293,Spa Country,VIC,504.1
+144.062,-37.045,Spa Country,VIC,504.1
+144.491,-36.977,Spa Country,VIC,504.1
+144.232,-36.949,Spa Country,VIC,504.1
+146.898,-36.153,Murray East,VIC,252.6
+146.907,-36.196,Murray East,VIC,252.6
+146.935,-36.107,Murray East,VIC,252.6
+145.117,-38.282,Mornington Peninsula,VIC,2105.0
+145.041,-38.414,Mornington Peninsula,VIC,2105.0
+144.922,-38.438,Mornington Peninsula,VIC,2105.0
+144.925,-38.363,Mornington Peninsula,VIC,2105.0
+145.169,-38.119,Mornington Peninsula,VIC,2105.0
+145.159,-38.182,Mornington Peninsula,VIC,2105.0
+145.162,-38.076,Mornington Peninsula,VIC,2105.0
+145.209,-38.364,Mornington Peninsula,VIC,2105.0
+145.117,-38.393,Mornington Peninsula,VIC,2105.0
+145.127,-38.158,Mornington Peninsula,VIC,2105.0
+145.215,-38.357,Mornington Peninsula,VIC,2105.0
+145.218,-38.28,Mornington Peninsula,VIC,2105.0
+145.114,-38.193,Mornington Peninsula,VIC,2105.0
+145.053,-38.228,Mornington Peninsula,VIC,2105.0
+144.873,-38.427,Mornington Peninsula,VIC,2105.0
+145.059,-38.332,Mornington Peninsula,VIC,2105.0
+145.021,-38.462,Mornington Peninsula,VIC,2105.0
+144.992,-38.458,Mornington Peninsula,VIC,2105.0
+145.078,-38.241,Mornington Peninsula,VIC,2105.0
+145.073,-38.231,Mornington Peninsula,VIC,2105.0
+145.209,-38.354,Mornington Peninsula,VIC,2105.0

@@ -15,21 +15,11 @@ const charts = {
   vis14: "specs/14_bump.json"
 };
 
-// One typographic voice for every chart (matches the page body font)
-const FONT = "Source Sans 3, system-ui, sans-serif";
-const chartConfig = {
-  font: FONT,
-  title: { font: FONT, fontSize: 18, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 13.5, subtitleColor: "#616e7c", subtitlePadding: 4 },
-  axis: { labelFont: FONT, titleFont: FONT, labelFontSize: 12.5, titleFontSize: 13, labelColor: "#52606d", titleColor: "#52606d", titleFontWeight: 600 },
-  legend: { labelFont: FONT, titleFont: FONT, labelFontSize: 12.5, titleFontSize: 13 },
-  text: { font: FONT }
-};
-
 Object.entries(charts).forEach(([id, spec]) => {
   const el = document.getElementById(id);
 
   // actions menu is shown by default (the "..." button), like the course samples
-  vegaEmbed("#" + id, spec, { config: chartConfig }).catch((err) => {
+  vegaEmbed("#" + id, spec).catch((err) => {
     console.error(spec, err);
     el.innerHTML =
       '<div class="placeholder">Chart ' + id.replace("vis", "") +
