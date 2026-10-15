@@ -7,35 +7,18 @@
   "contains": "padding"
  },
  "title": {
-  "text": "Queensland climbed from 4th to 1st; the Northern Territory slid from 6th to last",
-  "subtitle": "Rank of each state's trips relative to 2019 (1 = most recovered), 2020\u20132024",
+  "text": [
+   "Queensland climbed from 4th to 1st; the Northern Territory",
+   "slid from 6th to last"
+  ],
+  "subtitle": [
+   "Rank of each state's trips relative to 2019 (1 = most recovered), 2020–2024"
+  ],
   "anchor": "start"
  },
  "data": {
-  "url": "data/nvs_state_purpose.csv"
+  "url": "data/nvs_state_rank.csv"
  },
- "transform": [
-  {
-   "filter": "datum.purpose=='Total' && datum.state!='AUS' && datum.year>=2020 && datum.year<=2024"
-  },
-  {
-   "window": [
-    {
-     "op": "rank",
-     "as": "rank"
-    }
-   ],
-   "groupby": [
-    "year"
-   ],
-   "sort": [
-    {
-     "field": "index_2019",
-     "order": "descending"
-    }
-   ]
-  }
- ],
  "layer": [
   {
    "mark": {

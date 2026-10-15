@@ -3,8 +3,14 @@
  "width": "container",
  "height": 300,
  "title": {
-  "text": "The Northern Territory's visitors peak in the dry season; Tasmania's in summer",
-  "subtitle": "Overnight trips by quarter as an index of each state's own 5-quarter average (=100), June 2025 \u2013 June 2026",
+  "text": [
+   "The Northern Territory's visitors peak in the dry season;",
+   "Tasmania's in summer"
+  ],
+  "subtitle": [
+   "Overnight trips by quarter as an index of each state's own 5-quarter average (=100),",
+   "June 2025 – June 2026"
+  ],
   "anchor": "start"
  },
  "data": {

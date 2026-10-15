@@ -3,8 +3,13 @@
  "width": "container",
  "height": 420,
  "title": {
-  "text": "Tasmania's North West and Victoria's Lakes lead the regional rebound",
-  "subtitle": "Top 15 regional destinations by change in overnight trips, 2024 vs 2019 (%)",
+  "text": [
+   "Tasmania's North West and Victoria's Lakes lead the",
+   "regional rebound"
+  ],
+  "subtitle": [
+   "Top 15 regional destinations by change in overnight trips, 2024 vs 2019 (%)"
+  ],
   "anchor": "start"
  },
  "data": {

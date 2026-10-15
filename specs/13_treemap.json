@@ -1,14 +1,20 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 400,
+ "height": 430,
  "autosize": {
   "type": "fit-x",
   "contains": "padding"
  },
  "title": {
-  "text": "Accommodation, flights and eating out take 58% of visitor spending",
-  "subtitle": "Domestic overnight trip expenditure by item, year ending June 2026 (rectangle area = $ spent)",
+  "text": [
+   "Accommodation, flights and eating out take 58% of visitor",
+   "spending"
+  ],
+  "subtitle": [
+   "Domestic overnight trip expenditure by item, year ending June 2026 (rectangle area = $",
+   "spent)"
+  ],
   "anchor": "start"
  },
  "data": {
@@ -115,9 +121,9 @@
   {
    "mark": {
     "type": "text",
-    "fontSize": 12,
+    "fontSize": 14,
     "fontWeight": "bold",
-    "limit": 150
+    "limit": 400
    },
    "transform": [
     {

@@ -1,78 +1,160 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
-  "height": 460,
-  "title": {
-    "text": "Regional winners and losers, 2019 vs 2024",
-    "subtitle": "Overnight trips ('000). The 6 biggest gainers and 6 biggest decliners among regional destinations with 500k+ trips in 2019",
-    "anchor": "start"
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "height": 460,
+ "title": {
+  "text": [
+   "Regional winners and losers, 2019 vs 2024"
+  ],
+  "subtitle": [
+   "Overnight trips ('000). The 6 biggest gainers and 6 biggest decliners among regional",
+   "destinations with 500k+ trips in 2019"
+  ],
+  "anchor": "start"
+ },
+ "data": {
+  "url": "data/region_slope.csv"
+ },
+ "transform": [
+  {
+   "calculate": "datum.region=='Flinders Ranges and Outback' ? 'fall' : datum.region=='North West' ? 'rise' : 'rest'",
+   "as": "grp"
   },
-  "data": { "url": "data/region_slope.csv" },
-  "transform": [
-    {
-      "calculate": "datum.region=='Flinders Ranges and Outback' ? 'fall' : datum.region=='North West' ? 'rise' : 'rest'",
-      "as": "grp"
-    },
-    {
-      "calculate": "datum.region + ' (' + (datum.change_pct>0?'+':'') + datum.change_pct + '%)'",
-      "as": "lbl"
+  {
+   "calculate": "datum.region + ' ' + (datum.change_pct>0?'+':'') + datum.change_pct + '%'",
+   "as": "lbl"
+  }
+ ],
+ "layer": [
+  {
+   "mark": {
+    "type": "line",
+    "point": {
+     "filled": true,
+     "size": 50
     }
-  ],
-  "layer": [
-    {
-      "mark": { "type": "line", "point": { "filled": true, "size": 50 } },
-      "encoding": {
-        "x": {
-          "field": "year",
-          "type": "ordinal",
-          "axis": { "title": null, "labelFontSize": 13, "labelAngle": 0 },
-          "scale": { "padding": 0.9 }
-        },
-        "y": {
-          "field": "trips",
-          "type": "quantitative",
-          "title": "Overnight trips ('000)",
-          "scale": { "zero": false }
-        },
-        "detail": { "field": "region" },
-        "color": {
-          "condition": [
-            { "test": "datum.grp=='fall'", "value": "#cb181d" },
-            { "test": "datum.grp=='rise'", "value": "#252525" }
-          ],
-          "value": "#bdbdbd"
-        },
-        "strokeWidth": {
-          "condition": { "test": "datum.grp=='rest'", "value": 1.3 },
-          "value": 3
-        },
-        "tooltip": [
-          { "field": "region" },
-          { "field": "year", "type": "ordinal" },
-          { "field": "trips", "title": "Trips ('000)" },
-          { "field": "change_pct", "title": "Change (%)" }
-        ]
-      }
+   },
+   "encoding": {
+    "x": {
+     "field": "year",
+     "type": "ordinal",
+     "axis": {
+      "title": null,
+      "labelFontSize": 13,
+      "labelAngle": 0
+     },
+     "scale": {
+      "padding": 0.9
+     }
     },
-    {
-      "transform": [{ "filter": "datum.year==2024 && datum.grp!='rest'" }],
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 10,
-        "fontSize": 12,
-        "fontWeight": "bold"
+    "y": {
+     "field": "trips",
+     "type": "quantitative",
+     "title": "Overnight trips ('000)",
+     "scale": {
+      "zero": false
+     }
+    },
+    "detail": {
+     "field": "region"
+    },
+    "color": {
+     "condition": [
+      {
+       "test": "datum.grp=='fall'",
+       "value": "#cb181d"
       },
-      "encoding": {
-        "x": { "field": "year", "type": "ordinal" },
-        "y": { "field": "trips", "type": "quantitative" },
-        "text": { "field": "lbl" },
-        "color": {
-          "condition": { "test": "datum.grp=='fall'", "value": "#cb181d" },
-          "value": "#252525"
-        }
+      {
+       "test": "datum.grp=='rise'",
+       "value": "#252525"
       }
+     ],
+     "value": "#bdbdbd"
+    },
+    "strokeWidth": {
+     "condition": {
+      "test": "datum.grp=='rest'",
+      "value": 1.3
+     },
+     "value": 3
+    },
+    "tooltip": [
+     {
+      "field": "region"
+     },
+     {
+      "field": "year",
+      "type": "ordinal"
+     },
+     {
+      "field": "trips",
+      "title": "Trips ('000)"
+     },
+     {
+      "field": "change_pct",
+      "title": "Change (%)"
+     }
+    ]
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.year==2024 && datum.grp!='rest'"
     }
-  ],
-  "config": { "view": { "stroke": null }, "axis": { "grid": false } }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 10,
+    "fontSize": 12,
+    "fontWeight": "bold"
+   },
+   "encoding": {
+    "x": {
+     "field": "year",
+     "type": "ordinal"
+    },
+    "y": {
+     "field": "trips",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lbl"
+    },
+    "color": {
+     "condition": {
+      "test": "datum.grp=='fall'",
+      "value": "#cb181d"
+     },
+     "value": "#252525"
+    },
+    "dy": {
+     "condition": {
+      "test": "datum.grp=='rise'",
+      "value": -9
+     },
+     "value": 9
+    }
+   }
+  }
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "grid": false
+  }
+ },
+ "autosize": {
+  "type": "fit-x",
+  "contains": "padding"
+ },
+ "padding": {
+  "right": 120,
+  "left": 5,
+  "top": 5,
+  "bottom": 5
+ }
 }

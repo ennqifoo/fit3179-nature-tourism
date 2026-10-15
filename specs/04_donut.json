@@ -1,10 +1,14 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 330,
+ "height": 430,
  "title": {
-  "text": "Nearly half of all trips are holidays",
-  "subtitle": "Share of overnight trips by reason, year ending June 2026",
+  "text": [
+   "Nearly half of all trips are holidays"
+  ],
+  "subtitle": [
+   "Share of overnight trips by reason, year ending June 2026"
+  ],
   "anchor": "start"
  },
  "data": {
@@ -14,8 +18,8 @@
   {
    "mark": {
     "type": "arc",
-    "innerRadius": 75,
-    "outerRadius": 135,
+    "innerRadius": 95,
+    "outerRadius": 180,
     "stroke": "white",
     "strokeWidth": 2
    },
@@ -55,7 +59,10 @@
      },
      "legend": {
       "title": null,
-      "orient": "right"
+      "orient": "bottom",
+      "direction": "horizontal",
+      "labelFontSize": 13,
+      "symbolSize": 140
      }
     },
     "opacity": {
@@ -99,8 +106,8 @@
   {
    "mark": {
     "type": "text",
-    "radius": 105,
-    "fontSize": 13,
+    "radius": 138,
+    "fontSize": 16,
     "fontWeight": "bold"
    },
    "transform": [
@@ -144,7 +151,7 @@
    },
    "mark": {
     "type": "text",
-    "fontSize": 24,
+    "fontSize": 30,
     "fontWeight": "bold",
     "dy": -8,
     "color": "#222"
@@ -165,8 +172,8 @@
    },
    "mark": {
     "type": "text",
-    "fontSize": 12,
-    "dy": 14,
+    "fontSize": 14,
+    "dy": 18,
     "color": "#666"
    },
    "encoding": {

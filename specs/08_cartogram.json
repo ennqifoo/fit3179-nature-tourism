@@ -3,9 +3,13 @@
  "width": 560,
  "height": 420,
  "title": {
-  "text": "NSW is the biggest destination, but Queensland grew and the Northern Territory shrank",
+  "text": [
+   "NSW is the biggest destination, but Queensland grew and",
+   "the Northern Territory shrank"
+  ],
   "subtitle": [
-   "Dorling cartogram: circle area = overnight trips, year ending June 2026; circles sit near each state's real position",
+   "Dorling cartogram: circle area = overnight trips, year ending June 2026; circles sit",
+   "near each state's real position",
    "Orange = fastest growth / fastest fall in trips versus June 2025; others grey"
   ],
   "anchor": "start"

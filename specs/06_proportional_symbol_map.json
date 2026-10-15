@@ -3,8 +3,14 @@
  "width": "container",
  "height": 520,
  "title": {
-  "text": "Sydney and Melbourne dominate; the Gold Coast and Tropical North Queensland lead the regional gateways",
-  "subtitle": "Overnight trips by international visitors to the top 20 regions, year ending June 2026 (circle area = trips)",
+  "text": [
+   "Sydney and Melbourne dominate; the Gold Coast and Tropical",
+   "North Queensland lead the regional gateways"
+  ],
+  "subtitle": [
+   "Overnight trips by international visitors to the top 20 regions, year ending June 2026",
+   "(circle area = trips)"
+  ],
   "anchor": "start"
  },
  "projection": {
@@ -70,11 +76,11 @@
       ],
       "range": [
        0,
-       5000
+       2600
       ]
      },
      "legend": {
-      "orient": "bottom-left",
+      "orient": "bottom-right",
       "values": [
        100,
        500,
@@ -98,7 +104,7 @@
       ]
      },
      "legend": {
-      "orient": "bottom-left"
+      "orient": "bottom-right"
      }
     },
     "order": {

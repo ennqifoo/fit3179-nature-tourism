@@ -1,7 +1,9 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "title": {
-  "text": "How far has each state recovered from COVID-19?",
+  "text": [
+   "How far has each state recovered from COVID-19?"
+  ],
   "subtitle": [
    "Overnight trips by Australian residents, indexed (2019 = 100).",
    "Pick a purpose, hover a line, drag the strip below to zoom.",

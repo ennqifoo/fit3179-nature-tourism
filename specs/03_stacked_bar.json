@@ -7,9 +7,13 @@
   "contains": "padding"
  },
  "title": {
-  "text": "International visitors now sleep in rented homes more than in friends' homes",
+  "text": [
+   "International visitors now sleep in rented homes more than",
+   "in friends' homes"
+  ],
   "subtitle": [
-   "Share of international visitor nights by accommodation type, years ending June (100% stacked)"
+   "Share of international visitor nights by accommodation type, years ending June (100%",
+   "stacked)"
   ],
   "anchor": "start"
  },

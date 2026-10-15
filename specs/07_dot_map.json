@@ -3,8 +3,14 @@
  "width": "container",
  "height": 520,
  "title": {
-  "text": "Four in five regional nature trips go to NSW, Victoria and Queensland; the Northern Territory has only 7 dots",
-  "subtitle": "Each dot = 100,000 overnight trips by Australian residents to a regional destination in 2024 (capital-city regions excluded). Dots are placed randomly inside each region.",
+  "text": [
+   "Four in five regional nature trips go to NSW, Victoria and",
+   "Queensland; the Northern Territory has only 7 dots"
+  ],
+  "subtitle": [
+   "Each dot = 100,000 overnight trips by Australian residents to a regional destination in",
+   "2024 (capital-city regions excluded). Dots are placed randomly inside each region."
+  ],
   "anchor": "start"
  },
  "params": [
@@ -117,7 +123,7 @@
      {
       "lon": 124,
       "lat": -40.5,
-      "t": "\u25cf  = 100,000 overnight trips"
+      "t": "●  = 100,000 overnight trips"
      }
     ]
    },
