@@ -65,3 +65,8 @@ footer p{margin:0 0 6px}
 
 .spec-link{margin:6px 0 0;font-size:.95rem}
 .pill b{font-size:1.9rem}
+
+footer ol{margin:4px 0 8px;padding-left:1.2rem}
+footer li{margin-bottom:4px}
+footer a{color:#08519c}
+#takeaways li{line-height:1.5}
