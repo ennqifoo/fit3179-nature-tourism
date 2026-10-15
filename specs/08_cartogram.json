@@ -23,19 +23,6 @@
    "as": "hl"
   }
  ],
- "params": [
-  {
-   "name": "hv",
-   "select": {
-    "type": "point",
-    "fields": [
-     "state"
-    ],
-    "on": "mouseover",
-    "clear": "mouseout"
-   }
-  }
- ],
  "encoding": {
   "x": {
    "field": "x",
@@ -107,7 +94,20 @@
       "format": "+.1f"
      }
     ]
-   }
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "state"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
   },
   {
    "mark": {

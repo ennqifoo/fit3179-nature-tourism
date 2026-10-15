@@ -10,19 +10,6 @@
  "data": {
   "url": "data/dots_reason.csv"
  },
- "params": [
-  {
-   "name": "hv",
-   "select": {
-    "type": "point",
-    "fields": [
-     "reason"
-    ],
-    "on": "mouseover",
-    "clear": "mouseout"
-   }
-  }
- ],
  "layer": [
   {
    "mark": {
@@ -94,7 +81,20 @@
       "title": "Share (%)"
      }
     ]
-   }
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "reason"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
   },
   {
    "mark": {

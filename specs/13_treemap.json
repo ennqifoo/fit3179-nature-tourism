@@ -14,19 +14,6 @@
  "data": {
   "url": "data/dots_spend_items.csv"
  },
- "params": [
-  {
-   "name": "hv",
-   "select": {
-    "type": "point",
-    "fields": [
-     "item"
-    ],
-    "on": "mouseover",
-    "clear": "mouseout"
-   }
-  }
- ],
  "transform": [
   {
    "calculate": "datum.item=='Accommodation' ? 'hero' : (datum.item=='Domestic airfares' ? 'second' : 'rest')",
@@ -110,7 +97,20 @@
       "title": "Share (%)"
      }
     ]
-   }
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "item"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
   },
   {
    "mark": {

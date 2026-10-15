@@ -22,19 +22,6 @@
    "as": "ord"
   }
  ],
- "params": [
-  {
-   "name": "hv",
-   "select": {
-    "type": "point",
-    "fields": [
-     "type"
-    ],
-    "on": "mouseover",
-    "clear": "mouseout"
-   }
-  }
- ],
  "layer": [
   {
    "mark": {
@@ -46,9 +33,10 @@
     "y": {
      "field": "year",
      "type": "nominal",
-     "sort": {
-      "field": "yorder"
-     },
+     "sort": [
+      "Jun 2025",
+      "Jun 2026"
+     ],
      "title": null
     },
     "x": {
@@ -116,7 +104,20 @@
       "format": ","
      }
     ]
-   }
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "type"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
   },
   {
    "mark": {
@@ -133,9 +134,10 @@
     "y": {
      "field": "year",
      "type": "nominal",
-     "sort": {
-      "field": "yorder"
-     }
+     "sort": [
+      "Jun 2025",
+      "Jun 2026"
+     ]
     },
     "x": {
      "field": "share",

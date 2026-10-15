@@ -36,19 +36,6 @@
    ]
   }
  ],
- "params": [
-  {
-   "name": "hv",
-   "select": {
-    "type": "point",
-    "fields": [
-     "state"
-    ],
-    "on": "mouseover",
-    "clear": "mouseout"
-   }
-  }
- ],
  "layer": [
   {
    "mark": {
@@ -170,7 +157,20 @@
       "title": "Index (2019=100)"
      }
     ]
-   }
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "fields": [
+       "state"
+      ],
+      "on": "mouseover",
+      "clear": "mouseout"
+     }
+    }
+   ]
   },
   {
    "mark": {
