@@ -32,10 +32,12 @@ h2 .num{display:inline-grid;place-items:center;width:34px;height:34px;border-rad
 .row.two{grid-template-columns:1fr 1fr}
 .row.three{grid-template-columns:repeat(3,1fr)}
 
-.block{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px 10px;min-width:0;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.block{overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px 10px;min-width:0;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 .block h3{font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;margin:0 0 2px}
 .block .cap{font-size:.88rem;color:var(--muted);margin:0 0 8px}
-.chart{width:100%;min-height:120px}
+.chart{width:100%;min-width:0;min-height:120px;overflow:hidden}
+.vega-embed{width:100%;display:block}
+.vega-embed details,.vega-embed summary{position:absolute}
 .chart .placeholder{border:2px dashed #c9c2ad;border-radius:8px;padding:28px;text-align:center;color:var(--muted)}
 
 /* side panel */

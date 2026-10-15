@@ -3,8 +3,9 @@
  "title": {
   "text": "How far has each state recovered from COVID-19?",
   "subtitle": [
-   "Overnight trips by Australian residents, indexed (2019 = 100). Choose a trip purpose, hover a line, and drag the strip below to zoom.",
-   "Series break in 2014 (new survey method): compare with care before then."
+   "Overnight trips by Australian residents, indexed (2019 = 100).",
+   "Pick a purpose, hover a line, drag the strip below to zoom.",
+   "Series break in 2014 (new survey method)."
   ],
   "anchor": "start"
  },
@@ -234,11 +235,12 @@
      ],
      "mark": {
       "type": "text",
-      "align": "left",
-      "dx": 6,
+      "align": "right",
+      "dx": -6,
       "fontSize": 12,
       "fontWeight": "bold",
-      "clip": false
+      "clip": true,
+      "dy": -7
      },
      "encoding": {
       "x": {
@@ -274,6 +276,20 @@
         }
        ],
        "value": "#757575"
+      },
+      "opacity": {
+       "condition": [
+        {
+         "param": "pick",
+         "empty": false,
+         "value": 1
+        },
+        {
+         "test": "datum.grp!='rest'",
+         "value": 1
+        }
+       ],
+       "value": 0
       }
      }
     }
@@ -335,5 +351,9 @@
   "axis": {
    "grid": false
   }
+ },
+ "autosize": {
+  "type": "fit-x",
+  "contains": "padding"
  }
 }
