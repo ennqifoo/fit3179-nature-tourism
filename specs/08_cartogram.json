@@ -117,7 +117,7 @@
    "mark": {
     "type": "text",
     "fontWeight": "bold",
-    "fontSize": 12,
+    "fontSize": 13,
     "color": "#222"
    },
    "transform": [
@@ -134,7 +134,7 @@
   {
    "mark": {
     "type": "text",
-    "fontSize": 11,
+    "fontSize": 13,
     "color": "#222",
     "dy": -22
    },

@@ -18,7 +18,9 @@ body{font-family:"Source Sans 3",system-ui,sans-serif;font-size:17px;color:var(-
 .stat span{font-size:1rem;opacity:.85}
 
 main,footer{max-width:1760px;margin:0 auto;padding:0 32px}
-.intro{margin:22px 0 0;font-size:1.25rem;max-width:1100px}
+/* at most ~60 characters per line (Week 4 typography notes); ch is wider than an average letter */
+.intro{margin:22px 0 0;font-size:1.25rem;max-width:47ch}
+.lede{margin:0 0 16px;font-size:1.1rem;max-width:48ch}
 
 /* sections */
 section.act{margin:34px 0 0}
@@ -34,7 +36,7 @@ h2 .num{display:inline-grid;place-items:center;width:34px;height:34px;border-rad
 .row.three{grid-template-columns:repeat(3,1fr)}
 
 .block{overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px 10px;min-width:0;box-shadow:0 1px 3px rgba(0,0,0,.05)}
-.tag{font-size:.85rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.tag{font-size:.9rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
 .block h3{font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;margin:0 0 2px}
 .block .cap{font-size:.88rem;color:var(--muted);margin:0 0 8px}
 .chart{width:100%;min-width:0;min-height:120px;overflow:hidden}
@@ -52,10 +54,11 @@ h2 .num{display:inline-grid;place-items:center;width:34px;height:34px;border-rad
 .pill span{font-size:1rem;color:var(--muted)}
 
 #takeaways{margin-top:34px}
-#takeaways ul{padding-left:1.2rem;columns:2;column-gap:32px;font-size:1.15rem}
+#takeaways ul{padding-left:1.2rem;columns:2;column-gap:4ch;font-size:1.15rem;max-width:98ch}
 #takeaways li{break-inside:avoid;margin-bottom:8px}
 
-footer{border-top:2px solid var(--line);margin-top:40px;padding-top:16px;padding-bottom:40px;font-size:1rem;color:var(--muted);display:grid;grid-template-columns:1.4fr 1fr;gap:8px 32px}
+footer{border-top:2px solid var(--line);margin-top:40px;padding-top:16px;padding-bottom:40px;font-size:1rem;color:var(--muted);display:grid;grid-template-columns:1fr 1fr;gap:8px 32px}
+footer > div{max-width:48ch}
 footer p{margin:0 0 6px}
 
 @media (max-width:900px){

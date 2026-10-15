@@ -161,7 +161,7 @@
     "align": "left",
     "dx": 10,
     "fontWeight": "bold",
-    "fontSize": 12
+    "fontSize": 13
    },
    "transform": [
     {
@@ -201,7 +201,7 @@
     "align": "right",
     "dx": -10,
     "fontWeight": "bold",
-    "fontSize": 12
+    "fontSize": 13
    },
    "transform": [
     {

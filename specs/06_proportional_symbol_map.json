@@ -80,10 +80,10 @@
       ]
      },
      "legend": {
-      "orient": "bottom-right",
+      "orient": "bottom",
+      "direction": "horizontal",
       "values": [
        100,
-       500,
        1000,
        3000
       ]
@@ -104,7 +104,8 @@
       ]
      },
      "legend": {
-      "orient": "bottom-right"
+      "orient": "bottom",
+      "direction": "horizontal"
      }
     },
     "order": {
@@ -144,15 +145,170 @@
    },
    "transform": [
     {
-     "filter": "datum.rank<=7"
+     "filter": {
+      "field": "region",
+      "oneOf": [
+       "Destination Perth",
+       "Adelaide"
+      ]
+     }
     }
    ],
    "mark": {
     "type": "text",
     "align": "left",
-    "dx": 4,
+    "dx": 16,
     "dy": -2,
-    "fontSize": 11,
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "color": "#333"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "region"
+    }
+   }
+  },
+  {
+   "data": {
+    "url": "data/ivs_top20.csv"
+   },
+   "transform": [
+    {
+     "filter": {
+      "field": "region",
+      "oneOf": [
+       "Sydney",
+       "Melbourne"
+      ]
+     }
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "dx": -32,
+    "dy": -2,
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "color": "#333"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "region"
+    }
+   }
+  },
+  {
+   "data": {
+    "url": "data/ivs_top20.csv"
+   },
+   "transform": [
+    {
+     "filter": {
+      "field": "region",
+      "oneOf": [
+       "Brisbane"
+      ]
+     }
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "dx": -20,
+    "dy": -6,
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "color": "#333"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "region"
+    }
+   }
+  },
+  {
+   "data": {
+    "url": "data/ivs_top20.csv"
+   },
+   "transform": [
+    {
+     "filter": {
+      "field": "region",
+      "oneOf": [
+       "Gold Coast"
+      ]
+     }
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "dx": -18,
+    "dy": 16,
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "color": "#333"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "region"
+    }
+   }
+  },
+  {
+   "data": {
+    "url": "data/ivs_top20.csv"
+   },
+   "transform": [
+    {
+     "filter": {
+      "field": "region",
+      "oneOf": [
+       "Tropical North Queensland"
+      ]
+     }
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "dx": -16,
+    "dy": -2,
+    "fontSize": 13,
     "fontWeight": "bold",
     "color": "#333"
    },

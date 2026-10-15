@@ -126,7 +126,7 @@
   {
    "mark": {
     "type": "text",
-    "fontSize": 12,
+    "fontSize": 13,
     "fontWeight": "bold"
    },
    "transform": [

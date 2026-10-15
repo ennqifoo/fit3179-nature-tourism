@@ -100,15 +100,16 @@
   {
    "transform": [
     {
-     "filter": "datum.year==2024 && datum.grp!='rest'"
+     "filter": "datum.year==2024 && datum.grp=='rise'"
     }
    ],
    "mark": {
     "type": "text",
     "align": "left",
     "dx": 10,
-    "fontSize": 12,
-    "fontWeight": "bold"
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "dy": -10
    },
    "encoding": {
     "x": {
@@ -128,13 +129,41 @@
       "value": "#cb181d"
      },
      "value": "#252525"
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.year==2024 && datum.grp=='fall'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 10,
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "dy": 10
+   },
+   "encoding": {
+    "x": {
+     "field": "year",
+     "type": "ordinal"
     },
-    "dy": {
+    "y": {
+     "field": "trips",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lbl"
+    },
+    "color": {
      "condition": {
-      "test": "datum.grp=='rise'",
-      "value": -9
+      "test": "datum.grp=='fall'",
+      "value": "#cb181d"
      },
-     "value": 9
+     "value": "#252525"
     }
    }
   }

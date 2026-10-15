@@ -19,9 +19,9 @@ const charts = {
 const FONT = "\"Source Sans 3\", system-ui, sans-serif";  // family name with spaces/digits must be quoted for canvas
 const chartConfig = {
   font: FONT,
-  title: { font: FONT, fontSize: 18, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 13.5, subtitleColor: "#616e7c", subtitlePadding: 4 },
-  axis: { labelFont: FONT, titleFont: FONT, labelFontSize: 12.5, titleFontSize: 13, labelColor: "#52606d", titleColor: "#52606d", titleFontWeight: 600 },
-  legend: { labelFont: FONT, titleFont: FONT, labelFontSize: 12.5, titleFontSize: 13 },
+  title: { font: FONT, fontSize: 20, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 15, subtitleColor: "#616e7c", subtitlePadding: 4 },
+  axis: { labelFont: FONT, titleFont: FONT, labelFontSize: 14, titleFontSize: 14, labelColor: "#52606d", titleColor: "#52606d", titleFontWeight: 600 },
+  legend: { labelFont: FONT, titleFont: FONT, labelFontSize: 14, titleFontSize: 14 },
   text: { font: FONT }
 };
 
