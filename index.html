@@ -15,44 +15,89 @@
 </head>
 <body>
   <header class="band">
-    <h1>Australia's Wild Side</h1>
-    <p class="sub">Is nature tourism back?</p>
+    <div class="band-inner">
+      <div>
+        <p class="eyebrow">FIT3179 &middot; Data Visualisation 2 &middot; TODO your name</p>
+        <h1>Australia's Wild Side</h1>
+        <p class="sub">Is nature tourism back?</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>86.4M</b><span>regional trips in 2024</span></div>
+        <div class="stat"><b>29 of 72</b><span>regions above 2019 levels</span></div>
+        <div class="stat"><b>+24%</b><span>NT spend per trip, 2026</span></div>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="intro">
-      <p>From rainforests and deserts to coastlines, Australia's natural places draw millions of trips each year. This page follows nature tourism from the COVID-19 collapse to today: how big it is, where it happens, who is recovering fastest, and when and why people travel.</p>
-      <!-- TODO: key-numbers strip -->
+    <p class="intro">From rainforests and deserts to coastlines, Australia's natural places draw millions of trips each year. This page follows nature tourism from the COVID-19 collapse to today: how big it is, where it happens, who is recovering fastest, and when and why people travel.</p>
+
+    <section class="act" id="act1">
+      <h2><span class="num">1</span>How big is it, and what happened?</h2>
+      <div class="row main-side">
+        <div class="block"><h3>Trips against 2019, by state</h3><p class="cap">Choose a trip purpose; drag the lower chart to zoom.</p><div class="chart" id="vis01"></div></div>
+        <aside class="side">
+          <h3>What to notice</h3>
+          <div class="pill"><b>101</b><span>Queensland, 2024 (2019 = 100): the only big state fully recovered</span></div>
+          <ul>
+            <li>Every state fell sharply in 2020&ndash;21.</li>
+            <li>Business and visiting-friends trips recover differently from holidays.</li>
+            <li>The 2014 jump in WA and NT is a survey change, not real growth.</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="row two">
+        <div class="block"><h3>Latest year: who grew, who fell</h3><p class="cap">Year ending June 2026 vs June 2025.</p><div class="chart" id="vis02"></div></div>
+        <div class="block"><h3>Where visitors stay</h3><p class="cap">Accommodation type.</p><div class="chart" id="vis03"></div></div>
+      </div>
     </section>
 
-    <section id="act1">
-      <h2>1. How big is it, and what happened?</h2>
-      <div class="chart" id="vis01"></div>
-      <div class="chart" id="vis02"></div>
+    <section class="act" id="act2">
+      <h2><span class="num">2</span>Where does it happen?</h2>
+      <div class="row main-side">
+        <div class="block"><h3>Recovery by tourism region</h3><p class="cap">Use the slider to change year. Darker brown = further behind 2019.</p><div class="chart" id="vis05"></div></div>
+        <aside class="side">
+          <h3>What to notice</h3>
+          <ul>
+            <li>Desert and outback regions are furthest behind 2019.</li>
+            <li>Tasmania's north-west is the strongest region.</li>
+            <li>Four remote regions have no 2024 data.</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="row two">
+        <div class="block"><h3>International gateways</h3><p class="cap">Circle area = trips, 2026.</p><div class="chart" id="vis06"></div></div>
+        <div class="block"><h3>Regional trips, 2024</h3><p class="cap">One dot = 100,000 trips.</p><div class="chart" id="vis07"></div></div>
+      </div>
+      <div class="row"><div class="block"><h3>States resized by trips</h3><div class="chart" id="vis08"></div></div></div>
     </section>
 
-    <section id="act2">
-      <h2>2. Where does it happen?</h2>
-      <div class="chart" id="vis05"></div>
-      <div class="chart" id="vis06"></div>
-      <div class="chart" id="vis07"></div>
-      <div class="chart" id="vis08"></div>
+    <section class="act" id="act3">
+      <h2><span class="num">3</span>Who is winning the recovery?</h2>
+      <div class="row two">
+        <div class="block"><h3>Biggest risers and fallers</h3><p class="cap">Regions, 2019 vs 2024.</p><div class="chart" id="vis09"></div></div>
+        <div class="block"><h3>Regional rebound leaders</h3><p class="cap">Top 15 regions.</p><div class="chart" id="vis10"></div></div>
+      </div>
+      <div class="row two">
+        <div class="block"><h3>Spend per trip</h3><p class="cap">Hollow = 2025, filled = 2026.</p><div class="chart" id="vis11"></div></div>
+        <div class="block"><h3>Ranking of states</h3><div class="chart" id="vis14"></div></div>
+      </div>
     </section>
 
-    <section id="act3">
-      <h2>3. Who is winning the recovery?</h2>
-      <div class="chart" id="vis09"></div>
-      <div class="chart" id="vis10"></div>
-      <div class="chart" id="vis11"></div>
-      <div class="chart" id="vis14"></div>
-    </section>
-
-    <section id="act4">
-      <h2>4. When, how and why do people travel?</h2>
-      <div class="chart" id="vis12"></div>
-      <div class="chart" id="vis03"></div>
-      <div class="chart" id="vis04"></div>
-      <div class="chart" id="vis13"></div>
+    <section class="act" id="act4">
+      <h2><span class="num">4</span>When, how and why do people travel?</h2>
+      <div class="row main-side">
+        <div class="block"><h3>Seasons</h3><p class="cap">Quarter trips as an index of each state's own average.</p><div class="chart" id="vis12"></div></div>
+        <aside class="side">
+          <h3>What to notice</h3>
+          <div class="pill"><b>130 vs 67</b><span>NT trips index: dry season (Sep) vs wet season (Mar)</span></div>
+          <ul><li>Tasmania peaks in summer; the NT in the dry season.</li></ul>
+        </aside>
+      </div>
+      <div class="row two">
+        <div class="block"><h3>Why people travel</h3><div class="chart" id="vis04"></div></div>
+        <div class="block"><h3>What visitors spend on</h3><div class="chart" id="vis13"></div></div>
+      </div>
     </section>
 
     <section id="takeaways">
@@ -66,9 +111,13 @@
   </main>
 
   <footer>
-    <p><strong>Sources:</strong> Tourism Research Australia (National Visitor Survey; Domestic Tourism Statistics; International Visitor Survey); Australian Bureau of Statistics (ASGS boundaries, CC BY 4.0). TODO second source.</p>
-    <p><strong>Author:</strong> TODO name &middot; FIT3179 Data Visualisation 2 &middot; Monash University &middot; October 2026</p>
-    <p><strong>Built with</strong> Vega-Lite. <strong>AI use:</strong> TODO acknowledge Claude assistance.</p>
+    <div>
+      <p><strong>Sources:</strong> Tourism Research Australia (National Visitor Survey; Domestic Tourism Statistics; International Visitor Survey); Australian Bureau of Statistics (ASGS boundaries, CC BY 4.0). TODO second source.</p>
+    </div>
+    <div>
+      <p><strong>Author:</strong> TODO name &middot; Monash University &middot; October 2026</p>
+      <p><strong>Built with</strong> Vega-Lite. <strong>AI use:</strong> TODO acknowledge Claude assistance.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
