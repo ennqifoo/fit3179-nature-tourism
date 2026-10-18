@@ -18,11 +18,23 @@
   {
    "calculate": "datum.code=='QLD'||datum.code=='NT'",
    "as": "hl"
+  },
+  {
+   "calculate": "datum.trips_2026-datum.trips_2025",
+   "as": "diff"
+  },
+  {
+   "calculate": "datum.change_pct>=0 ? 'grew' : 'fell'",
+   "as": "dir"
   }
  ],
  "layer": [
   {
-   "mark": "bar",
+   "mark": {
+    "type": "bar",
+    "cursor": "pointer",
+    "strokeWidth": 0
+   },
    "encoding": {
     "y": {
      "field": "state",
@@ -41,8 +53,68 @@
       "value": "#e6550d"
      },
      "value": "#bdbdbd"
+    },
+    "opacity": {
+     "condition": {
+      "param": "hv",
+      "empty": true,
+      "value": 1
+     },
+     "value": 0.45
+    },
+    "strokeWidth": {
+     "condition": {
+      "param": "hv",
+      "empty": false,
+      "value": 2
+     },
+     "value": 0
+    },
+    "tooltip": [
+     {
+      "field": "state",
+      "type": "nominal",
+      "title": "State"
+     },
+     {
+      "field": "change_pct",
+      "type": "quantitative",
+      "title": "Change vs June 2025 (%)",
+      "format": "+.2f"
+     },
+     {
+      "field": "trips_2025",
+      "type": "quantitative",
+      "title": "Year to Jun 2025 ('000 trips)",
+      "format": ",.0f"
+     },
+     {
+      "field": "trips_2026",
+      "type": "quantitative",
+      "title": "Year to Jun 2026 ('000 trips)",
+      "format": ",.0f"
+     },
+     {
+      "field": "diff",
+      "type": "quantitative",
+      "title": "Difference ('000 trips)",
+      "format": "+,.0f"
+     }
+    ]
+   },
+   "params": [
+    {
+     "name": "hv",
+     "select": {
+      "type": "point",
+      "on": "mouseover",
+      "clear": "mouseout",
+      "fields": [
+       "state"
+      ]
+     }
     }
-   }
+   ]
   },
   {
    "mark": {

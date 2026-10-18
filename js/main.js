@@ -35,10 +35,4 @@ Object.entries(charts).forEach(([id, spec]) => {
       '<div class="placeholder">Chart ' + id.replace("vis", "") +
       " could not load (" + spec + ")<br><small>" + err.message + "</small></div>";
   });
-
-  // link to the JSON spec under each chart
-  const link = document.createElement("p");
-  link.className = "spec-link";
-  link.innerHTML = '<a href="' + spec + '" target="_blank" rel="noopener">View Vega-Lite spec (JSON)</a>';
-  el.after(link);
 });
