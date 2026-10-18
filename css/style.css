@@ -194,6 +194,16 @@ h2 .num {
 .vega-embed {
   width: 100%;
   display: block;
+  position: relative;
+}
+/* keep the "..." actions button at the chart's top-right corner */
+.vega-embed details {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.vega-embed summary {
+  opacity: 0.85;
 }
 .chart .placeholder {
   border: 2px dashed #c9c2ad;
