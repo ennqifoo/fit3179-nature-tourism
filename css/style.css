@@ -377,3 +377,31 @@ footer p {
     flex: 1 1 100%;
   }
 }
+
+/* bullets under each chart (like the sample page); ~60 characters per line */
+.block {
+  display: flex;
+  flex-direction: column;
+}
+.chart-desc {
+  margin: 12px 0 0;
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  max-width: 52ch;
+}
+.chart-desc li {
+  margin-bottom: 6px;
+  break-inside: avoid;
+}
+.row.one .chart-desc {
+  columns: 3;
+  column-gap: 48px;
+  max-width: none;
+}
+@media (max-width: 900px) {
+  .row.one .chart-desc {
+    columns: 1;
+    max-width: 52ch;
+  }
+}
