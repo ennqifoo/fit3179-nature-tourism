@@ -1,6 +1,6 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
- "width": 560,
+ "width": "container",
  "height": 420,
  "title": {
   "text": [
@@ -33,7 +33,7 @@
    "type": "quantitative",
    "scale": {
     "domain": [
-     0,
+     50,
      560
     ]
    },
@@ -154,5 +154,9 @@
   "view": {
    "stroke": null
   }
+ },
+ "autosize": {
+  "type": "fit-x",
+  "contains": "padding"
  }
 }

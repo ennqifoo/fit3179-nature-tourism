@@ -148,6 +148,9 @@ h2 .num {
 .row.main-side {
   grid-template-columns: 3fr 1fr;
 }
+.row.main-side.cart {
+  grid-template-columns: 5fr 3fr;
+}
 .row.two {
   grid-template-columns: 1fr 1fr;
 }
@@ -325,6 +328,7 @@ footer p {
   .row.third,
   .band-inner,
   .row.main-side,
+  .row.main-side.cart,
   .row.two,
   .row.three,
   footer {
