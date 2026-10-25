@@ -9,7 +9,7 @@
   ],
   "subtitle": [
    "Overnight trips by quarter as an index of each state's own 5-quarter average (=100),",
-   "June 2025 – June 2026"
+   "June 2025 \u2013 June 2026"
   ],
   "anchor": "start"
  },
@@ -125,10 +125,10 @@
     },
     "color": {
      "condition": {
-      "test": "datum.index>118",
+      "test": "datum.index>116",
       "value": "white"
      },
-     "value": "#333"
+     "value": "#000"
     }
    }
   }

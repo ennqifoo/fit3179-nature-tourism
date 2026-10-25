@@ -9,7 +9,8 @@
   ],
   "subtitle": [
    "Each dot = 100,000 overnight trips by Australian residents to a regional destination in",
-   "2024 (capital-city regions excluded). Dots are placed randomly inside each region."
+   "2024 (capital-city regions excluded). Dots are placed randomly inside each region;",
+   "two dots in tiny Alice Springs overlap."
   ],
   "anchor": "start"
  },
@@ -123,7 +124,7 @@
      {
       "lon": 124,
       "lat": -40.5,
-      "t": "●  = 100,000 overnight trips"
+      "t": "\u25cf  = 100,000 overnight trips"
      }
     ]
    },

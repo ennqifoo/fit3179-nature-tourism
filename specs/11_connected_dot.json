@@ -8,7 +8,7 @@
    "and 24% more than a year ago"
   ],
   "subtitle": [
-   "Regional spend per overnight trip ($), year ending June 2025 vs June 2026 (spend ÷",
+   "Regional spend per overnight trip ($), year ending June 2025 vs June 2026 (spend \u00f7",
    "trips)"
   ],
   "anchor": "start"
@@ -24,6 +24,10 @@
   {
    "calculate": "max(datum.spt_2025,datum.spt_2026)",
    "as": "mx"
+  },
+  {
+   "calculate": "format(datum.change_pct,'+.1f')+'%'",
+   "as": "chg_lbl"
   }
  ],
  "encoding": {
@@ -170,9 +174,8 @@
      "type": "quantitative"
     },
     "text": {
-     "field": "change_pct",
-     "type": "quantitative",
-     "format": "+.1f"
+     "field": "chg_lbl",
+     "type": "nominal"
     },
     "color": {
      "condition": {
