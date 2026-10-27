@@ -1,17 +1,17 @@
 level,group,item,spend_m,share,x0,y0,x1,y1,cx,cy,wrap,show_label,fill
-group,Transport,Transport,32041,29.66,0,0,57.46,30.97,0.6,2.3,0,1,#b34700
-item,Transport,Domestic airfares,16291,15.08,0,4.6,29.21,30.97,14.61,17.78,0,1,#f2b98c
-item,Transport,Petrol,11617,10.75,29.21,4.6,50.04,30.97,39.63,17.78,0,1,#f2b98c
-item,Transport,Long-distance transport,4133,3.83,50.04,4.6,57.46,30.97,53.75,17.78,1,1,#f2b98c
-group,Accommodation,Accommodation,30035,27.8,0,30.97,57.46,60.0,0.6,33.27,0,1,#0b5c8f
-item,Accommodation,Accommodation,30035,27.8,0,35.57,57.46,60.0,28.73,47.78,0,0,#9ccbe8
-group,Food and drink,Food and drink,27429,25.39,57.46,0,100.0,35.8,58.06,2.3,0,1,#00795a
-item,Food and drink,Restaurants and takeaways,16226,15.02,57.46,4.6,82.62,35.8,70.04,20.2,1,1,#8dd3ba
-item,Food and drink,Groceries,6268,5.8,82.62,4.6,100.0,22.06,91.31,13.33,0,1,#8dd3ba
-item,Food and drink,Alcohol and drinks,4935,4.57,82.62,22.06,100.0,35.8,91.31,28.93,1,1,#8dd3ba
-group,Shopping and leisure,Shopping and leisure,10251,9.49,57.46,35.8,80.98,60.0,58.06,38.1,0,1,#9c3f7f
-item,Shopping and leisure,Shopping,5811,5.38,57.46,40.4,70.79,60.0,64.12,50.2,0,1,#e3b0d3
-item,Shopping and leisure,Entertainment,2643,2.45,70.79,40.4,80.98,52.07,75.89,46.24,1,1,#e3b0d3
-item,Shopping and leisure,Package tours,1797,1.66,70.79,52.07,80.98,60.0,75.89,56.03,1,1,#e3b0d3
-group,Other,Other,8285,7.67,80.98,35.8,100.0,60.0,81.58,38.1,0,1,#5c5c5c
-item,Other,All other items,8285,7.67,80.98,40.4,100.0,60.0,90.49,50.2,1,0,#d4d4d4
+group,Transport,Transport,32041,29.66,0,0,57.46,30.97,0.6,0.0,0,1,#b34700
+item,Transport,Domestic airfares,16291,15.08,0,0,29.21,30.97,14.61,15.48,0,1,#b34700
+item,Transport,Petrol,11617,10.75,29.21,0,57.46,22.84,43.33,11.42,0,1,#b34700
+item,Transport,Long-distance transport,4133,3.83,29.21,22.84,57.46,30.97,43.33,26.91,0,1,#b34700
+group,Accommodation,Accommodation,30035,27.8,0,30.97,57.46,60.0,0.6,30.97,0,1,#0b5c8f
+item,Accommodation,Accommodation,30035,27.8,0,30.97,57.46,60.0,28.73,45.48,0,1,#0b5c8f
+group,Food and drink,Food and drink,27429,25.39,57.46,0,100.0,35.8,58.06,0.0,0,1,#00795a
+item,Food and drink,Restaurants and takeaways,16226,15.02,57.46,0,82.62,35.8,70.04,17.9,1,1,#00795a
+item,Food and drink,Groceries,6268,5.8,82.62,0,100.0,20.03,91.31,10.02,0,1,#00795a
+item,Food and drink,Alcohol and drinks,4935,4.57,82.62,20.03,100.0,35.8,91.31,27.92,1,1,#00795a
+group,Shopping and leisure,Shopping and leisure,10251,9.49,57.46,35.8,80.98,60.0,58.06,35.8,0,1,#9c3f7f
+item,Shopping and leisure,Shopping,5811,5.38,57.46,35.8,80.98,49.52,69.22,42.66,0,1,#9c3f7f
+item,Shopping and leisure,Entertainment,2643,2.45,57.46,49.52,71.46,60.0,64.46,54.76,1,1,#9c3f7f
+item,Shopping and leisure,Package tours,1797,1.66,71.46,49.52,80.98,60.0,76.22,54.76,1,1,#9c3f7f
+group,Other,Other,8285,7.67,80.98,35.8,100.0,60.0,81.58,35.8,0,1,#5c5c5c
+item,Other,All other items,8285,7.67,80.98,35.8,100.0,60.0,90.49,47.9,1,1,#5c5c5c

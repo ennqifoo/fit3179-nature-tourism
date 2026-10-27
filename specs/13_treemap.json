@@ -65,13 +65,13 @@
   {
    "transform": [
     {
-     "filter": "datum.level=='group'"
+     "filter": "datum.level=='item'"
     }
    ],
    "mark": {
     "type": "rect",
     "stroke": "white",
-    "strokeWidth": 4
+    "strokeWidth": 2
    },
    "encoding": {
     "color": {
@@ -104,49 +104,13 @@
       "labelLimit": 240
      }
     },
-    "tooltip": [
-     {
-      "field": "group",
-      "title": "Group"
-     },
-     {
-      "field": "spend_m",
-      "title": "Spend ($ million)",
-      "format": ","
-     },
-     {
-      "field": "share",
-      "title": "Share of spending (%)",
-      "format": ".1f"
-     }
-    ]
-   }
-  },
-  {
-   "transform": [
-    {
-     "filter": "datum.level=='item'"
-    }
-   ],
-   "mark": {
-    "type": "rect",
-    "stroke": "white",
-    "strokeWidth": 2
-   },
-   "encoding": {
-    "color": {
-     "field": "fill",
-     "type": "nominal",
-     "scale": null,
-     "legend": null
-    },
     "opacity": {
      "condition": {
       "param": "hv",
       "empty": false,
       "value": 1
      },
-     "value": 0.85
+     "value": 0.9
     },
     "tooltip": [
      {
@@ -190,39 +154,23 @@
     }
    ],
    "mark": {
-    "type": "text",
-    "align": "left",
-    "baseline": "middle",
-    "dx": 8,
-    "fontSize": 14,
-    "fontWeight": "bold",
-    "color": "white"
-   },
-   "encoding": {
-    "x": {
-     "field": "x0",
-     "type": "quantitative"
-    },
-    "y": {
-     "field": "cy",
-     "type": "quantitative"
-    },
-    "text": {
-     "field": "lbl"
-    }
+    "type": "rect",
+    "fill": null,
+    "stroke": "white",
+    "strokeWidth": 6
    }
   },
   {
    "transform": [
     {
-     "filter": "datum.level=='item' && datum.show_label==1"
+     "filter": "datum.level=='item'"
     }
    ],
    "mark": {
     "type": "text",
-    "fontSize": 12,
+    "fontSize": 13,
     "fontWeight": "bold",
-    "color": "#1f2933",
+    "color": "white",
     "lineHeight": 15
    },
    "encoding": {
