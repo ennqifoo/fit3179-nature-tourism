@@ -139,7 +139,41 @@
      "type": "quantitative",
      "format": "+.1f"
     }
-   }
+   },
+   "transform": [
+    {
+     "filter": "datum.change_pct>=0"
+    }
+   ]
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "dx": -4,
+    "fontSize": 13
+   },
+   "encoding": {
+    "y": {
+     "field": "state",
+     "type": "nominal",
+     "sort": "-x"
+    },
+    "x": {
+     "field": "change_pct",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "change_pct",
+     "type": "quantitative",
+     "format": "+.1f"
+    }
+   },
+   "transform": [
+    {
+     "filter": "datum.change_pct<0"
+    }
+   ]
   }
  ],
  "config": {
