@@ -1,7 +1,7 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 430,
+ "height": 470,
  "autosize": {
   "type": "fit-x",
   "contains": "padding"
@@ -75,10 +75,34 @@
    },
    "encoding": {
     "color": {
-     "field": "fill",
+     "field": "group",
      "type": "nominal",
-     "scale": null,
-     "legend": null
+     "scale": {
+      "domain": [
+       "Transport",
+       "Accommodation",
+       "Food and drink",
+       "Shopping and leisure",
+       "Other"
+      ],
+      "range": [
+       "#b34700",
+       "#0b5c8f",
+       "#00795a",
+       "#9c3f7f",
+       "#5c5c5c"
+      ]
+     },
+     "legend": {
+      "title": "Spending group",
+      "orient": "bottom",
+      "symbolType": "square",
+      "symbolSize": 180,
+      "columns": 3,
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "labelLimit": 240
+     }
     },
     "tooltip": [
      {
@@ -196,7 +220,7 @@
    ],
    "mark": {
     "type": "text",
-    "fontSize": 13,
+    "fontSize": 12,
     "fontWeight": "bold",
     "color": "#1f2933",
     "lineHeight": 15
