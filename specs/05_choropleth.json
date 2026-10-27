@@ -1,7 +1,7 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 520,
+ "height": 585,
  "title": {
   "text": [
    "Desert and outback regions are furthest behind their 2019",

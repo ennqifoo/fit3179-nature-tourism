@@ -1,7 +1,7 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 395,
+ "height": 555,
  "title": {
   "text": [
    "Northern Territory visitors now spend the most per trip,",
