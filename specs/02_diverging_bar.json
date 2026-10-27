@@ -40,7 +40,16 @@
     "y": {
      "field": "state",
      "type": "nominal",
-     "sort": "-x",
+     "sort": [
+      "Queensland",
+      "Western Australia",
+      "New South Wales",
+      "Australian Capital Territory",
+      "Victoria",
+      "Tasmania",
+      "South Australia",
+      "Northern Territory"
+     ],
      "title": null
     },
     "x": {
@@ -128,7 +137,16 @@
     "y": {
      "field": "state",
      "type": "nominal",
-     "sort": "-x"
+     "sort": [
+      "Queensland",
+      "Western Australia",
+      "New South Wales",
+      "Australian Capital Territory",
+      "Victoria",
+      "Tasmania",
+      "South Australia",
+      "Northern Territory"
+     ]
     },
     "x": {
      "field": "change_pct",
@@ -157,7 +175,16 @@
     "y": {
      "field": "state",
      "type": "nominal",
-     "sort": "-x"
+     "sort": [
+      "Queensland",
+      "Western Australia",
+      "New South Wales",
+      "Australian Capital Territory",
+      "Victoria",
+      "Tasmania",
+      "South Australia",
+      "Northern Territory"
+     ]
     },
     "x": {
      "field": "change_pct",
