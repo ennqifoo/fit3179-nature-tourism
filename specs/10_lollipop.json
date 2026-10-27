@@ -1,7 +1,7 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 420,
+ "height": 475,
  "title": {
   "text": [
    "Tasmania's North West and Victoria's Lakes lead the",
@@ -62,11 +62,34 @@
      "field": "change_pct"
     },
     "color": {
-     "condition": {
-      "test": "datum.change_pct>=17",
-      "value": "#d4a017"
+     "field": "state",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Victoria",
+       "Queensland",
+       "New South Wales",
+       "South Australia",
+       "Tasmania",
+       "Western Australia"
+      ],
+      "range": [
+       "#0072B2",
+       "#E69F00",
+       "#009E73",
+       "#CC79A7",
+       "#5e3c99",
+       "#8c510a"
+      ]
      },
-     "value": "#bdbdbd"
+     "legend": {
+      "title": "State",
+      "orient": "bottom",
+      "symbolType": "circle",
+      "symbolSize": 140,
+      "columns": 3,
+      "labelLimit": 200
+     }
     }
    }
   },
@@ -107,11 +130,34 @@
      "type": "quantitative"
     },
     "color": {
-     "condition": {
-      "test": "datum.change_pct>=17",
-      "value": "#d4a017"
+     "field": "state",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Victoria",
+       "Queensland",
+       "New South Wales",
+       "South Australia",
+       "Tasmania",
+       "Western Australia"
+      ],
+      "range": [
+       "#0072B2",
+       "#E69F00",
+       "#009E73",
+       "#CC79A7",
+       "#5e3c99",
+       "#8c510a"
+      ]
      },
-     "value": "#bdbdbd"
+     "legend": {
+      "title": "State",
+      "orient": "bottom",
+      "symbolType": "circle",
+      "symbolSize": 140,
+      "columns": 3,
+      "labelLimit": 200
+     }
     },
     "tooltip": [
      {

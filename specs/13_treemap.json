@@ -8,77 +8,113 @@
  },
  "title": {
   "text": [
-   "Accommodation, flights and eating out take 58% of visitor",
-   "spending"
+   "Transport, accommodation and food take 83% of",
+   "visitor spending"
   ],
   "subtitle": [
-   "Domestic overnight trip expenditure by item, year ending June 2026 (rectangle",
-   "area = $ spent)"
+   "Domestic overnight trip spending, year ending June 2026. Colour = spending",
+   "group; rectangle area = dollars spent."
   ],
   "anchor": "start"
  },
  "data": {
-  "url": "data/dots_spend_items.csv"
+  "url": "data/spend_treemap.csv"
  },
  "transform": [
   {
-   "calculate": "datum.item=='Accommodation' ? 'hero' : (datum.item=='Domestic airfares' ? 'second' : 'rest')",
-   "as": "grp"
+   "calculate": "datum.item+' '+format(datum.share,'.0f')+'%'",
+   "as": "txt"
   },
   {
-   "calculate": "datum.item+' '+format(datum.share,'.0f')+'%'",
+   "calculate": "datum.wrap==1 ? split(datum.txt,' ') : datum.txt",
    "as": "lbl"
   }
  ],
+ "encoding": {
+  "x": {
+   "field": "x0",
+   "type": "quantitative",
+   "scale": {
+    "domain": [
+     0,
+     100
+    ]
+   },
+   "axis": null
+  },
+  "x2": {
+   "field": "x1"
+  },
+  "y": {
+   "field": "y0",
+   "type": "quantitative",
+   "scale": {
+    "domain": [
+     0,
+     60
+    ],
+    "reverse": true
+   },
+   "axis": null
+  },
+  "y2": {
+   "field": "y1"
+  }
+ },
  "layer": [
   {
+   "transform": [
+    {
+     "filter": "datum.level=='group'"
+    }
+   ],
    "mark": {
     "type": "rect",
     "stroke": "white",
-    "strokeWidth": 3
+    "strokeWidth": 4
    },
    "encoding": {
-    "x": {
-     "field": "x0",
-     "type": "quantitative",
-     "scale": {
-      "domain": [
-       0,
-       100
-      ]
-     },
-     "axis": null
-    },
-    "x2": {
-     "field": "x1"
-    },
-    "y": {
-     "field": "y0",
-     "type": "quantitative",
-     "scale": {
-      "domain": [
-       0,
-       60
-      ],
-      "reverse": true
-     },
-     "axis": null
-    },
-    "y2": {
-     "field": "y1"
-    },
     "color": {
-     "condition": [
-      {
-       "test": "datum.grp=='hero'",
-       "value": "#c2185b"
-      },
-      {
-       "test": "datum.grp=='second'",
-       "value": "#e57fa6"
-      }
-     ],
-     "value": "#d9d9d9"
+     "field": "fill",
+     "type": "nominal",
+     "scale": null,
+     "legend": null
+    },
+    "tooltip": [
+     {
+      "field": "group",
+      "title": "Group"
+     },
+     {
+      "field": "spend_m",
+      "title": "Spend ($ million)",
+      "format": ","
+     },
+     {
+      "field": "share",
+      "title": "Share of spending (%)",
+      "format": ".1f"
+     }
+    ]
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.level=='item'"
+    }
+   ],
+   "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "color": {
+     "field": "fill",
+     "type": "nominal",
+     "scale": null,
+     "legend": null
     },
     "opacity": {
      "condition": {
@@ -86,21 +122,26 @@
       "empty": false,
       "value": 1
      },
-     "value": 0.9
+     "value": 0.85
     },
     "tooltip": [
+     {
+      "field": "group",
+      "title": "Group"
+     },
      {
       "field": "item",
       "title": "Item"
      },
      {
       "field": "spend_m",
-      "title": "Spend ($M)",
+      "title": "Spend ($ million)",
       "format": ","
      },
      {
       "field": "share",
-      "title": "Share (%)"
+      "title": "Share of spending (%)",
+      "format": ".1f"
      }
     ]
    },
@@ -119,17 +160,47 @@
    ]
   },
   {
-   "mark": {
-    "type": "text",
-    "fontSize": 14,
-    "fontWeight": "bold",
-    "limit": 400
-   },
    "transform": [
     {
-     "filter": "datum.show_label==1"
+     "filter": "datum.level=='group'"
     }
    ],
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "baseline": "middle",
+    "dx": 8,
+    "fontSize": 14,
+    "fontWeight": "bold",
+    "color": "white"
+   },
+   "encoding": {
+    "x": {
+     "field": "x0",
+     "type": "quantitative"
+    },
+    "y": {
+     "field": "cy",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lbl"
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.level=='item' && datum.show_label==1"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "color": "#1f2933",
+    "lineHeight": 15
+   },
    "encoding": {
     "x": {
      "field": "cx",
@@ -141,13 +212,6 @@
     },
     "text": {
      "field": "lbl"
-    },
-    "color": {
-     "condition": {
-      "test": "datum.grp=='hero'||datum.grp=='second'",
-      "value": "white"
-     },
-     "value": "#222"
     }
    }
   }
