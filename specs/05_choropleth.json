@@ -8,10 +8,9 @@
    "levels"
   ],
   "subtitle": [
-   "Overnight trips by Australian residents, by tourism region, as a % of the 2019 level.",
-   "Drag the slider to change the year.",
-   "In 2024, 29 of 72 regions with data are above 2019. Kakadu (NT) is at 59% and Alice",
-   "Springs at 67%."
+   "Overnight trips by Australian residents, by tourism region, as a % of the 2019",
+   "level. Drag the slider to change the year. In 2024, 29 of 72 regions with data",
+   "are above 2019. Kakadu (Northern Territory) is at 59% and Alice Springs at 67%."
   ],
   "anchor": "start"
  },
@@ -157,7 +156,7 @@
      {
       "field": "trips_000",
       "type": "quantitative",
-      "title": "Trips ('000)",
+      "title": "Trips (thousands)",
       "format": ",.0f"
      },
      {

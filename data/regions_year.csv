@@ -1,825 +1,825 @@
 name,state,year,trips_000,index_2019
-Blue Mountains,NSW,2014,834.8,63.6
-Blue Mountains,NSW,2015,885.8,67.4
-Blue Mountains,NSW,2016,968.1,73.7
-Blue Mountains,NSW,2017,1080.6,82.3
-Blue Mountains,NSW,2018,1155.3,88.0
-Blue Mountains,NSW,2019,1313.3,100.0
-Blue Mountains,NSW,2020,946.9,72.1
-Blue Mountains,NSW,2021,952.8,72.5
-Blue Mountains,NSW,2022,1352.7,103.0
-Blue Mountains,NSW,2023,1241.7,94.5
-Blue Mountains,NSW,2024,1265.4,96.4
-Southern Tablelands,NSW,2014,1032.7,59.6
-Southern Tablelands,NSW,2015,1155.4,66.6
-Southern Tablelands,NSW,2016,1207.2,69.6
-Southern Tablelands,NSW,2017,1341.0,77.4
-Southern Tablelands,NSW,2018,1513.2,87.3
-Southern Tablelands,NSW,2019,1733.6,100.0
-Southern Tablelands,NSW,2020,1177.6,67.9
-Southern Tablelands,NSW,2021,1267.9,73.1
-Southern Tablelands,NSW,2022,1641.7,94.7
-Southern Tablelands,NSW,2023,1616.5,93.2
-Southern Tablelands,NSW,2024,2023.1,116.7
-Sydney,NSW,2014,8244.8,65.2
-Sydney,NSW,2015,8664.3,68.5
-Sydney,NSW,2016,9155.5,72.3
-Sydney,NSW,2017,10130.2,80.0
-Sydney,NSW,2018,11102.4,87.7
-Sydney,NSW,2019,12654.9,100.0
-Sydney,NSW,2020,5622.5,44.4
-Sydney,NSW,2021,5531.5,43.7
-Sydney,NSW,2022,10377.4,82.0
-Sydney,NSW,2023,10867.5,85.9
-Sydney,NSW,2024,11338.1,89.6
-Hunter,NSW,2014,2983.4,64.6
-Hunter,NSW,2015,3148.5,68.1
-Hunter,NSW,2016,3335.8,72.2
-Hunter,NSW,2017,3715.3,80.4
-Hunter,NSW,2018,3913.0,84.7
-Hunter,NSW,2019,4620.8,100.0
-Hunter,NSW,2020,3068.0,66.4
-Hunter,NSW,2021,3079.5,66.6
-Hunter,NSW,2022,4296.3,93.0
-Hunter,NSW,2023,4800.3,103.9
-Hunter,NSW,2024,4465.0,96.6
-New England North West,NSW,2014,1341.2,76.8
-New England North West,NSW,2015,1344.9,77.0
-New England North West,NSW,2016,1497.0,85.7
-New England North West,NSW,2017,1661.5,95.2
-New England North West,NSW,2018,1618.1,92.7
-New England North West,NSW,2019,1746.0,100.0
-New England North West,NSW,2020,1119.9,64.1
-New England North West,NSW,2021,1340.3,76.8
-New England North West,NSW,2022,1658.7,95.0
-New England North West,NSW,2023,1857.2,106.4
-New England North West,NSW,2024,1748.8,100.2
-Central Coast,NSW,2014,1248.1,64.4
-Central Coast,NSW,2015,1267.6,65.4
-Central Coast,NSW,2016,1301.8,67.1
-Central Coast,NSW,2017,1466.4,75.6
-Central Coast,NSW,2018,1401.1,72.3
-Central Coast,NSW,2019,1939.1,100.0
-Central Coast,NSW,2020,1521.3,78.5
-Central Coast,NSW,2021,1374.6,70.9
-Central Coast,NSW,2022,1646.8,84.9
-Central Coast,NSW,2023,1802.3,92.9
-Central Coast,NSW,2024,1796.6,92.7
-Central NSW,NSW,2014,1917.6,67.6
-Central NSW,NSW,2015,1986.4,70.1
-Central NSW,NSW,2016,2100.8,74.1
-Central NSW,NSW,2017,2597.1,91.6
-Central NSW,NSW,2018,2902.9,102.4
-Central NSW,NSW,2019,2835.6,100.0
-Central NSW,NSW,2020,2171.5,76.6
-Central NSW,NSW,2021,2018.0,71.2
-Central NSW,NSW,2022,2625.1,92.6
-Central NSW,NSW,2023,2966.2,104.6
-Central NSW,NSW,2024,2771.5,97.7
-Limestone Coast,SA,2014,456.0,62.5
-Limestone Coast,SA,2015,538.7,73.8
-Limestone Coast,SA,2016,521.1,71.4
-Limestone Coast,SA,2017,589.0,80.7
-Limestone Coast,SA,2018,612.5,83.9
-Limestone Coast,SA,2019,729.6,100.0
-Limestone Coast,SA,2020,499.7,68.5
-Limestone Coast,SA,2021,609.7,83.6
-Limestone Coast,SA,2022,609.0,83.5
-Limestone Coast,SA,2023,726.9,99.6
-Limestone Coast,SA,2024,775.0,106.2
-"Murray River, Lakes and Coorong",SA,2014,317.3,71.5
-"Murray River, Lakes and Coorong",SA,2015,276.9,62.4
-"Murray River, Lakes and Coorong",SA,2016,321.3,72.4
-"Murray River, Lakes and Coorong",SA,2017,289.9,65.3
-"Murray River, Lakes and Coorong",SA,2018,340.8,76.8
-"Murray River, Lakes and Coorong",SA,2019,443.9,100.0
-"Murray River, Lakes and Coorong",SA,2020,364.4,82.1
-"Murray River, Lakes and Coorong",SA,2021,390.6,88.0
-"Murray River, Lakes and Coorong",SA,2022,379.3,85.4
-"Murray River, Lakes and Coorong",SA,2023,356.1,80.2
-"Murray River, Lakes and Coorong",SA,2024,381.9,86.0
-Eyre Peninsula,SA,2014,366.7,65.5
-Eyre Peninsula,SA,2015,416.5,74.4
-Eyre Peninsula,SA,2016,414.0,74.0
-Eyre Peninsula,SA,2017,383.3,68.5
-Eyre Peninsula,SA,2018,408.5,73.0
-Eyre Peninsula,SA,2019,559.6,100.0
-Eyre Peninsula,SA,2020,345.7,61.8
-Eyre Peninsula,SA,2021,483.9,86.5
-Eyre Peninsula,SA,2022,494.6,88.4
-Eyre Peninsula,SA,2023,519.1,92.8
-Eyre Peninsula,SA,2024,441.7,78.9
-Fleurieu Peninsula,SA,2014,669.3,77.0
-Fleurieu Peninsula,SA,2015,685.8,78.9
-Fleurieu Peninsula,SA,2016,742.9,85.4
-Fleurieu Peninsula,SA,2017,690.8,79.5
-Fleurieu Peninsula,SA,2018,672.9,77.4
-Fleurieu Peninsula,SA,2019,869.5,100.0
-Fleurieu Peninsula,SA,2020,867.1,99.7
-Fleurieu Peninsula,SA,2021,893.5,102.8
-Fleurieu Peninsula,SA,2022,775.7,89.2
-Fleurieu Peninsula,SA,2023,841.0,96.7
-Fleurieu Peninsula,SA,2024,698.6,80.4
-Riverland,SA,2014,311.3,74.2
-Riverland,SA,2015,359.1,85.6
-Riverland,SA,2016,343.9,81.9
-Riverland,SA,2017,427.8,101.9
-Riverland,SA,2018,368.2,87.7
-Riverland,SA,2019,419.7,100.0
-Riverland,SA,2020,334.3,79.7
-Riverland,SA,2021,345.1,82.2
-Riverland,SA,2022,410.2,97.7
-Riverland,SA,2023,317.5,75.6
-Riverland,SA,2024,456.3,108.7
-Yorke Peninsula,SA,2014,454.0,77.5
-Yorke Peninsula,SA,2015,482.5,82.3
-Yorke Peninsula,SA,2016,502.1,85.7
-Yorke Peninsula,SA,2017,583.7,99.6
-Yorke Peninsula,SA,2018,500.0,85.3
-Yorke Peninsula,SA,2019,585.9,100.0
-Yorke Peninsula,SA,2020,554.3,94.6
-Yorke Peninsula,SA,2021,619.7,105.8
-Yorke Peninsula,SA,2022,599.8,102.4
-Yorke Peninsula,SA,2023,522.7,89.2
-Yorke Peninsula,SA,2024,611.6,104.4
-Litchfield Kakadu Arnhem,NT,2014,265.2,80.4
-Litchfield Kakadu Arnhem,NT,2015,272.1,82.5
-Litchfield Kakadu Arnhem,NT,2016,306.3,92.8
-Litchfield Kakadu Arnhem,NT,2017,249.6,75.6
-Litchfield Kakadu Arnhem,NT,2018,296.9,90.0
-Litchfield Kakadu Arnhem,NT,2019,330.0,100.0
-Litchfield Kakadu Arnhem,NT,2020,242.2,73.4
-Litchfield Kakadu Arnhem,NT,2021,319.0,96.7
-Litchfield Kakadu Arnhem,NT,2022,334.1,101.3
-Litchfield Kakadu Arnhem,NT,2023,224.7,68.1
-Litchfield Kakadu Arnhem,NT,2024,196.0,59.4
-Barossa,SA,2014,195.6,64.4
-Barossa,SA,2015,183.6,60.5
-Barossa,SA,2016,195.6,64.4
-Barossa,SA,2017,207.0,68.2
-Barossa,SA,2018,227.3,74.9
-Barossa,SA,2019,303.6,100.0
-Barossa,SA,2020,193.3,63.7
-Barossa,SA,2021,229.8,75.7
-Barossa,SA,2022,315.8,104.0
-Barossa,SA,2023,334.0,110.0
-Barossa,SA,2024,231.9,76.4
-Katherine Daly,NT,2014,300.4,107.2
-Katherine Daly,NT,2015,308.9,110.3
-Katherine Daly,NT,2016,287.7,102.7
-Katherine Daly,NT,2017,308.8,110.2
-Katherine Daly,NT,2018,333.7,119.1
-Katherine Daly,NT,2019,280.1,100.0
-Katherine Daly,NT,2020,217.4,77.6
-Katherine Daly,NT,2021,256.2,91.5
-Katherine Daly,NT,2022,378.5,135.1
-Katherine Daly,NT,2023,275.0,98.2
-Katherine Daly,NT,2024,253.6,90.5
-Clare Valley,SA,2014,147.1,74.1
-Clare Valley,SA,2015,152.9,77.0
-Clare Valley,SA,2016,187.4,94.4
-Clare Valley,SA,2017,171.9,86.6
-Clare Valley,SA,2018,175.9,88.6
-Clare Valley,SA,2019,198.6,100.0
-Clare Valley,SA,2020,183.7,92.5
-Clare Valley,SA,2021,281.5,141.7
-Clare Valley,SA,2022,192.5,96.9
-Clare Valley,SA,2023,221.4,111.5
-Clare Valley,SA,2024,217.7,109.6
-Barkly,NT,2014,77.9,78.4
-Barkly,NT,2015,123.6,124.3
-Barkly,NT,2016,120.2,120.9
-Barkly,NT,2017,107.6,108.2
-Barkly,NT,2018,127.1,127.8
-Barkly,NT,2019,99.5,100.0
-Wimmera,VIC,2014,124.1,48.0
-Wimmera,VIC,2015,138.8,53.7
-Wimmera,VIC,2016,123.5,47.8
-Wimmera,VIC,2017,234.2,90.6
-Wimmera,VIC,2018,292.2,113.0
-Wimmera,VIC,2019,258.6,100.0
-Wimmera,VIC,2020,147.8,57.2
-Wimmera,VIC,2021,169.0,65.3
-Wimmera,VIC,2022,207.4,80.2
-Wimmera,VIC,2023,211.5,81.8
-Wimmera,VIC,2024,272.4,105.4
-Adelaide,SA,2014,2482.5,71.2
-Adelaide,SA,2015,2524.0,72.4
-Adelaide,SA,2016,2656.0,76.2
-Adelaide,SA,2017,2856.4,82.0
-Adelaide,SA,2018,2862.2,82.1
-Adelaide,SA,2019,3485.0,100.0
-Adelaide,SA,2020,1653.0,47.4
-Adelaide,SA,2021,1977.6,56.7
-Adelaide,SA,2022,2925.4,83.9
-Adelaide,SA,2023,3030.3,87.0
-Adelaide,SA,2024,3531.2,101.3
-Alice Springs,NT,2014,284.6,83.0
-Alice Springs,NT,2015,286.0,83.4
-Alice Springs,NT,2016,291.0,84.9
-Alice Springs,NT,2017,280.9,81.9
-Alice Springs,NT,2018,284.1,82.9
-Alice Springs,NT,2019,342.9,100.0
-Alice Springs,NT,2020,128.7,37.5
-Alice Springs,NT,2021,206.3,60.2
-Alice Springs,NT,2022,211.4,61.7
-Alice Springs,NT,2023,225.5,65.8
-Alice Springs,NT,2024,229.2,66.8
-Adelaide Hills,SA,2014,123.9,57.8
-Adelaide Hills,SA,2015,178.4,83.2
-Adelaide Hills,SA,2016,178.6,83.3
-Adelaide Hills,SA,2017,177.3,82.7
-Adelaide Hills,SA,2018,159.6,74.4
-Adelaide Hills,SA,2019,214.3,100.0
-Adelaide Hills,SA,2020,124.2,57.9
-Adelaide Hills,SA,2021,181.0,84.4
-Adelaide Hills,SA,2022,150.7,70.3
-Adelaide Hills,SA,2023,216.9,101.2
-Adelaide Hills,SA,2024,190.8,89.0
-Lasseter,NT,2014,185.1,65.5
-Lasseter,NT,2015,220.6,78.1
-Lasseter,NT,2016,207.4,73.4
-Lasseter,NT,2017,205.1,72.6
-Lasseter,NT,2018,206.1,72.9
-Lasseter,NT,2019,282.7,100.0
-Lasseter,NT,2021,158.9,56.2
-Lasseter,NT,2022,211.5,74.8
-Lasseter,NT,2023,210.8,74.6
-MacDonnell,NT,2015,67.8,59.2
-MacDonnell,NT,2016,72.3,63.1
-MacDonnell,NT,2017,115.3,100.6
-MacDonnell,NT,2018,48.1,42.0
-MacDonnell,NT,2019,114.6,100.0
-MacDonnell,NT,2021,106.0,92.5
-MacDonnell,NT,2022,102.2,89.2
-South Coast,NSW,2014,3250.6,71.2
-South Coast,NSW,2015,3390.4,74.3
-South Coast,NSW,2016,3598.6,78.9
-South Coast,NSW,2017,3859.3,84.6
-South Coast,NSW,2018,4142.8,90.8
-South Coast,NSW,2019,4562.8,100.0
-South Coast,NSW,2020,3726.5,81.7
-South Coast,NSW,2021,3530.7,77.4
-South Coast,NSW,2022,4651.1,101.9
-South Coast,NSW,2023,4826.4,105.8
-South Coast,NSW,2024,4493.5,98.5
-The Murray,NSW,2014,971.8,71.4
-The Murray,NSW,2015,1025.1,75.3
-The Murray,NSW,2016,1054.2,77.5
-The Murray,NSW,2017,1211.3,89.0
-The Murray,NSW,2018,1177.5,86.5
-The Murray,NSW,2019,1360.6,100.0
-The Murray,NSW,2020,722.4,53.1
-The Murray,NSW,2021,873.6,64.2
-The Murray,NSW,2022,1373.6,101.0
-The Murray,NSW,2023,1448.7,106.5
-The Murray,NSW,2024,1245.9,91.6
-Riverina,NSW,2014,968.3,78.7
-Riverina,NSW,2015,1056.3,85.8
-Riverina,NSW,2016,1075.5,87.4
-Riverina,NSW,2017,986.2,80.1
-Riverina,NSW,2018,1255.1,102.0
-Riverina,NSW,2019,1230.9,100.0
-Riverina,NSW,2020,811.4,65.9
-Riverina,NSW,2021,857.9,69.7
-Riverina,NSW,2022,1352.1,109.8
-Riverina,NSW,2023,1218.3,99.0
-Riverina,NSW,2024,1261.1,102.5
-Snowy Mountains,NSW,2014,721.2,75.3
-Snowy Mountains,NSW,2015,785.4,82.1
-Snowy Mountains,NSW,2016,800.0,83.6
-Snowy Mountains,NSW,2017,953.3,99.6
-Snowy Mountains,NSW,2018,1017.5,106.3
-Snowy Mountains,NSW,2019,957.1,100.0
-Snowy Mountains,NSW,2020,673.7,70.4
-Snowy Mountains,NSW,2021,760.0,79.4
-Snowy Mountains,NSW,2022,1089.6,113.8
-Snowy Mountains,NSW,2023,982.8,102.7
-Snowy Mountains,NSW,2024,968.7,101.2
-Darwin,NT,2014,733.0,94.9
-Darwin,NT,2015,715.7,92.7
-Darwin,NT,2016,696.0,90.1
-Darwin,NT,2017,764.5,99.0
-Darwin,NT,2018,690.3,89.4
-Darwin,NT,2019,772.2,100.0
-Darwin,NT,2020,306.9,39.7
-Darwin,NT,2021,558.4,72.3
-Darwin,NT,2022,815.7,105.6
-Darwin,NT,2023,638.9,82.7
-Darwin,NT,2024,689.3,89.3
-Townsville,QLD,2014,1068.5,82.4
-Townsville,QLD,2015,1153.9,88.9
-Townsville,QLD,2016,1164.6,89.8
-Townsville,QLD,2017,1082.9,83.5
-Townsville,QLD,2018,1335.9,103.0
-Townsville,QLD,2019,1297.4,100.0
-Townsville,QLD,2020,796.7,61.4
-Townsville,QLD,2021,1049.3,80.9
-Townsville,QLD,2022,1208.3,93.1
-Townsville,QLD,2023,1144.6,88.2
-Townsville,QLD,2024,1279.3,98.6
-Outback Queensland,QLD,2014,839.6,72.9
-Outback Queensland,QLD,2015,854.2,74.1
-Outback Queensland,QLD,2016,930.1,80.7
-Outback Queensland,QLD,2017,1043.3,90.6
-Outback Queensland,QLD,2018,910.5,79.0
-Outback Queensland,QLD,2019,1152.0,100.0
-Outback Queensland,QLD,2020,853.7,74.1
-Outback Queensland,QLD,2021,931.8,80.9
-Outback Queensland,QLD,2022,955.9,83.0
-Outback Queensland,QLD,2023,961.5,83.5
-Outback Queensland,QLD,2024,1107.0,96.1
-Gold Coast,QLD,2014,3219.6,76.6
-Gold Coast,QLD,2015,3246.5,77.3
-Gold Coast,QLD,2016,3378.9,80.4
-Gold Coast,QLD,2017,3561.4,84.8
-Gold Coast,QLD,2018,3781.2,90.0
-Gold Coast,QLD,2019,4202.1,100.0
-Gold Coast,QLD,2020,2221.6,52.9
-Gold Coast,QLD,2021,3239.1,77.1
-Gold Coast,QLD,2022,4121.8,98.1
-Gold Coast,QLD,2023,4137.3,98.5
-Gold Coast,QLD,2024,4286.6,102.0
-Mackay,QLD,2014,774.9,72.8
-Mackay,QLD,2015,808.8,76.0
-Mackay,QLD,2016,865.4,81.3
-Mackay,QLD,2017,828.1,77.8
-Mackay,QLD,2018,1011.4,95.0
-Mackay,QLD,2019,1064.4,100.0
-Mackay,QLD,2020,939.4,88.3
-Mackay,QLD,2021,1106.4,103.9
-Mackay,QLD,2022,1181.2,111.0
-Mackay,QLD,2023,1110.6,104.3
-Mackay,QLD,2024,1160.8,109.1
-Sunshine Coast,QLD,2014,3246.7,80.2
-Sunshine Coast,QLD,2015,3270.2,80.8
-Sunshine Coast,QLD,2016,3392.0,83.8
-Sunshine Coast,QLD,2017,3407.7,84.2
-Sunshine Coast,QLD,2018,3621.8,89.5
-Sunshine Coast,QLD,2019,4048.0,100.0
-Sunshine Coast,QLD,2020,3033.9,74.9
-Sunshine Coast,QLD,2021,3514.6,86.8
-Sunshine Coast,QLD,2022,4214.8,104.1
-Sunshine Coast,QLD,2023,4193.2,103.6
-Sunshine Coast,QLD,2024,4028.0,99.5
-Brisbane,QLD,2014,5678.0,70.9
-Brisbane,QLD,2015,5952.7,74.3
-Brisbane,QLD,2016,6096.3,76.1
-Brisbane,QLD,2017,6754.9,84.3
-Brisbane,QLD,2018,7157.3,89.4
-Brisbane,QLD,2019,8009.8,100.0
-Brisbane,QLD,2020,4517.0,56.4
-Brisbane,QLD,2021,5098.8,63.7
-Brisbane,QLD,2022,7169.3,89.5
-Brisbane,QLD,2023,7325.3,91.5
-Brisbane,QLD,2024,8149.1,101.7
-Flinders Ranges and Outback,SA,2014,589.1,66.8
-Flinders Ranges and Outback,SA,2015,619.7,70.2
-Flinders Ranges and Outback,SA,2016,672.1,76.2
-Flinders Ranges and Outback,SA,2017,655.1,74.2
-Flinders Ranges and Outback,SA,2018,711.8,80.7
-Flinders Ranges and Outback,SA,2019,882.4,100.0
-Flinders Ranges and Outback,SA,2020,578.6,65.6
-Flinders Ranges and Outback,SA,2021,635.3,72.0
-Flinders Ranges and Outback,SA,2022,823.1,93.3
-Flinders Ranges and Outback,SA,2023,730.3,82.8
-Flinders Ranges and Outback,SA,2024,662.2,75.0
-Queensland Country,QLD,2014,2160.2,77.1
-Queensland Country,QLD,2015,2268.5,80.9
-Queensland Country,QLD,2016,2314.8,82.6
-Queensland Country,QLD,2017,2466.7,88.0
-Queensland Country,QLD,2018,2741.5,97.8
-Queensland Country,QLD,2019,2803.1,100.0
-Queensland Country,QLD,2020,2082.8,74.3
-Queensland Country,QLD,2021,2582.4,92.1
-Queensland Country,QLD,2022,3114.4,111.1
-Queensland Country,QLD,2023,2880.6,102.8
-Queensland Country,QLD,2024,3137.0,111.9
-Fraser Coast,QLD,2014,594.8,77.5
-Fraser Coast,QLD,2015,594.5,77.5
-Fraser Coast,QLD,2016,594.1,77.4
-Fraser Coast,QLD,2017,674.9,88.0
-Fraser Coast,QLD,2018,755.2,98.4
-Fraser Coast,QLD,2019,767.3,100.0
-Fraser Coast,QLD,2020,574.9,74.9
-Fraser Coast,QLD,2021,696.1,90.7
-Fraser Coast,QLD,2022,820.2,106.9
-Fraser Coast,QLD,2023,861.1,112.2
-Fraser Coast,QLD,2024,730.0,95.1
-Bundaberg,QLD,2014,540.4,71.1
-Bundaberg,QLD,2015,543.7,71.6
-Bundaberg,QLD,2016,554.2,72.9
-Bundaberg,QLD,2017,600.1,79.0
-Bundaberg,QLD,2018,673.1,88.6
-Bundaberg,QLD,2019,759.9,100.0
-Bundaberg,QLD,2020,580.4,76.4
-Bundaberg,QLD,2021,623.1,82.0
-Bundaberg,QLD,2022,680.4,89.5
-Bundaberg,QLD,2023,629.3,82.8
-Bundaberg,QLD,2024,706.4,93.0
-Kangaroo Island,SA,2014,95.3,61.5
-Kangaroo Island,SA,2015,103.7,67.0
-Kangaroo Island,SA,2016,111.2,71.8
-Kangaroo Island,SA,2017,101.7,65.7
-Kangaroo Island,SA,2018,118.5,76.5
-Kangaroo Island,SA,2019,154.8,100.0
-Kangaroo Island,SA,2020,143.4,92.6
-Kangaroo Island,SA,2021,188.8,121.9
-Kangaroo Island,SA,2022,157.7,101.8
-Kangaroo Island,SA,2023,179.0,115.6
-West Coast,TAS,2014,167.6,82.9
-West Coast,TAS,2015,131.4,65.0
-West Coast,TAS,2016,147.7,73.0
-West Coast,TAS,2017,168.7,83.4
-West Coast,TAS,2018,154.4,76.4
-West Coast,TAS,2019,202.3,100.0
-West Coast,TAS,2020,116.0,57.3
-West Coast,TAS,2021,168.6,83.4
-West Coast,TAS,2022,183.9,90.9
-West Coast,TAS,2023,182.9,90.4
-West Coast,TAS,2024,185.1,91.5
-Launceston and the North,TAS,2014,709.1,69.4
-Launceston and the North,TAS,2015,721.3,70.6
-Launceston and the North,TAS,2016,719.4,70.4
-Launceston and the North,TAS,2017,804.4,78.8
-Launceston and the North,TAS,2018,858.5,84.1
-Launceston and the North,TAS,2019,1021.2,100.0
-Launceston and the North,TAS,2020,589.0,57.7
-Launceston and the North,TAS,2021,926.8,90.8
-Launceston and the North,TAS,2022,878.9,86.1
-Launceston and the North,TAS,2023,974.7,95.5
-Launceston and the North,TAS,2024,987.3,96.7
-North West,TAS,2014,491.5,83.3
-North West,TAS,2015,498.7,84.5
-North West,TAS,2016,538.6,91.2
-North West,TAS,2017,596.4,101.0
-North West,TAS,2018,561.2,95.1
-North West,TAS,2019,590.3,100.0
-North West,TAS,2020,447.1,75.7
-North West,TAS,2021,475.3,80.5
-North West,TAS,2022,624.5,105.8
-North West,TAS,2023,584.6,99.0
-North West,TAS,2024,705.6,119.5
-Hobart and the South,TAS,2014,1224.1,70.1
-Hobart and the South,TAS,2015,1201.4,68.8
-Hobart and the South,TAS,2016,1279.6,73.2
-Hobart and the South,TAS,2017,1401.6,80.2
-Hobart and the South,TAS,2018,1643.7,94.1
-Hobart and the South,TAS,2019,1747.0,100.0
-Hobart and the South,TAS,2020,1015.2,58.1
-Hobart and the South,TAS,2021,1369.4,78.4
-Hobart and the South,TAS,2022,1657.7,94.9
-Hobart and the South,TAS,2023,1613.8,92.4
-Hobart and the South,TAS,2024,1578.1,90.3
-East Coast,TAS,2014,372.0,72.8
-East Coast,TAS,2015,374.2,73.2
-East Coast,TAS,2016,373.4,73.1
-East Coast,TAS,2017,431.6,84.5
-East Coast,TAS,2018,490.8,96.1
-East Coast,TAS,2019,510.9,100.0
-East Coast,TAS,2020,466.3,91.3
-East Coast,TAS,2021,465.9,91.2
-East Coast,TAS,2022,470.9,92.2
-East Coast,TAS,2023,409.2,80.1
-East Coast,TAS,2024,462.0,90.4
-Tropical North Queensland,QLD,2014,1761.2,79.4
-Tropical North Queensland,QLD,2015,1820.1,82.1
-Tropical North Queensland,QLD,2016,1899.5,85.6
-Tropical North Queensland,QLD,2017,1823.0,82.2
-Tropical North Queensland,QLD,2018,2024.3,91.3
-Tropical North Queensland,QLD,2019,2217.7,100.0
-Tropical North Queensland,QLD,2020,1447.9,65.3
-Tropical North Queensland,QLD,2021,1982.4,89.4
-Tropical North Queensland,QLD,2022,2525.4,113.9
-Tropical North Queensland,QLD,2023,2284.6,103.0
-Tropical North Queensland,QLD,2024,2161.5,97.5
-Victoria's High Country,VIC,2014,1557.2,64.7
-Victoria's High Country,VIC,2015,1648.4,68.5
-Victoria's High Country,VIC,2016,1694.7,70.4
-Victoria's High Country,VIC,2017,2083.3,86.6
-Victoria's High Country,VIC,2018,2151.6,89.4
-Victoria's High Country,VIC,2019,2405.8,100.0
-Victoria's High Country,VIC,2020,977.5,40.6
-Victoria's High Country,VIC,2021,1856.5,77.2
-Victoria's High Country,VIC,2022,2503.5,104.1
-Victoria's High Country,VIC,2023,2622.1,109.0
-Victoria's High Country,VIC,2024,2438.3,101.4
-Lakes,VIC,2014,609.7,73.5
-Lakes,VIC,2015,641.5,77.4
-Lakes,VIC,2016,691.4,83.4
-Lakes,VIC,2017,793.5,95.7
-Lakes,VIC,2018,820.4,98.9
-Lakes,VIC,2019,829.1,100.0
-Lakes,VIC,2020,633.7,76.4
-Lakes,VIC,2021,704.3,85.0
-Lakes,VIC,2022,797.4,96.2
-Lakes,VIC,2023,850.8,102.6
-Lakes,VIC,2024,972.7,117.3
-Whitsundays,QLD,2014,470.2,74.5
-Whitsundays,QLD,2015,476.8,75.6
-Whitsundays,QLD,2016,454.9,72.1
-Whitsundays,QLD,2017,538.7,85.4
-Whitsundays,QLD,2018,639.8,101.4
-Whitsundays,QLD,2019,631.1,100.0
-Whitsundays,QLD,2020,532.1,84.3
-Whitsundays,QLD,2021,791.4,125.4
-Whitsundays,QLD,2022,850.5,134.8
-Whitsundays,QLD,2023,724.0,114.7
-Whitsundays,QLD,2024,709.1,112.4
-Gippsland,VIC,2014,959.2,66.8
-Gippsland,VIC,2015,995.4,69.3
-Gippsland,VIC,2016,1021.7,71.1
-Gippsland,VIC,2017,1472.2,102.5
-Gippsland,VIC,2018,1291.5,89.9
-Gippsland,VIC,2019,1436.1,100.0
-Gippsland,VIC,2020,1126.5,78.4
-Gippsland,VIC,2021,1206.9,84.0
-Gippsland,VIC,2022,1559.0,108.6
-Gippsland,VIC,2023,1509.4,105.1
-Gippsland,VIC,2024,1638.4,114.1
-Goulburn,VIC,2014,505.9,73.3
-Goulburn,VIC,2015,513.3,74.4
-Goulburn,VIC,2016,501.1,72.6
-Goulburn,VIC,2017,744.5,107.9
-Goulburn,VIC,2018,713.8,103.5
-Goulburn,VIC,2019,689.7,100.0
-Goulburn,VIC,2020,545.1,79.0
-Goulburn,VIC,2021,518.0,75.1
-Goulburn,VIC,2022,715.0,103.7
-Goulburn,VIC,2023,788.3,114.3
-Goulburn,VIC,2024,805.8,116.8
-Capricorn Coast,QLD,2014,681.8,89.5
-Capricorn Coast,QLD,2015,666.3,87.5
-Capricorn Coast,QLD,2016,715.1,93.9
-Capricorn Coast,QLD,2017,642.3,84.4
-Capricorn Coast,QLD,2018,799.5,105.0
-Capricorn Coast,QLD,2019,761.4,100.0
-Capricorn Coast,QLD,2020,657.3,86.3
-Capricorn Coast,QLD,2021,785.9,103.2
-Capricorn Coast,QLD,2022,873.0,114.7
-Capricorn Coast,QLD,2023,788.3,103.5
-Capricorn Coast,QLD,2024,842.0,110.6
-Gladstone,QLD,2014,450.3,79.9
-Gladstone,QLD,2015,495.2,87.9
-Gladstone,QLD,2016,475.4,84.4
-Gladstone,QLD,2017,460.4,81.7
-Gladstone,QLD,2018,407.3,72.3
-Gladstone,QLD,2019,563.3,100.0
-Gladstone,QLD,2020,414.8,73.6
-Gladstone,QLD,2021,579.6,102.9
-Gladstone,QLD,2022,512.4,91.0
-Gladstone,QLD,2023,529.1,93.9
-Gladstone,QLD,2024,497.2,88.3
-Melbourne,VIC,2014,7802.6,68.2
-Melbourne,VIC,2015,8080.0,70.7
-Melbourne,VIC,2016,8630.3,75.5
-Melbourne,VIC,2017,9460.9,82.7
-Melbourne,VIC,2018,10046.1,87.9
-Melbourne,VIC,2019,11435.4,100.0
-Melbourne,VIC,2020,3543.1,31.0
-Melbourne,VIC,2021,4361.7,38.1
-Melbourne,VIC,2022,8556.5,74.8
-Melbourne,VIC,2023,10257.1,89.7
-Melbourne,VIC,2024,10410.8,91.0
-Greater Ballarat,VIC,2014,615.8,62.1
-Greater Ballarat,VIC,2015,589.1,59.4
-Greater Ballarat,VIC,2016,680.1,68.6
-Greater Ballarat,VIC,2017,847.2,85.4
-Greater Ballarat,VIC,2018,749.4,75.6
-Greater Ballarat,VIC,2019,991.7,100.0
-Greater Ballarat,VIC,2020,433.2,43.7
-Greater Ballarat,VIC,2021,639.8,64.5
-Greater Ballarat,VIC,2022,803.3,81.0
-Greater Ballarat,VIC,2023,903.7,91.1
-Greater Ballarat,VIC,2024,1056.4,106.5
-Central Murray,VIC,2014,720.5,75.5
-Central Murray,VIC,2015,731.3,76.6
-Central Murray,VIC,2016,742.2,77.8
-Central Murray,VIC,2017,767.4,80.4
-Central Murray,VIC,2018,921.6,96.6
-Central Murray,VIC,2019,954.5,100.0
-Central Murray,VIC,2020,457.7,48.0
-Central Murray,VIC,2021,667.6,69.9
-Central Murray,VIC,2022,853.9,89.5
-Central Murray,VIC,2023,832.7,87.2
-Central Murray,VIC,2024,923.6,96.8
-Geelong and the Bellarine,VIC,2014,1163.2,69.7
-Geelong and the Bellarine,VIC,2015,1203.2,72.1
-Geelong and the Bellarine,VIC,2016,1345.4,80.6
-Geelong and the Bellarine,VIC,2017,1405.8,84.2
-Geelong and the Bellarine,VIC,2018,1414.3,84.7
-Geelong and the Bellarine,VIC,2019,1669.0,100.0
-Geelong and the Bellarine,VIC,2020,936.5,56.1
-Geelong and the Bellarine,VIC,2021,1086.2,65.1
-Geelong and the Bellarine,VIC,2022,1653.4,99.1
-Geelong and the Bellarine,VIC,2023,1754.5,105.1
-Geelong and the Bellarine,VIC,2024,1768.2,105.9
-Greater Bendigo,VIC,2014,894.3,68.0
-Greater Bendigo,VIC,2015,951.6,72.3
-Greater Bendigo,VIC,2016,1032.3,78.5
-Greater Bendigo,VIC,2017,1023.5,77.8
-Greater Bendigo,VIC,2018,1120.2,85.1
-Greater Bendigo,VIC,2019,1315.6,100.0
-Greater Bendigo,VIC,2020,623.1,47.4
-Greater Bendigo,VIC,2021,963.3,73.2
-Greater Bendigo,VIC,2022,1369.8,104.1
-Greater Bendigo,VIC,2023,1316.7,100.1
-Greater Bendigo,VIC,2024,1271.4,96.6
-Central Highlands,VIC,2014,277.0,60.7
-Central Highlands,VIC,2015,318.4,69.8
-Central Highlands,VIC,2016,345.8,75.8
-Central Highlands,VIC,2017,444.8,97.4
-Central Highlands,VIC,2018,392.5,86.0
-Central Highlands,VIC,2019,456.5,100.0
-Central Highlands,VIC,2020,292.1,64.0
-Central Highlands,VIC,2021,362.9,79.5
-Central Highlands,VIC,2022,516.8,113.2
-Central Highlands,VIC,2023,485.7,106.4
-Central Highlands,VIC,2024,525.1,115.0
-Australia's South West,WA,2014,2915.8,94.8
-Australia's South West,WA,2015,2900.5,94.3
-Australia's South West,WA,2016,2902.8,94.4
-Australia's South West,WA,2017,2741.4,89.1
-Australia's South West,WA,2018,2828.3,91.9
-Australia's South West,WA,2019,3076.3,100.0
-Australia's South West,WA,2020,2738.8,89.0
-Australia's South West,WA,2021,3194.4,103.8
-Australia's South West,WA,2022,3094.1,100.6
-Australia's South West,WA,2023,3205.2,104.2
-Australia's South West,WA,2024,3264.2,106.1
-Australia's Coral Coast,WA,2014,1097.1,106.0
-Australia's Coral Coast,WA,2015,1113.4,107.6
-Australia's Coral Coast,WA,2016,1097.2,106.0
-Australia's Coral Coast,WA,2017,936.0,90.5
-Australia's Coral Coast,WA,2018,928.6,89.7
-Australia's Coral Coast,WA,2019,1034.9,100.0
-Australia's Coral Coast,WA,2020,1054.2,101.9
-Australia's Coral Coast,WA,2021,1113.2,107.6
-Australia's Coral Coast,WA,2022,1062.7,102.7
-Australia's Coral Coast,WA,2023,1055.6,102.0
-Australia's Coral Coast,WA,2024,955.8,92.4
-Western Grampians,VIC,2014,302.2,70.5
-Western Grampians,VIC,2015,316.6,73.9
-Western Grampians,VIC,2016,334.9,78.2
-Western Grampians,VIC,2017,371.9,86.8
-Western Grampians,VIC,2018,461.0,107.6
-Western Grampians,VIC,2019,428.3,100.0
-Western Grampians,VIC,2020,258.7,60.4
-Western Grampians,VIC,2021,304.6,71.1
-Western Grampians,VIC,2022,365.4,85.3
-Western Grampians,VIC,2023,358.5,83.7
-Western Grampians,VIC,2024,378.4,88.3
-Australia's Golden Outback,WA,2014,1086.6,74.5
-Australia's Golden Outback,WA,2015,1095.1,75.1
-Australia's Golden Outback,WA,2016,1123.8,77.1
-Australia's Golden Outback,WA,2017,973.5,66.8
-Australia's Golden Outback,WA,2018,1018.4,69.8
-Australia's Golden Outback,WA,2019,1458.3,100.0
-Australia's Golden Outback,WA,2020,1085.2,74.4
-Australia's Golden Outback,WA,2021,1249.6,85.7
-Australia's Golden Outback,WA,2022,1246.5,85.5
-Australia's Golden Outback,WA,2023,1364.6,93.6
-Australia's Golden Outback,WA,2024,1368.6,93.8
-Australia's North West,WA,2014,1126.6,73.4
-Australia's North West,WA,2015,1184.9,77.2
-Australia's North West,WA,2016,1245.7,81.1
-Australia's North West,WA,2017,1095.1,71.3
-Australia's North West,WA,2018,1130.4,73.6
-Australia's North West,WA,2019,1535.3,100.0
-Australia's North West,WA,2020,1181.3,76.9
-Australia's North West,WA,2021,1425.3,92.8
-Australia's North West,WA,2022,1477.1,96.2
-Australia's North West,WA,2023,1526.6,99.4
-Australia's North West,WA,2024,1474.0,96.0
-Canberra,ACT,2014,2257.3,70.5
-Canberra,ACT,2015,2383.8,74.4
-Canberra,ACT,2016,2488.8,77.7
-Canberra,ACT,2017,2816.2,87.9
-Canberra,ACT,2018,2767.1,86.4
-Canberra,ACT,2019,3203.3,100.0
-Canberra,ACT,2020,1657.0,51.7
-Canberra,ACT,2021,1731.4,54.1
-Canberra,ACT,2022,3032.8,94.7
-Canberra,ACT,2023,3298.1,103.0
-Canberra,ACT,2024,3097.9,96.7
-Destination Perth,WA,2014,4077.0,86.6
-Destination Perth,WA,2015,4003.9,85.1
-Destination Perth,WA,2016,3980.7,84.6
-Destination Perth,WA,2017,3818.0,81.1
-Destination Perth,WA,2018,4516.8,96.0
-Destination Perth,WA,2019,4706.5,100.0
-Destination Perth,WA,2020,3127.2,66.4
-Destination Perth,WA,2021,3442.6,73.1
-Destination Perth,WA,2022,4343.8,92.3
-Destination Perth,WA,2023,4457.8,94.7
-Destination Perth,WA,2024,4449.2,94.5
-Great Ocean Road,VIC,2014,1771.3,63.8
-Great Ocean Road,VIC,2015,1836.2,66.2
-Great Ocean Road,VIC,2016,1901.7,68.5
-Great Ocean Road,VIC,2017,2270.4,81.8
-Great Ocean Road,VIC,2018,2267.6,81.7
-Great Ocean Road,VIC,2019,2775.6,100.0
-Great Ocean Road,VIC,2020,1603.6,57.8
-Great Ocean Road,VIC,2021,1944.9,70.1
-Great Ocean Road,VIC,2022,2417.4,87.1
-Great Ocean Road,VIC,2023,2442.7,88.0
-Great Ocean Road,VIC,2024,2465.3,88.8
-Outback NSW,NSW,2014,421.7,63.7
-Outback NSW,NSW,2015,432.4,65.3
-Outback NSW,NSW,2016,473.4,71.5
-Outback NSW,NSW,2017,518.9,78.4
-Outback NSW,NSW,2018,531.7,80.4
-Outback NSW,NSW,2019,661.6,100.0
-Outback NSW,NSW,2020,432.2,65.3
-Outback NSW,NSW,2021,453.0,68.5
-Outback NSW,NSW,2022,615.9,93.1
-Outback NSW,NSW,2023,604.4,91.3
-Outback NSW,NSW,2024,687.7,103.9
-Mallee,VIC,2014,674.7,78.7
-Mallee,VIC,2015,668.7,78.0
-Mallee,VIC,2016,726.8,84.7
-Mallee,VIC,2017,808.7,94.3
-Mallee,VIC,2018,793.1,92.5
-Mallee,VIC,2019,857.7,100.0
-Mallee,VIC,2020,390.1,45.5
-Mallee,VIC,2021,562.8,65.6
-Mallee,VIC,2022,706.9,82.4
-Mallee,VIC,2023,781.7,91.1
-Mallee,VIC,2024,872.9,101.8
-Yarra Valley and Dandenong Ranges,VIC,2014,528.3,63.3
-Yarra Valley and Dandenong Ranges,VIC,2015,553.5,66.3
-Yarra Valley and Dandenong Ranges,VIC,2016,626.6,75.1
-Yarra Valley and Dandenong Ranges,VIC,2017,681.3,81.6
-Yarra Valley and Dandenong Ranges,VIC,2018,628.5,75.3
-Yarra Valley and Dandenong Ranges,VIC,2019,834.6,100.0
-Yarra Valley and Dandenong Ranges,VIC,2020,413.7,49.6
-Yarra Valley and Dandenong Ranges,VIC,2021,571.9,68.5
-Yarra Valley and Dandenong Ranges,VIC,2022,784.1,94.0
-Yarra Valley and Dandenong Ranges,VIC,2023,799.3,95.8
-Yarra Valley and Dandenong Ranges,VIC,2024,792.1,94.9
-North Coast NSW,NSW,2014,4690.8,73.3
-North Coast NSW,NSW,2015,4888.4,76.4
-North Coast NSW,NSW,2016,5211.1,81.4
-North Coast NSW,NSW,2017,5169.6,80.7
-North Coast NSW,NSW,2018,5707.4,89.1
-North Coast NSW,NSW,2019,6402.4,100.0
-North Coast NSW,NSW,2020,4302.8,67.2
-North Coast NSW,NSW,2021,4321.7,67.5
-North Coast NSW,NSW,2022,5489.6,85.7
-North Coast NSW,NSW,2023,5632.4,88.0
-North Coast NSW,NSW,2024,6239.6,97.5
-Macedon,VIC,2014,256.2,62.7
-Macedon,VIC,2015,269.3,65.9
-Macedon,VIC,2016,313.2,76.6
-Macedon,VIC,2017,299.7,73.3
-Macedon,VIC,2018,351.6,86.0
-Macedon,VIC,2019,408.8,100.0
-Macedon,VIC,2020,180.8,44.2
-Macedon,VIC,2021,319.3,78.1
-Macedon,VIC,2022,445.6,109.0
-Macedon,VIC,2023,472.0,115.5
-Macedon,VIC,2024,373.8,91.4
-Phillip Island,VIC,2014,790.2,72.9
-Phillip Island,VIC,2015,797.4,73.5
-Phillip Island,VIC,2016,832.4,76.8
-Phillip Island,VIC,2017,966.1,89.1
-Phillip Island,VIC,2018,930.4,85.8
-Phillip Island,VIC,2019,1084.5,100.0
-Phillip Island,VIC,2020,585.4,54.0
-Phillip Island,VIC,2021,832.3,76.7
-Phillip Island,VIC,2022,1125.7,103.8
-Phillip Island,VIC,2023,1118.5,103.1
-Phillip Island,VIC,2024,1014.4,93.5
-Spa Country,VIC,2014,311.5,61.5
-Spa Country,VIC,2015,326.3,64.4
-Spa Country,VIC,2016,370.9,73.2
-Spa Country,VIC,2017,352.5,69.6
-Spa Country,VIC,2018,443.9,87.6
-Spa Country,VIC,2019,506.7,100.0
-Spa Country,VIC,2020,195.0,38.5
-Spa Country,VIC,2021,332.9,65.7
-Spa Country,VIC,2022,541.8,106.9
-Spa Country,VIC,2023,399.5,78.8
-Spa Country,VIC,2024,504.1,99.5
-Murray East,VIC,2014,196.0,91.4
-Murray East,VIC,2015,152.6,71.2
-Murray East,VIC,2016,170.5,79.5
-Murray East,VIC,2017,228.9,106.8
-Murray East,VIC,2018,169.5,79.1
-Murray East,VIC,2019,214.4,100.0
-Murray East,VIC,2020,95.6,44.6
-Murray East,VIC,2021,143.2,66.8
-Murray East,VIC,2022,221.5,103.3
-Murray East,VIC,2023,227.1,105.9
-Murray East,VIC,2024,252.6,117.8
-Mornington Peninsula,VIC,2014,1251.2,60.0
-Mornington Peninsula,VIC,2015,1302.2,62.5
-Mornington Peninsula,VIC,2016,1375.4,66.0
-Mornington Peninsula,VIC,2017,1680.0,80.6
-Mornington Peninsula,VIC,2018,1818.2,87.2
-Mornington Peninsula,VIC,2019,2085.2,100.0
-Mornington Peninsula,VIC,2020,1269.0,60.9
-Mornington Peninsula,VIC,2021,1603.5,76.9
-Mornington Peninsula,VIC,2022,1715.9,82.3
-Mornington Peninsula,VIC,2023,1931.0,92.6
-Mornington Peninsula,VIC,2024,2105.0,100.9
+Blue Mountains,New South Wales,2014,834.8,63.6
+Blue Mountains,New South Wales,2015,885.8,67.4
+Blue Mountains,New South Wales,2016,968.1,73.7
+Blue Mountains,New South Wales,2017,1080.6,82.3
+Blue Mountains,New South Wales,2018,1155.3,88.0
+Blue Mountains,New South Wales,2019,1313.3,100.0
+Blue Mountains,New South Wales,2020,946.9,72.1
+Blue Mountains,New South Wales,2021,952.8,72.5
+Blue Mountains,New South Wales,2022,1352.7,103.0
+Blue Mountains,New South Wales,2023,1241.7,94.5
+Blue Mountains,New South Wales,2024,1265.4,96.4
+Southern Tablelands,New South Wales,2014,1032.7,59.6
+Southern Tablelands,New South Wales,2015,1155.4,66.6
+Southern Tablelands,New South Wales,2016,1207.2,69.6
+Southern Tablelands,New South Wales,2017,1341.0,77.4
+Southern Tablelands,New South Wales,2018,1513.2,87.3
+Southern Tablelands,New South Wales,2019,1733.6,100.0
+Southern Tablelands,New South Wales,2020,1177.6,67.9
+Southern Tablelands,New South Wales,2021,1267.9,73.1
+Southern Tablelands,New South Wales,2022,1641.7,94.7
+Southern Tablelands,New South Wales,2023,1616.5,93.2
+Southern Tablelands,New South Wales,2024,2023.1,116.7
+Sydney,New South Wales,2014,8244.8,65.2
+Sydney,New South Wales,2015,8664.3,68.5
+Sydney,New South Wales,2016,9155.5,72.3
+Sydney,New South Wales,2017,10130.2,80.0
+Sydney,New South Wales,2018,11102.4,87.7
+Sydney,New South Wales,2019,12654.9,100.0
+Sydney,New South Wales,2020,5622.5,44.4
+Sydney,New South Wales,2021,5531.5,43.7
+Sydney,New South Wales,2022,10377.4,82.0
+Sydney,New South Wales,2023,10867.5,85.9
+Sydney,New South Wales,2024,11338.1,89.6
+Hunter,New South Wales,2014,2983.4,64.6
+Hunter,New South Wales,2015,3148.5,68.1
+Hunter,New South Wales,2016,3335.8,72.2
+Hunter,New South Wales,2017,3715.3,80.4
+Hunter,New South Wales,2018,3913.0,84.7
+Hunter,New South Wales,2019,4620.8,100.0
+Hunter,New South Wales,2020,3068.0,66.4
+Hunter,New South Wales,2021,3079.5,66.6
+Hunter,New South Wales,2022,4296.3,93.0
+Hunter,New South Wales,2023,4800.3,103.9
+Hunter,New South Wales,2024,4465.0,96.6
+New England North West,New South Wales,2014,1341.2,76.8
+New England North West,New South Wales,2015,1344.9,77.0
+New England North West,New South Wales,2016,1497.0,85.7
+New England North West,New South Wales,2017,1661.5,95.2
+New England North West,New South Wales,2018,1618.1,92.7
+New England North West,New South Wales,2019,1746.0,100.0
+New England North West,New South Wales,2020,1119.9,64.1
+New England North West,New South Wales,2021,1340.3,76.8
+New England North West,New South Wales,2022,1658.7,95.0
+New England North West,New South Wales,2023,1857.2,106.4
+New England North West,New South Wales,2024,1748.8,100.2
+Central Coast,New South Wales,2014,1248.1,64.4
+Central Coast,New South Wales,2015,1267.6,65.4
+Central Coast,New South Wales,2016,1301.8,67.1
+Central Coast,New South Wales,2017,1466.4,75.6
+Central Coast,New South Wales,2018,1401.1,72.3
+Central Coast,New South Wales,2019,1939.1,100.0
+Central Coast,New South Wales,2020,1521.3,78.5
+Central Coast,New South Wales,2021,1374.6,70.9
+Central Coast,New South Wales,2022,1646.8,84.9
+Central Coast,New South Wales,2023,1802.3,92.9
+Central Coast,New South Wales,2024,1796.6,92.7
+Central NSW,New South Wales,2014,1917.6,67.6
+Central NSW,New South Wales,2015,1986.4,70.1
+Central NSW,New South Wales,2016,2100.8,74.1
+Central NSW,New South Wales,2017,2597.1,91.6
+Central NSW,New South Wales,2018,2902.9,102.4
+Central NSW,New South Wales,2019,2835.6,100.0
+Central NSW,New South Wales,2020,2171.5,76.6
+Central NSW,New South Wales,2021,2018.0,71.2
+Central NSW,New South Wales,2022,2625.1,92.6
+Central NSW,New South Wales,2023,2966.2,104.6
+Central NSW,New South Wales,2024,2771.5,97.7
+Limestone Coast,South Australia,2014,456.0,62.5
+Limestone Coast,South Australia,2015,538.7,73.8
+Limestone Coast,South Australia,2016,521.1,71.4
+Limestone Coast,South Australia,2017,589.0,80.7
+Limestone Coast,South Australia,2018,612.5,83.9
+Limestone Coast,South Australia,2019,729.6,100.0
+Limestone Coast,South Australia,2020,499.7,68.5
+Limestone Coast,South Australia,2021,609.7,83.6
+Limestone Coast,South Australia,2022,609.0,83.5
+Limestone Coast,South Australia,2023,726.9,99.6
+Limestone Coast,South Australia,2024,775.0,106.2
+"Murray River, Lakes and Coorong",South Australia,2014,317.3,71.5
+"Murray River, Lakes and Coorong",South Australia,2015,276.9,62.4
+"Murray River, Lakes and Coorong",South Australia,2016,321.3,72.4
+"Murray River, Lakes and Coorong",South Australia,2017,289.9,65.3
+"Murray River, Lakes and Coorong",South Australia,2018,340.8,76.8
+"Murray River, Lakes and Coorong",South Australia,2019,443.9,100.0
+"Murray River, Lakes and Coorong",South Australia,2020,364.4,82.1
+"Murray River, Lakes and Coorong",South Australia,2021,390.6,88.0
+"Murray River, Lakes and Coorong",South Australia,2022,379.3,85.4
+"Murray River, Lakes and Coorong",South Australia,2023,356.1,80.2
+"Murray River, Lakes and Coorong",South Australia,2024,381.9,86.0
+Eyre Peninsula,South Australia,2014,366.7,65.5
+Eyre Peninsula,South Australia,2015,416.5,74.4
+Eyre Peninsula,South Australia,2016,414.0,74.0
+Eyre Peninsula,South Australia,2017,383.3,68.5
+Eyre Peninsula,South Australia,2018,408.5,73.0
+Eyre Peninsula,South Australia,2019,559.6,100.0
+Eyre Peninsula,South Australia,2020,345.7,61.8
+Eyre Peninsula,South Australia,2021,483.9,86.5
+Eyre Peninsula,South Australia,2022,494.6,88.4
+Eyre Peninsula,South Australia,2023,519.1,92.8
+Eyre Peninsula,South Australia,2024,441.7,78.9
+Fleurieu Peninsula,South Australia,2014,669.3,77.0
+Fleurieu Peninsula,South Australia,2015,685.8,78.9
+Fleurieu Peninsula,South Australia,2016,742.9,85.4
+Fleurieu Peninsula,South Australia,2017,690.8,79.5
+Fleurieu Peninsula,South Australia,2018,672.9,77.4
+Fleurieu Peninsula,South Australia,2019,869.5,100.0
+Fleurieu Peninsula,South Australia,2020,867.1,99.7
+Fleurieu Peninsula,South Australia,2021,893.5,102.8
+Fleurieu Peninsula,South Australia,2022,775.7,89.2
+Fleurieu Peninsula,South Australia,2023,841.0,96.7
+Fleurieu Peninsula,South Australia,2024,698.6,80.4
+Riverland,South Australia,2014,311.3,74.2
+Riverland,South Australia,2015,359.1,85.6
+Riverland,South Australia,2016,343.9,81.9
+Riverland,South Australia,2017,427.8,101.9
+Riverland,South Australia,2018,368.2,87.7
+Riverland,South Australia,2019,419.7,100.0
+Riverland,South Australia,2020,334.3,79.7
+Riverland,South Australia,2021,345.1,82.2
+Riverland,South Australia,2022,410.2,97.7
+Riverland,South Australia,2023,317.5,75.6
+Riverland,South Australia,2024,456.3,108.7
+Yorke Peninsula,South Australia,2014,454.0,77.5
+Yorke Peninsula,South Australia,2015,482.5,82.3
+Yorke Peninsula,South Australia,2016,502.1,85.7
+Yorke Peninsula,South Australia,2017,583.7,99.6
+Yorke Peninsula,South Australia,2018,500.0,85.3
+Yorke Peninsula,South Australia,2019,585.9,100.0
+Yorke Peninsula,South Australia,2020,554.3,94.6
+Yorke Peninsula,South Australia,2021,619.7,105.8
+Yorke Peninsula,South Australia,2022,599.8,102.4
+Yorke Peninsula,South Australia,2023,522.7,89.2
+Yorke Peninsula,South Australia,2024,611.6,104.4
+Litchfield Kakadu Arnhem,Northern Territory,2014,265.2,80.4
+Litchfield Kakadu Arnhem,Northern Territory,2015,272.1,82.5
+Litchfield Kakadu Arnhem,Northern Territory,2016,306.3,92.8
+Litchfield Kakadu Arnhem,Northern Territory,2017,249.6,75.6
+Litchfield Kakadu Arnhem,Northern Territory,2018,296.9,90.0
+Litchfield Kakadu Arnhem,Northern Territory,2019,330.0,100.0
+Litchfield Kakadu Arnhem,Northern Territory,2020,242.2,73.4
+Litchfield Kakadu Arnhem,Northern Territory,2021,319.0,96.7
+Litchfield Kakadu Arnhem,Northern Territory,2022,334.1,101.3
+Litchfield Kakadu Arnhem,Northern Territory,2023,224.7,68.1
+Litchfield Kakadu Arnhem,Northern Territory,2024,196.0,59.4
+Barossa,South Australia,2014,195.6,64.4
+Barossa,South Australia,2015,183.6,60.5
+Barossa,South Australia,2016,195.6,64.4
+Barossa,South Australia,2017,207.0,68.2
+Barossa,South Australia,2018,227.3,74.9
+Barossa,South Australia,2019,303.6,100.0
+Barossa,South Australia,2020,193.3,63.7
+Barossa,South Australia,2021,229.8,75.7
+Barossa,South Australia,2022,315.8,104.0
+Barossa,South Australia,2023,334.0,110.0
+Barossa,South Australia,2024,231.9,76.4
+Katherine Daly,Northern Territory,2014,300.4,107.2
+Katherine Daly,Northern Territory,2015,308.9,110.3
+Katherine Daly,Northern Territory,2016,287.7,102.7
+Katherine Daly,Northern Territory,2017,308.8,110.2
+Katherine Daly,Northern Territory,2018,333.7,119.1
+Katherine Daly,Northern Territory,2019,280.1,100.0
+Katherine Daly,Northern Territory,2020,217.4,77.6
+Katherine Daly,Northern Territory,2021,256.2,91.5
+Katherine Daly,Northern Territory,2022,378.5,135.1
+Katherine Daly,Northern Territory,2023,275.0,98.2
+Katherine Daly,Northern Territory,2024,253.6,90.5
+Clare Valley,South Australia,2014,147.1,74.1
+Clare Valley,South Australia,2015,152.9,77.0
+Clare Valley,South Australia,2016,187.4,94.4
+Clare Valley,South Australia,2017,171.9,86.6
+Clare Valley,South Australia,2018,175.9,88.6
+Clare Valley,South Australia,2019,198.6,100.0
+Clare Valley,South Australia,2020,183.7,92.5
+Clare Valley,South Australia,2021,281.5,141.7
+Clare Valley,South Australia,2022,192.5,96.9
+Clare Valley,South Australia,2023,221.4,111.5
+Clare Valley,South Australia,2024,217.7,109.6
+Barkly,Northern Territory,2014,77.9,78.4
+Barkly,Northern Territory,2015,123.6,124.3
+Barkly,Northern Territory,2016,120.2,120.9
+Barkly,Northern Territory,2017,107.6,108.2
+Barkly,Northern Territory,2018,127.1,127.8
+Barkly,Northern Territory,2019,99.5,100.0
+Wimmera,Victoria,2014,124.1,48.0
+Wimmera,Victoria,2015,138.8,53.7
+Wimmera,Victoria,2016,123.5,47.8
+Wimmera,Victoria,2017,234.2,90.6
+Wimmera,Victoria,2018,292.2,113.0
+Wimmera,Victoria,2019,258.6,100.0
+Wimmera,Victoria,2020,147.8,57.2
+Wimmera,Victoria,2021,169.0,65.3
+Wimmera,Victoria,2022,207.4,80.2
+Wimmera,Victoria,2023,211.5,81.8
+Wimmera,Victoria,2024,272.4,105.4
+Adelaide,South Australia,2014,2482.5,71.2
+Adelaide,South Australia,2015,2524.0,72.4
+Adelaide,South Australia,2016,2656.0,76.2
+Adelaide,South Australia,2017,2856.4,82.0
+Adelaide,South Australia,2018,2862.2,82.1
+Adelaide,South Australia,2019,3485.0,100.0
+Adelaide,South Australia,2020,1653.0,47.4
+Adelaide,South Australia,2021,1977.6,56.7
+Adelaide,South Australia,2022,2925.4,83.9
+Adelaide,South Australia,2023,3030.3,87.0
+Adelaide,South Australia,2024,3531.2,101.3
+Alice Springs,Northern Territory,2014,284.6,83.0
+Alice Springs,Northern Territory,2015,286.0,83.4
+Alice Springs,Northern Territory,2016,291.0,84.9
+Alice Springs,Northern Territory,2017,280.9,81.9
+Alice Springs,Northern Territory,2018,284.1,82.9
+Alice Springs,Northern Territory,2019,342.9,100.0
+Alice Springs,Northern Territory,2020,128.7,37.5
+Alice Springs,Northern Territory,2021,206.3,60.2
+Alice Springs,Northern Territory,2022,211.4,61.7
+Alice Springs,Northern Territory,2023,225.5,65.8
+Alice Springs,Northern Territory,2024,229.2,66.8
+Adelaide Hills,South Australia,2014,123.9,57.8
+Adelaide Hills,South Australia,2015,178.4,83.2
+Adelaide Hills,South Australia,2016,178.6,83.3
+Adelaide Hills,South Australia,2017,177.3,82.7
+Adelaide Hills,South Australia,2018,159.6,74.4
+Adelaide Hills,South Australia,2019,214.3,100.0
+Adelaide Hills,South Australia,2020,124.2,57.9
+Adelaide Hills,South Australia,2021,181.0,84.4
+Adelaide Hills,South Australia,2022,150.7,70.3
+Adelaide Hills,South Australia,2023,216.9,101.2
+Adelaide Hills,South Australia,2024,190.8,89.0
+Lasseter,Northern Territory,2014,185.1,65.5
+Lasseter,Northern Territory,2015,220.6,78.1
+Lasseter,Northern Territory,2016,207.4,73.4
+Lasseter,Northern Territory,2017,205.1,72.6
+Lasseter,Northern Territory,2018,206.1,72.9
+Lasseter,Northern Territory,2019,282.7,100.0
+Lasseter,Northern Territory,2021,158.9,56.2
+Lasseter,Northern Territory,2022,211.5,74.8
+Lasseter,Northern Territory,2023,210.8,74.6
+MacDonnell,Northern Territory,2015,67.8,59.2
+MacDonnell,Northern Territory,2016,72.3,63.1
+MacDonnell,Northern Territory,2017,115.3,100.6
+MacDonnell,Northern Territory,2018,48.1,42.0
+MacDonnell,Northern Territory,2019,114.6,100.0
+MacDonnell,Northern Territory,2021,106.0,92.5
+MacDonnell,Northern Territory,2022,102.2,89.2
+South Coast,New South Wales,2014,3250.6,71.2
+South Coast,New South Wales,2015,3390.4,74.3
+South Coast,New South Wales,2016,3598.6,78.9
+South Coast,New South Wales,2017,3859.3,84.6
+South Coast,New South Wales,2018,4142.8,90.8
+South Coast,New South Wales,2019,4562.8,100.0
+South Coast,New South Wales,2020,3726.5,81.7
+South Coast,New South Wales,2021,3530.7,77.4
+South Coast,New South Wales,2022,4651.1,101.9
+South Coast,New South Wales,2023,4826.4,105.8
+South Coast,New South Wales,2024,4493.5,98.5
+The Murray,New South Wales,2014,971.8,71.4
+The Murray,New South Wales,2015,1025.1,75.3
+The Murray,New South Wales,2016,1054.2,77.5
+The Murray,New South Wales,2017,1211.3,89.0
+The Murray,New South Wales,2018,1177.5,86.5
+The Murray,New South Wales,2019,1360.6,100.0
+The Murray,New South Wales,2020,722.4,53.1
+The Murray,New South Wales,2021,873.6,64.2
+The Murray,New South Wales,2022,1373.6,101.0
+The Murray,New South Wales,2023,1448.7,106.5
+The Murray,New South Wales,2024,1245.9,91.6
+Riverina,New South Wales,2014,968.3,78.7
+Riverina,New South Wales,2015,1056.3,85.8
+Riverina,New South Wales,2016,1075.5,87.4
+Riverina,New South Wales,2017,986.2,80.1
+Riverina,New South Wales,2018,1255.1,102.0
+Riverina,New South Wales,2019,1230.9,100.0
+Riverina,New South Wales,2020,811.4,65.9
+Riverina,New South Wales,2021,857.9,69.7
+Riverina,New South Wales,2022,1352.1,109.8
+Riverina,New South Wales,2023,1218.3,99.0
+Riverina,New South Wales,2024,1261.1,102.5
+Snowy Mountains,New South Wales,2014,721.2,75.3
+Snowy Mountains,New South Wales,2015,785.4,82.1
+Snowy Mountains,New South Wales,2016,800.0,83.6
+Snowy Mountains,New South Wales,2017,953.3,99.6
+Snowy Mountains,New South Wales,2018,1017.5,106.3
+Snowy Mountains,New South Wales,2019,957.1,100.0
+Snowy Mountains,New South Wales,2020,673.7,70.4
+Snowy Mountains,New South Wales,2021,760.0,79.4
+Snowy Mountains,New South Wales,2022,1089.6,113.8
+Snowy Mountains,New South Wales,2023,982.8,102.7
+Snowy Mountains,New South Wales,2024,968.7,101.2
+Darwin,Northern Territory,2014,733.0,94.9
+Darwin,Northern Territory,2015,715.7,92.7
+Darwin,Northern Territory,2016,696.0,90.1
+Darwin,Northern Territory,2017,764.5,99.0
+Darwin,Northern Territory,2018,690.3,89.4
+Darwin,Northern Territory,2019,772.2,100.0
+Darwin,Northern Territory,2020,306.9,39.7
+Darwin,Northern Territory,2021,558.4,72.3
+Darwin,Northern Territory,2022,815.7,105.6
+Darwin,Northern Territory,2023,638.9,82.7
+Darwin,Northern Territory,2024,689.3,89.3
+Townsville,Queensland,2014,1068.5,82.4
+Townsville,Queensland,2015,1153.9,88.9
+Townsville,Queensland,2016,1164.6,89.8
+Townsville,Queensland,2017,1082.9,83.5
+Townsville,Queensland,2018,1335.9,103.0
+Townsville,Queensland,2019,1297.4,100.0
+Townsville,Queensland,2020,796.7,61.4
+Townsville,Queensland,2021,1049.3,80.9
+Townsville,Queensland,2022,1208.3,93.1
+Townsville,Queensland,2023,1144.6,88.2
+Townsville,Queensland,2024,1279.3,98.6
+Outback Queensland,Queensland,2014,839.6,72.9
+Outback Queensland,Queensland,2015,854.2,74.1
+Outback Queensland,Queensland,2016,930.1,80.7
+Outback Queensland,Queensland,2017,1043.3,90.6
+Outback Queensland,Queensland,2018,910.5,79.0
+Outback Queensland,Queensland,2019,1152.0,100.0
+Outback Queensland,Queensland,2020,853.7,74.1
+Outback Queensland,Queensland,2021,931.8,80.9
+Outback Queensland,Queensland,2022,955.9,83.0
+Outback Queensland,Queensland,2023,961.5,83.5
+Outback Queensland,Queensland,2024,1107.0,96.1
+Gold Coast,Queensland,2014,3219.6,76.6
+Gold Coast,Queensland,2015,3246.5,77.3
+Gold Coast,Queensland,2016,3378.9,80.4
+Gold Coast,Queensland,2017,3561.4,84.8
+Gold Coast,Queensland,2018,3781.2,90.0
+Gold Coast,Queensland,2019,4202.1,100.0
+Gold Coast,Queensland,2020,2221.6,52.9
+Gold Coast,Queensland,2021,3239.1,77.1
+Gold Coast,Queensland,2022,4121.8,98.1
+Gold Coast,Queensland,2023,4137.3,98.5
+Gold Coast,Queensland,2024,4286.6,102.0
+Mackay,Queensland,2014,774.9,72.8
+Mackay,Queensland,2015,808.8,76.0
+Mackay,Queensland,2016,865.4,81.3
+Mackay,Queensland,2017,828.1,77.8
+Mackay,Queensland,2018,1011.4,95.0
+Mackay,Queensland,2019,1064.4,100.0
+Mackay,Queensland,2020,939.4,88.3
+Mackay,Queensland,2021,1106.4,103.9
+Mackay,Queensland,2022,1181.2,111.0
+Mackay,Queensland,2023,1110.6,104.3
+Mackay,Queensland,2024,1160.8,109.1
+Sunshine Coast,Queensland,2014,3246.7,80.2
+Sunshine Coast,Queensland,2015,3270.2,80.8
+Sunshine Coast,Queensland,2016,3392.0,83.8
+Sunshine Coast,Queensland,2017,3407.7,84.2
+Sunshine Coast,Queensland,2018,3621.8,89.5
+Sunshine Coast,Queensland,2019,4048.0,100.0
+Sunshine Coast,Queensland,2020,3033.9,74.9
+Sunshine Coast,Queensland,2021,3514.6,86.8
+Sunshine Coast,Queensland,2022,4214.8,104.1
+Sunshine Coast,Queensland,2023,4193.2,103.6
+Sunshine Coast,Queensland,2024,4028.0,99.5
+Brisbane,Queensland,2014,5678.0,70.9
+Brisbane,Queensland,2015,5952.7,74.3
+Brisbane,Queensland,2016,6096.3,76.1
+Brisbane,Queensland,2017,6754.9,84.3
+Brisbane,Queensland,2018,7157.3,89.4
+Brisbane,Queensland,2019,8009.8,100.0
+Brisbane,Queensland,2020,4517.0,56.4
+Brisbane,Queensland,2021,5098.8,63.7
+Brisbane,Queensland,2022,7169.3,89.5
+Brisbane,Queensland,2023,7325.3,91.5
+Brisbane,Queensland,2024,8149.1,101.7
+Flinders Ranges and Outback,South Australia,2014,589.1,66.8
+Flinders Ranges and Outback,South Australia,2015,619.7,70.2
+Flinders Ranges and Outback,South Australia,2016,672.1,76.2
+Flinders Ranges and Outback,South Australia,2017,655.1,74.2
+Flinders Ranges and Outback,South Australia,2018,711.8,80.7
+Flinders Ranges and Outback,South Australia,2019,882.4,100.0
+Flinders Ranges and Outback,South Australia,2020,578.6,65.6
+Flinders Ranges and Outback,South Australia,2021,635.3,72.0
+Flinders Ranges and Outback,South Australia,2022,823.1,93.3
+Flinders Ranges and Outback,South Australia,2023,730.3,82.8
+Flinders Ranges and Outback,South Australia,2024,662.2,75.0
+Queensland Country,Queensland,2014,2160.2,77.1
+Queensland Country,Queensland,2015,2268.5,80.9
+Queensland Country,Queensland,2016,2314.8,82.6
+Queensland Country,Queensland,2017,2466.7,88.0
+Queensland Country,Queensland,2018,2741.5,97.8
+Queensland Country,Queensland,2019,2803.1,100.0
+Queensland Country,Queensland,2020,2082.8,74.3
+Queensland Country,Queensland,2021,2582.4,92.1
+Queensland Country,Queensland,2022,3114.4,111.1
+Queensland Country,Queensland,2023,2880.6,102.8
+Queensland Country,Queensland,2024,3137.0,111.9
+Fraser Coast,Queensland,2014,594.8,77.5
+Fraser Coast,Queensland,2015,594.5,77.5
+Fraser Coast,Queensland,2016,594.1,77.4
+Fraser Coast,Queensland,2017,674.9,88.0
+Fraser Coast,Queensland,2018,755.2,98.4
+Fraser Coast,Queensland,2019,767.3,100.0
+Fraser Coast,Queensland,2020,574.9,74.9
+Fraser Coast,Queensland,2021,696.1,90.7
+Fraser Coast,Queensland,2022,820.2,106.9
+Fraser Coast,Queensland,2023,861.1,112.2
+Fraser Coast,Queensland,2024,730.0,95.1
+Bundaberg,Queensland,2014,540.4,71.1
+Bundaberg,Queensland,2015,543.7,71.6
+Bundaberg,Queensland,2016,554.2,72.9
+Bundaberg,Queensland,2017,600.1,79.0
+Bundaberg,Queensland,2018,673.1,88.6
+Bundaberg,Queensland,2019,759.9,100.0
+Bundaberg,Queensland,2020,580.4,76.4
+Bundaberg,Queensland,2021,623.1,82.0
+Bundaberg,Queensland,2022,680.4,89.5
+Bundaberg,Queensland,2023,629.3,82.8
+Bundaberg,Queensland,2024,706.4,93.0
+Kangaroo Island,South Australia,2014,95.3,61.5
+Kangaroo Island,South Australia,2015,103.7,67.0
+Kangaroo Island,South Australia,2016,111.2,71.8
+Kangaroo Island,South Australia,2017,101.7,65.7
+Kangaroo Island,South Australia,2018,118.5,76.5
+Kangaroo Island,South Australia,2019,154.8,100.0
+Kangaroo Island,South Australia,2020,143.4,92.6
+Kangaroo Island,South Australia,2021,188.8,121.9
+Kangaroo Island,South Australia,2022,157.7,101.8
+Kangaroo Island,South Australia,2023,179.0,115.6
+West Coast,Tasmania,2014,167.6,82.9
+West Coast,Tasmania,2015,131.4,65.0
+West Coast,Tasmania,2016,147.7,73.0
+West Coast,Tasmania,2017,168.7,83.4
+West Coast,Tasmania,2018,154.4,76.4
+West Coast,Tasmania,2019,202.3,100.0
+West Coast,Tasmania,2020,116.0,57.3
+West Coast,Tasmania,2021,168.6,83.4
+West Coast,Tasmania,2022,183.9,90.9
+West Coast,Tasmania,2023,182.9,90.4
+West Coast,Tasmania,2024,185.1,91.5
+Launceston and the North,Tasmania,2014,709.1,69.4
+Launceston and the North,Tasmania,2015,721.3,70.6
+Launceston and the North,Tasmania,2016,719.4,70.4
+Launceston and the North,Tasmania,2017,804.4,78.8
+Launceston and the North,Tasmania,2018,858.5,84.1
+Launceston and the North,Tasmania,2019,1021.2,100.0
+Launceston and the North,Tasmania,2020,589.0,57.7
+Launceston and the North,Tasmania,2021,926.8,90.8
+Launceston and the North,Tasmania,2022,878.9,86.1
+Launceston and the North,Tasmania,2023,974.7,95.5
+Launceston and the North,Tasmania,2024,987.3,96.7
+North West,Tasmania,2014,491.5,83.3
+North West,Tasmania,2015,498.7,84.5
+North West,Tasmania,2016,538.6,91.2
+North West,Tasmania,2017,596.4,101.0
+North West,Tasmania,2018,561.2,95.1
+North West,Tasmania,2019,590.3,100.0
+North West,Tasmania,2020,447.1,75.7
+North West,Tasmania,2021,475.3,80.5
+North West,Tasmania,2022,624.5,105.8
+North West,Tasmania,2023,584.6,99.0
+North West,Tasmania,2024,705.6,119.5
+Hobart and the South,Tasmania,2014,1224.1,70.1
+Hobart and the South,Tasmania,2015,1201.4,68.8
+Hobart and the South,Tasmania,2016,1279.6,73.2
+Hobart and the South,Tasmania,2017,1401.6,80.2
+Hobart and the South,Tasmania,2018,1643.7,94.1
+Hobart and the South,Tasmania,2019,1747.0,100.0
+Hobart and the South,Tasmania,2020,1015.2,58.1
+Hobart and the South,Tasmania,2021,1369.4,78.4
+Hobart and the South,Tasmania,2022,1657.7,94.9
+Hobart and the South,Tasmania,2023,1613.8,92.4
+Hobart and the South,Tasmania,2024,1578.1,90.3
+East Coast,Tasmania,2014,372.0,72.8
+East Coast,Tasmania,2015,374.2,73.2
+East Coast,Tasmania,2016,373.4,73.1
+East Coast,Tasmania,2017,431.6,84.5
+East Coast,Tasmania,2018,490.8,96.1
+East Coast,Tasmania,2019,510.9,100.0
+East Coast,Tasmania,2020,466.3,91.3
+East Coast,Tasmania,2021,465.9,91.2
+East Coast,Tasmania,2022,470.9,92.2
+East Coast,Tasmania,2023,409.2,80.1
+East Coast,Tasmania,2024,462.0,90.4
+Tropical North Queensland,Queensland,2014,1761.2,79.4
+Tropical North Queensland,Queensland,2015,1820.1,82.1
+Tropical North Queensland,Queensland,2016,1899.5,85.6
+Tropical North Queensland,Queensland,2017,1823.0,82.2
+Tropical North Queensland,Queensland,2018,2024.3,91.3
+Tropical North Queensland,Queensland,2019,2217.7,100.0
+Tropical North Queensland,Queensland,2020,1447.9,65.3
+Tropical North Queensland,Queensland,2021,1982.4,89.4
+Tropical North Queensland,Queensland,2022,2525.4,113.9
+Tropical North Queensland,Queensland,2023,2284.6,103.0
+Tropical North Queensland,Queensland,2024,2161.5,97.5
+Victoria's High Country,Victoria,2014,1557.2,64.7
+Victoria's High Country,Victoria,2015,1648.4,68.5
+Victoria's High Country,Victoria,2016,1694.7,70.4
+Victoria's High Country,Victoria,2017,2083.3,86.6
+Victoria's High Country,Victoria,2018,2151.6,89.4
+Victoria's High Country,Victoria,2019,2405.8,100.0
+Victoria's High Country,Victoria,2020,977.5,40.6
+Victoria's High Country,Victoria,2021,1856.5,77.2
+Victoria's High Country,Victoria,2022,2503.5,104.1
+Victoria's High Country,Victoria,2023,2622.1,109.0
+Victoria's High Country,Victoria,2024,2438.3,101.4
+Lakes,Victoria,2014,609.7,73.5
+Lakes,Victoria,2015,641.5,77.4
+Lakes,Victoria,2016,691.4,83.4
+Lakes,Victoria,2017,793.5,95.7
+Lakes,Victoria,2018,820.4,98.9
+Lakes,Victoria,2019,829.1,100.0
+Lakes,Victoria,2020,633.7,76.4
+Lakes,Victoria,2021,704.3,85.0
+Lakes,Victoria,2022,797.4,96.2
+Lakes,Victoria,2023,850.8,102.6
+Lakes,Victoria,2024,972.7,117.3
+Whitsundays,Queensland,2014,470.2,74.5
+Whitsundays,Queensland,2015,476.8,75.6
+Whitsundays,Queensland,2016,454.9,72.1
+Whitsundays,Queensland,2017,538.7,85.4
+Whitsundays,Queensland,2018,639.8,101.4
+Whitsundays,Queensland,2019,631.1,100.0
+Whitsundays,Queensland,2020,532.1,84.3
+Whitsundays,Queensland,2021,791.4,125.4
+Whitsundays,Queensland,2022,850.5,134.8
+Whitsundays,Queensland,2023,724.0,114.7
+Whitsundays,Queensland,2024,709.1,112.4
+Gippsland,Victoria,2014,959.2,66.8
+Gippsland,Victoria,2015,995.4,69.3
+Gippsland,Victoria,2016,1021.7,71.1
+Gippsland,Victoria,2017,1472.2,102.5
+Gippsland,Victoria,2018,1291.5,89.9
+Gippsland,Victoria,2019,1436.1,100.0
+Gippsland,Victoria,2020,1126.5,78.4
+Gippsland,Victoria,2021,1206.9,84.0
+Gippsland,Victoria,2022,1559.0,108.6
+Gippsland,Victoria,2023,1509.4,105.1
+Gippsland,Victoria,2024,1638.4,114.1
+Goulburn,Victoria,2014,505.9,73.3
+Goulburn,Victoria,2015,513.3,74.4
+Goulburn,Victoria,2016,501.1,72.6
+Goulburn,Victoria,2017,744.5,107.9
+Goulburn,Victoria,2018,713.8,103.5
+Goulburn,Victoria,2019,689.7,100.0
+Goulburn,Victoria,2020,545.1,79.0
+Goulburn,Victoria,2021,518.0,75.1
+Goulburn,Victoria,2022,715.0,103.7
+Goulburn,Victoria,2023,788.3,114.3
+Goulburn,Victoria,2024,805.8,116.8
+Capricorn Coast,Queensland,2014,681.8,89.5
+Capricorn Coast,Queensland,2015,666.3,87.5
+Capricorn Coast,Queensland,2016,715.1,93.9
+Capricorn Coast,Queensland,2017,642.3,84.4
+Capricorn Coast,Queensland,2018,799.5,105.0
+Capricorn Coast,Queensland,2019,761.4,100.0
+Capricorn Coast,Queensland,2020,657.3,86.3
+Capricorn Coast,Queensland,2021,785.9,103.2
+Capricorn Coast,Queensland,2022,873.0,114.7
+Capricorn Coast,Queensland,2023,788.3,103.5
+Capricorn Coast,Queensland,2024,842.0,110.6
+Gladstone,Queensland,2014,450.3,79.9
+Gladstone,Queensland,2015,495.2,87.9
+Gladstone,Queensland,2016,475.4,84.4
+Gladstone,Queensland,2017,460.4,81.7
+Gladstone,Queensland,2018,407.3,72.3
+Gladstone,Queensland,2019,563.3,100.0
+Gladstone,Queensland,2020,414.8,73.6
+Gladstone,Queensland,2021,579.6,102.9
+Gladstone,Queensland,2022,512.4,91.0
+Gladstone,Queensland,2023,529.1,93.9
+Gladstone,Queensland,2024,497.2,88.3
+Melbourne,Victoria,2014,7802.6,68.2
+Melbourne,Victoria,2015,8080.0,70.7
+Melbourne,Victoria,2016,8630.3,75.5
+Melbourne,Victoria,2017,9460.9,82.7
+Melbourne,Victoria,2018,10046.1,87.9
+Melbourne,Victoria,2019,11435.4,100.0
+Melbourne,Victoria,2020,3543.1,31.0
+Melbourne,Victoria,2021,4361.7,38.1
+Melbourne,Victoria,2022,8556.5,74.8
+Melbourne,Victoria,2023,10257.1,89.7
+Melbourne,Victoria,2024,10410.8,91.0
+Greater Ballarat,Victoria,2014,615.8,62.1
+Greater Ballarat,Victoria,2015,589.1,59.4
+Greater Ballarat,Victoria,2016,680.1,68.6
+Greater Ballarat,Victoria,2017,847.2,85.4
+Greater Ballarat,Victoria,2018,749.4,75.6
+Greater Ballarat,Victoria,2019,991.7,100.0
+Greater Ballarat,Victoria,2020,433.2,43.7
+Greater Ballarat,Victoria,2021,639.8,64.5
+Greater Ballarat,Victoria,2022,803.3,81.0
+Greater Ballarat,Victoria,2023,903.7,91.1
+Greater Ballarat,Victoria,2024,1056.4,106.5
+Central Murray,Victoria,2014,720.5,75.5
+Central Murray,Victoria,2015,731.3,76.6
+Central Murray,Victoria,2016,742.2,77.8
+Central Murray,Victoria,2017,767.4,80.4
+Central Murray,Victoria,2018,921.6,96.6
+Central Murray,Victoria,2019,954.5,100.0
+Central Murray,Victoria,2020,457.7,48.0
+Central Murray,Victoria,2021,667.6,69.9
+Central Murray,Victoria,2022,853.9,89.5
+Central Murray,Victoria,2023,832.7,87.2
+Central Murray,Victoria,2024,923.6,96.8
+Geelong and the Bellarine,Victoria,2014,1163.2,69.7
+Geelong and the Bellarine,Victoria,2015,1203.2,72.1
+Geelong and the Bellarine,Victoria,2016,1345.4,80.6
+Geelong and the Bellarine,Victoria,2017,1405.8,84.2
+Geelong and the Bellarine,Victoria,2018,1414.3,84.7
+Geelong and the Bellarine,Victoria,2019,1669.0,100.0
+Geelong and the Bellarine,Victoria,2020,936.5,56.1
+Geelong and the Bellarine,Victoria,2021,1086.2,65.1
+Geelong and the Bellarine,Victoria,2022,1653.4,99.1
+Geelong and the Bellarine,Victoria,2023,1754.5,105.1
+Geelong and the Bellarine,Victoria,2024,1768.2,105.9
+Greater Bendigo,Victoria,2014,894.3,68.0
+Greater Bendigo,Victoria,2015,951.6,72.3
+Greater Bendigo,Victoria,2016,1032.3,78.5
+Greater Bendigo,Victoria,2017,1023.5,77.8
+Greater Bendigo,Victoria,2018,1120.2,85.1
+Greater Bendigo,Victoria,2019,1315.6,100.0
+Greater Bendigo,Victoria,2020,623.1,47.4
+Greater Bendigo,Victoria,2021,963.3,73.2
+Greater Bendigo,Victoria,2022,1369.8,104.1
+Greater Bendigo,Victoria,2023,1316.7,100.1
+Greater Bendigo,Victoria,2024,1271.4,96.6
+Central Highlands,Victoria,2014,277.0,60.7
+Central Highlands,Victoria,2015,318.4,69.8
+Central Highlands,Victoria,2016,345.8,75.8
+Central Highlands,Victoria,2017,444.8,97.4
+Central Highlands,Victoria,2018,392.5,86.0
+Central Highlands,Victoria,2019,456.5,100.0
+Central Highlands,Victoria,2020,292.1,64.0
+Central Highlands,Victoria,2021,362.9,79.5
+Central Highlands,Victoria,2022,516.8,113.2
+Central Highlands,Victoria,2023,485.7,106.4
+Central Highlands,Victoria,2024,525.1,115.0
+Australia's South West,Western Australia,2014,2915.8,94.8
+Australia's South West,Western Australia,2015,2900.5,94.3
+Australia's South West,Western Australia,2016,2902.8,94.4
+Australia's South West,Western Australia,2017,2741.4,89.1
+Australia's South West,Western Australia,2018,2828.3,91.9
+Australia's South West,Western Australia,2019,3076.3,100.0
+Australia's South West,Western Australia,2020,2738.8,89.0
+Australia's South West,Western Australia,2021,3194.4,103.8
+Australia's South West,Western Australia,2022,3094.1,100.6
+Australia's South West,Western Australia,2023,3205.2,104.2
+Australia's South West,Western Australia,2024,3264.2,106.1
+Australia's Coral Coast,Western Australia,2014,1097.1,106.0
+Australia's Coral Coast,Western Australia,2015,1113.4,107.6
+Australia's Coral Coast,Western Australia,2016,1097.2,106.0
+Australia's Coral Coast,Western Australia,2017,936.0,90.5
+Australia's Coral Coast,Western Australia,2018,928.6,89.7
+Australia's Coral Coast,Western Australia,2019,1034.9,100.0
+Australia's Coral Coast,Western Australia,2020,1054.2,101.9
+Australia's Coral Coast,Western Australia,2021,1113.2,107.6
+Australia's Coral Coast,Western Australia,2022,1062.7,102.7
+Australia's Coral Coast,Western Australia,2023,1055.6,102.0
+Australia's Coral Coast,Western Australia,2024,955.8,92.4
+Western Grampians,Victoria,2014,302.2,70.5
+Western Grampians,Victoria,2015,316.6,73.9
+Western Grampians,Victoria,2016,334.9,78.2
+Western Grampians,Victoria,2017,371.9,86.8
+Western Grampians,Victoria,2018,461.0,107.6
+Western Grampians,Victoria,2019,428.3,100.0
+Western Grampians,Victoria,2020,258.7,60.4
+Western Grampians,Victoria,2021,304.6,71.1
+Western Grampians,Victoria,2022,365.4,85.3
+Western Grampians,Victoria,2023,358.5,83.7
+Western Grampians,Victoria,2024,378.4,88.3
+Australia's Golden Outback,Western Australia,2014,1086.6,74.5
+Australia's Golden Outback,Western Australia,2015,1095.1,75.1
+Australia's Golden Outback,Western Australia,2016,1123.8,77.1
+Australia's Golden Outback,Western Australia,2017,973.5,66.8
+Australia's Golden Outback,Western Australia,2018,1018.4,69.8
+Australia's Golden Outback,Western Australia,2019,1458.3,100.0
+Australia's Golden Outback,Western Australia,2020,1085.2,74.4
+Australia's Golden Outback,Western Australia,2021,1249.6,85.7
+Australia's Golden Outback,Western Australia,2022,1246.5,85.5
+Australia's Golden Outback,Western Australia,2023,1364.6,93.6
+Australia's Golden Outback,Western Australia,2024,1368.6,93.8
+Australia's North West,Western Australia,2014,1126.6,73.4
+Australia's North West,Western Australia,2015,1184.9,77.2
+Australia's North West,Western Australia,2016,1245.7,81.1
+Australia's North West,Western Australia,2017,1095.1,71.3
+Australia's North West,Western Australia,2018,1130.4,73.6
+Australia's North West,Western Australia,2019,1535.3,100.0
+Australia's North West,Western Australia,2020,1181.3,76.9
+Australia's North West,Western Australia,2021,1425.3,92.8
+Australia's North West,Western Australia,2022,1477.1,96.2
+Australia's North West,Western Australia,2023,1526.6,99.4
+Australia's North West,Western Australia,2024,1474.0,96.0
+Canberra,Australian Capital Territory,2014,2257.3,70.5
+Canberra,Australian Capital Territory,2015,2383.8,74.4
+Canberra,Australian Capital Territory,2016,2488.8,77.7
+Canberra,Australian Capital Territory,2017,2816.2,87.9
+Canberra,Australian Capital Territory,2018,2767.1,86.4
+Canberra,Australian Capital Territory,2019,3203.3,100.0
+Canberra,Australian Capital Territory,2020,1657.0,51.7
+Canberra,Australian Capital Territory,2021,1731.4,54.1
+Canberra,Australian Capital Territory,2022,3032.8,94.7
+Canberra,Australian Capital Territory,2023,3298.1,103.0
+Canberra,Australian Capital Territory,2024,3097.9,96.7
+Destination Perth,Western Australia,2014,4077.0,86.6
+Destination Perth,Western Australia,2015,4003.9,85.1
+Destination Perth,Western Australia,2016,3980.7,84.6
+Destination Perth,Western Australia,2017,3818.0,81.1
+Destination Perth,Western Australia,2018,4516.8,96.0
+Destination Perth,Western Australia,2019,4706.5,100.0
+Destination Perth,Western Australia,2020,3127.2,66.4
+Destination Perth,Western Australia,2021,3442.6,73.1
+Destination Perth,Western Australia,2022,4343.8,92.3
+Destination Perth,Western Australia,2023,4457.8,94.7
+Destination Perth,Western Australia,2024,4449.2,94.5
+Great Ocean Road,Victoria,2014,1771.3,63.8
+Great Ocean Road,Victoria,2015,1836.2,66.2
+Great Ocean Road,Victoria,2016,1901.7,68.5
+Great Ocean Road,Victoria,2017,2270.4,81.8
+Great Ocean Road,Victoria,2018,2267.6,81.7
+Great Ocean Road,Victoria,2019,2775.6,100.0
+Great Ocean Road,Victoria,2020,1603.6,57.8
+Great Ocean Road,Victoria,2021,1944.9,70.1
+Great Ocean Road,Victoria,2022,2417.4,87.1
+Great Ocean Road,Victoria,2023,2442.7,88.0
+Great Ocean Road,Victoria,2024,2465.3,88.8
+Outback NSW,New South Wales,2014,421.7,63.7
+Outback NSW,New South Wales,2015,432.4,65.3
+Outback NSW,New South Wales,2016,473.4,71.5
+Outback NSW,New South Wales,2017,518.9,78.4
+Outback NSW,New South Wales,2018,531.7,80.4
+Outback NSW,New South Wales,2019,661.6,100.0
+Outback NSW,New South Wales,2020,432.2,65.3
+Outback NSW,New South Wales,2021,453.0,68.5
+Outback NSW,New South Wales,2022,615.9,93.1
+Outback NSW,New South Wales,2023,604.4,91.3
+Outback NSW,New South Wales,2024,687.7,103.9
+Mallee,Victoria,2014,674.7,78.7
+Mallee,Victoria,2015,668.7,78.0
+Mallee,Victoria,2016,726.8,84.7
+Mallee,Victoria,2017,808.7,94.3
+Mallee,Victoria,2018,793.1,92.5
+Mallee,Victoria,2019,857.7,100.0
+Mallee,Victoria,2020,390.1,45.5
+Mallee,Victoria,2021,562.8,65.6
+Mallee,Victoria,2022,706.9,82.4
+Mallee,Victoria,2023,781.7,91.1
+Mallee,Victoria,2024,872.9,101.8
+Yarra Valley and Dandenong Ranges,Victoria,2014,528.3,63.3
+Yarra Valley and Dandenong Ranges,Victoria,2015,553.5,66.3
+Yarra Valley and Dandenong Ranges,Victoria,2016,626.6,75.1
+Yarra Valley and Dandenong Ranges,Victoria,2017,681.3,81.6
+Yarra Valley and Dandenong Ranges,Victoria,2018,628.5,75.3
+Yarra Valley and Dandenong Ranges,Victoria,2019,834.6,100.0
+Yarra Valley and Dandenong Ranges,Victoria,2020,413.7,49.6
+Yarra Valley and Dandenong Ranges,Victoria,2021,571.9,68.5
+Yarra Valley and Dandenong Ranges,Victoria,2022,784.1,94.0
+Yarra Valley and Dandenong Ranges,Victoria,2023,799.3,95.8
+Yarra Valley and Dandenong Ranges,Victoria,2024,792.1,94.9
+North Coast NSW,New South Wales,2014,4690.8,73.3
+North Coast NSW,New South Wales,2015,4888.4,76.4
+North Coast NSW,New South Wales,2016,5211.1,81.4
+North Coast NSW,New South Wales,2017,5169.6,80.7
+North Coast NSW,New South Wales,2018,5707.4,89.1
+North Coast NSW,New South Wales,2019,6402.4,100.0
+North Coast NSW,New South Wales,2020,4302.8,67.2
+North Coast NSW,New South Wales,2021,4321.7,67.5
+North Coast NSW,New South Wales,2022,5489.6,85.7
+North Coast NSW,New South Wales,2023,5632.4,88.0
+North Coast NSW,New South Wales,2024,6239.6,97.5
+Macedon,Victoria,2014,256.2,62.7
+Macedon,Victoria,2015,269.3,65.9
+Macedon,Victoria,2016,313.2,76.6
+Macedon,Victoria,2017,299.7,73.3
+Macedon,Victoria,2018,351.6,86.0
+Macedon,Victoria,2019,408.8,100.0
+Macedon,Victoria,2020,180.8,44.2
+Macedon,Victoria,2021,319.3,78.1
+Macedon,Victoria,2022,445.6,109.0
+Macedon,Victoria,2023,472.0,115.5
+Macedon,Victoria,2024,373.8,91.4
+Phillip Island,Victoria,2014,790.2,72.9
+Phillip Island,Victoria,2015,797.4,73.5
+Phillip Island,Victoria,2016,832.4,76.8
+Phillip Island,Victoria,2017,966.1,89.1
+Phillip Island,Victoria,2018,930.4,85.8
+Phillip Island,Victoria,2019,1084.5,100.0
+Phillip Island,Victoria,2020,585.4,54.0
+Phillip Island,Victoria,2021,832.3,76.7
+Phillip Island,Victoria,2022,1125.7,103.8
+Phillip Island,Victoria,2023,1118.5,103.1
+Phillip Island,Victoria,2024,1014.4,93.5
+Spa Country,Victoria,2014,311.5,61.5
+Spa Country,Victoria,2015,326.3,64.4
+Spa Country,Victoria,2016,370.9,73.2
+Spa Country,Victoria,2017,352.5,69.6
+Spa Country,Victoria,2018,443.9,87.6
+Spa Country,Victoria,2019,506.7,100.0
+Spa Country,Victoria,2020,195.0,38.5
+Spa Country,Victoria,2021,332.9,65.7
+Spa Country,Victoria,2022,541.8,106.9
+Spa Country,Victoria,2023,399.5,78.8
+Spa Country,Victoria,2024,504.1,99.5
+Murray East,Victoria,2014,196.0,91.4
+Murray East,Victoria,2015,152.6,71.2
+Murray East,Victoria,2016,170.5,79.5
+Murray East,Victoria,2017,228.9,106.8
+Murray East,Victoria,2018,169.5,79.1
+Murray East,Victoria,2019,214.4,100.0
+Murray East,Victoria,2020,95.6,44.6
+Murray East,Victoria,2021,143.2,66.8
+Murray East,Victoria,2022,221.5,103.3
+Murray East,Victoria,2023,227.1,105.9
+Murray East,Victoria,2024,252.6,117.8
+Mornington Peninsula,Victoria,2014,1251.2,60.0
+Mornington Peninsula,Victoria,2015,1302.2,62.5
+Mornington Peninsula,Victoria,2016,1375.4,66.0
+Mornington Peninsula,Victoria,2017,1680.0,80.6
+Mornington Peninsula,Victoria,2018,1818.2,87.2
+Mornington Peninsula,Victoria,2019,2085.2,100.0
+Mornington Peninsula,Victoria,2020,1269.0,60.9
+Mornington Peninsula,Victoria,2021,1603.5,76.9
+Mornington Peninsula,Victoria,2022,1715.9,82.3
+Mornington Peninsula,Victoria,2023,1931.0,92.6
+Mornington Peninsula,Victoria,2024,2105.0,100.9

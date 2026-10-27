@@ -8,8 +8,8 @@
    "North Queensland lead the regional gateways"
   ],
   "subtitle": [
-   "Overnight trips by international visitors to the top 20 regions, year ending June 2026",
-   "(circle area = trips)"
+   "Overnight trips by international visitors to the top 20 regions, year ending",
+   "June 2026 (circle area = trips)"
   ],
   "anchor": "start"
  },
@@ -68,7 +68,7 @@
     "size": {
      "field": "trips_2026",
      "type": "quantitative",
-     "title": "Trips ('000)",
+     "title": "Trips (thousands)",
      "scale": {
       "domain": [
        0,
@@ -123,12 +123,12 @@
      },
      {
       "field": "trips_2026",
-      "title": "Trips ('000)",
+      "title": "Trips (thousands)",
       "format": ",.0f"
      },
      {
       "field": "nights_2026",
-      "title": "Nights ('000)",
+      "title": "Nights (thousands)",
       "format": ",.0f"
      },
      {

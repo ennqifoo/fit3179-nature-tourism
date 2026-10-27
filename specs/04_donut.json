@@ -1,7 +1,7 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 430,
+ "height": 485,
  "title": {
   "text": [
    "Nearly half of all trips are holidays"
@@ -18,8 +18,8 @@
   {
    "mark": {
     "type": "arc",
-    "innerRadius": 95,
-    "outerRadius": 180,
+    "innerRadius": 112,
+    "outerRadius": 212,
     "stroke": "white",
     "strokeWidth": 2
    },
@@ -80,7 +80,7 @@
      },
      {
       "field": "trips_000",
-      "title": "Trips ('000)",
+      "title": "Trips (thousands)",
       "format": ","
      },
      {
@@ -106,7 +106,7 @@
   {
    "mark": {
     "type": "text",
-    "radius": 138,
+    "radius": 162,
     "fontSize": 16,
     "fontWeight": "bold"
    },
@@ -144,7 +144,7 @@
    "data": {
     "values": [
      {
-      "t": "112.5M",
+      "t": "112.5 million",
       "s": "trips"
      }
     ]

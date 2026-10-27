@@ -17,15 +17,20 @@ const charts = {
 
 // One typographic voice for every chart (matches the page body font)
 const FONT = "\"Source Sans 3\", system-ui, sans-serif";  // family name with spaces/digits must be quoted for canvas
+const SERIF = "\"Source Serif 4\", Georgia, serif";  // serif for chart titles; sans serif for labels, legends and annotations
 const chartConfig = {
   font: FONT,
-  title: { font: FONT, fontSize: 20, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 15, subtitleColor: "#616e7c", subtitlePadding: 4 },
+  title: { font: SERIF, fontSize: 20, fontWeight: 700, color: "#1f2933", subtitleFont: FONT, subtitleFontSize: 15, subtitleColor: "#616e7c", subtitlePadding: 4, offset: 22 },
   axis: { labelFont: FONT, titleFont: FONT, labelFontSize: 14, titleFontSize: 14, labelColor: "#52606d", titleColor: "#52606d", titleFontWeight: 600 },
-  legend: { labelFont: FONT, titleFont: FONT, labelFontSize: 14, titleFontSize: 14 },
+  legend: { labelFont: FONT, titleFont: FONT, labelFontSize: 14, titleFontSize: 14, labelLimit: 320, columnPadding: 16 },
   text: { font: FONT }
 };
 
-Object.entries(charts).forEach(([id, spec]) => {
+Promise.all([
+  document.fonts.load("700 20px \"Source Serif 4\""),
+  document.fonts.load("400 14px \"Source Sans 3\""),
+  document.fonts.load("700 13px \"Source Sans 3\"")
+]).catch(() => {}).then(() => Object.entries(charts).forEach(([id, spec]) => {
   const el = document.getElementById(id);
 
   // actions menu is shown by default (the "..." button), like the course samples
@@ -35,4 +40,4 @@ Object.entries(charts).forEach(([id, spec]) => {
       '<div class="placeholder">Chart ' + id.replace("vis", "") +
       " could not load (" + spec + ")<br><small>" + err.message + "</small></div>";
   });
-});
+}));

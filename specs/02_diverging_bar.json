@@ -1,14 +1,14 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 220,
+ "height": 360,
  "title": {
   "text": [
    "Queensland grew most, Northern Territory fell most"
   ],
   "subtitle": [
-   "Change in overnight trips, year ending June 2026 vs June 2025 (%).",
-   "Orange = the biggest rise and the biggest fall."
+   "Change in overnight trips, year ending June 2026 versus June 2025 (%). Orange =",
+   "the biggest rise and the biggest fall."
   ],
   "anchor": "start"
  },
@@ -80,25 +80,25 @@
      {
       "field": "change_pct",
       "type": "quantitative",
-      "title": "Change vs June 2025 (%)",
+      "title": "Change versus June 2025 (%)",
       "format": "+.2f"
      },
      {
       "field": "trips_2025",
       "type": "quantitative",
-      "title": "Year to Jun 2025 ('000 trips)",
+      "title": "Year to June 2025 (thousands of trips)",
       "format": ",.0f"
      },
      {
       "field": "trips_2026",
       "type": "quantitative",
-      "title": "Year to Jun 2026 ('000 trips)",
+      "title": "Year to June 2026 (thousands of trips)",
       "format": ",.0f"
      },
      {
       "field": "diff",
       "type": "quantitative",
-      "title": "Difference ('000 trips)",
+      "title": "Difference (thousands of trips)",
       "format": "+,.0f"
      }
     ]

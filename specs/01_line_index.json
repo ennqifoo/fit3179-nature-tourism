@@ -5,9 +5,9 @@
    "How far has each state recovered from COVID-19?"
   ],
   "subtitle": [
-   "Overnight trips by Australian residents, indexed (2019 = 100).",
-   "Pick a purpose, hover a line, drag the strip below to zoom.",
-   "Series break in 2014 (new survey method)."
+   "Overnight trips by Australian residents, indexed (2019 = 100). Pick a purpose,",
+   "hover a line, drag the strip below to zoom. Series break in 2014 (new survey",
+   "method)."
   ],
   "anchor": "start"
  },
@@ -37,7 +37,7 @@
    "height": 320,
    "transform": [
     {
-     "filter": "datum.purpose == purpose && datum.state != 'AUS'"
+     "filter": "datum.purpose == purpose && datum.state != 'Australia'"
     },
     {
      "calculate": "datum.grp=='rest' ? datum.state : datum.state + ' ' + format(datum.index_2019,'.0f')",
@@ -155,7 +155,7 @@
        {
         "field": "trips_000",
         "type": "quantitative",
-        "title": "Trips ('000)",
+        "title": "Trips (thousands)",
         "format": ",.0f"
        },
        {
@@ -302,7 +302,7 @@
    "height": 60,
    "transform": [
     {
-     "filter": "datum.purpose == purpose && datum.state == 'AUS'"
+     "filter": "datum.purpose == purpose && datum.state == 'Australia'"
     }
    ],
    "params": [
@@ -329,7 +329,7 @@
      "type": "quantitative",
      "axis": {
       "format": "d",
-      "title": "Drag on this strip to zoom the chart above (all of Australia, trips '000)",
+      "title": "Drag on this strip to zoom the chart above (all of Australia, trips, in thousands)",
       "tickCount": 8
      }
     },

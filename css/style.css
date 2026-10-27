@@ -1,407 +1,99 @@
-:root {
-  --ink: #1f2933;
-  --muted: #616e7c;
-  --paper: #faf8f3;
-  --card: #fff;
-  --line: #d9d3c1;
-  --soft: #f1ede0;
-  --a1: #08519c;
-  --a2: #8c510a;
-  --a3: #cb181d;
-  --a4: #00838f; /* section accents */
+:root{
+  --ink:#1f2933; --muted:#616e7c; --paper:#faf8f3; --card:#fff; --line:#d9d3c1; --soft:#f1ede0;
+  --a1:#08519c; --a2:#8c510a; --a3:#cb181d; --a4:#00838f;   /* section accents */
 }
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: "Source Sans 3", system-ui, sans-serif;
-  font-size: 17px;
-  color: var(--ink);
-  background: var(--paper);
-  line-height: 1.55;
-  overflow-x: hidden;
-}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:"Source Sans 3",system-ui,sans-serif;font-size:17px;color:var(--ink);background:var(--paper);line-height:1.55;overflow-x:hidden}
 
 /* hero */
-.band {
-  background: #1b4332;
-  color: #f1ede0;
-  padding: 36px 24px 28px;
-}
-.band-inner {
-  max-width: 1760px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 32px;
-  align-items: end;
-}
-.eyebrow {
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.75;
-  margin: 0 0 6px;
-}
-.band h1 {
-  font-family: "Alfa Slab One", Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(2rem, 4.6vw, 3.4rem);
-  line-height: 1.05;
-  margin: 0;
-}
-.band .sub {
-  margin: 0.5rem 0 0;
-  font-size: 1.15rem;
-  opacity: 0.9;
-}
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-.stat {
-  background: rgba(255, 255, 255, 0.08);
-  border-left: 3px solid #e9c46a;
-  padding: 8px 12px;
-}
-.stat b {
-  display: block;
-  font-family: "Alfa Slab One", Georgia, serif;
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 1.1;
-}
-.stat span {
-  font-size: 1rem;
-  opacity: 0.85;
-}
+.band{background:#1b4332;color:#f1ede0;padding:36px 24px 28px}
+.band-inner{max-width:1760px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:end}
+.eyebrow{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin:0 0 6px}
+.band h1{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;margin:0}
+.band .sub{margin:.5rem 0 0;font-size:1.15rem;opacity:.9}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.stat{background:rgba(255,255,255,.08);border-left:3px solid #e9c46a;padding:8px 12px}
+.stat b{display:block;font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:1.7rem;line-height:1.1}
+.stat span{font-size:1rem;opacity:.85}
 
-main,
-footer {
-  max-width: 1760px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
+main,footer{max-width:1760px;margin:0 auto;padding:0 32px}
 /* at most ~60 characters per line (Week 4 typography notes); ch is wider than an average letter */
-.intro {
-  margin: 22px 0 0;
-  font-size: 1.25rem;
-  max-width: 47ch;
-}
-.lede {
-  margin: 0 0 16px;
-  font-size: 1.1rem;
-  max-width: 48ch;
-}
+.intro{margin:22px 0 0;font-size:1.25rem;max-width:47ch}
+.lede{margin:0 0 20px;font-size:1.1rem;max-width:80ch}
 
 /* sections */
-section.act {
-  margin: 34px 0 0;
-}
-h2 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-family: "Alfa Slab One", Georgia, serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin: 0 0 14px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid var(--line);
-}
-h2 .num {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 1rem;
-  background: var(--accent);
-}
-#act1 {
-  --accent: var(--a1);
-}
-#act2 {
-  --accent: var(--a2);
-}
-#act3 {
-  --accent: var(--a3);
-}
-#act4 {
-  --accent: var(--a4);
-}
+section.act{margin:34px 0 0}
+h2{display:flex;align-items:center;gap:12px;font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:1.5rem;line-height:1.25;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h2 .num{flex:none;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;color:#fff;font-size:1rem;background:var(--accent)}
+#act1{--accent:var(--a1)} #act2{--accent:var(--a2)} #act3{--accent:var(--a3)} #act4{--accent:var(--a4)}
 
 /* grids: no big gaps, charts fill their cell */
-.row {
-  display: grid;
-  gap: 18px;
-  margin-bottom: 18px;
-  align-items: stretch;
-}
-.row.main-side {
-  grid-template-columns: 3fr 1fr;
-}
-.row.one {
-  grid-template-columns: 1fr;
-}
-.row.two {
-  grid-template-columns: 1fr 1fr;
-}
-.row.third {
-  grid-template-columns: 2fr 3fr;
-}
-.row.three {
-  grid-template-columns: repeat(3, 1fr);
-}
+.row{display:grid;gap:18px;margin-bottom:18px;align-items:stretch}
+.row.main-side{grid-template-columns:3fr 1fr}
+.row.one{grid-template-columns:1fr}
+.row.two{grid-template-columns:1fr 1fr}
+.row.third{grid-template-columns:2fr 3fr}
+.row.three{grid-template-columns:repeat(3,1fr)}
 
-.block {
-  overflow: visible;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 12px 14px 10px;
-  min-width: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-.tag {
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 0 0 6px;
-}
-.block h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  margin: 0 0 2px;
-}
-.block .cap {
-  font-size: 0.88rem;
-  color: var(--muted);
-  margin: 0 0 8px;
-}
-.chart {
-  width: 100%;
-  min-width: 0;
-  min-height: 120px;
-  overflow: visible;
-}
-.vega-embed {
-  width: 100%;
-  display: block;
-  position: relative;
-}
+.block{overflow:visible;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px 10px;min-width:0;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.tag{font-size:.9rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.block h3{font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;margin:0 0 2px}
+.block .cap{font-size:.88rem;color:var(--muted);margin:0 0 8px}
+.chart{width:100%;min-width:0;min-height:120px;overflow:visible}
+.vega-embed{width:100%;display:block;position:relative}
 /* keep the "..." actions button at the chart's top-right corner */
-.vega-embed details {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.vega-embed summary {
-  opacity: 0.85;
-}
-.chart .placeholder {
-  border: 2px dashed #c9c2ad;
-  border-radius: 8px;
-  padding: 28px;
-  text-align: center;
-  color: var(--muted);
-}
+.vega-embed details{position:absolute;top:0;right:0}
+.vega-embed summary{opacity:.85}
+.chart .placeholder{border:2px dashed #c9c2ad;border-radius:8px;padding:28px;text-align:center;color:var(--muted)}
 
 /* side panel */
-.side {
-  background: var(--soft);
-  border-left: 4px solid var(--accent);
-  border-radius: 6px;
-  padding: 14px 16px;
-  min-width: 0;
-}
-.side h3 {
-  font-family: Georgia, serif;
-  font-size: 1.25rem;
-  margin: 0 0 8px;
-}
-.side ul {
-  margin: 0;
-  padding-left: 1.2rem;
-  font-size: 1.1rem;
-}
-.side li {
-  margin-bottom: 8px;
-}
-.pill {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 8px 12px;
-  margin-bottom: 10px;
-}
-.pill b {
-  display: block;
-  font-family: "Alfa Slab One", Georgia, serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: var(--accent);
-  line-height: 1.1;
-}
-.pill span {
-  font-size: 1rem;
-  color: var(--muted);
-}
+.side{background:var(--soft);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;min-width:0}
+.side h3{font-family:Georgia,serif;font-size:1.25rem;margin:0 0 8px}
+.side ul{margin:0;padding-left:1.2rem;font-size:1.1rem}
+.side li{margin-bottom:8px}
+.pill{background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin-bottom:10px}
+.pill b{display:block;font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:1.6rem;color:var(--accent);line-height:1.1}
+.pill span{font-size:1rem;color:var(--muted)}
 
-footer p {
-  margin: 0 0 6px;
-}
 
-.pill b {
-  font-size: 1.9rem;
-}
+footer p{margin:0 0 6px}
 
-footer ol {
-  margin: 4px 0 8px;
-  padding-left: 1.2rem;
-}
-footer li {
-  margin-bottom: 4px;
-}
-footer a {
-  color: #08519c;
-}
+
+.pill b{font-size:1.9rem}
+
+footer ol{margin:4px 0 8px;padding-left:1.2rem}
+footer li{margin-bottom:4px}
+footer a{color:#08519c}
 
 /* what it means: four even columns */
-#takeaways {
-  margin-top: 34px;
-}
-#takeaways ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px 32px;
-  font-size: 1.15rem;
-}
-#takeaways li {
-  margin: 0;
-  padding-top: 12px;
-  border-top: 3px solid var(--line);
-  line-height: 1.5;
-}
-#takeaways li strong {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 1.2rem;
-}
+#takeaways{margin-top:34px}
+#takeaways ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px 32px;font-size:1.15rem}
+#takeaways li{margin:0;padding-top:12px;border-top:3px solid var(--line);line-height:1.5}
+#takeaways li strong{display:block;margin-bottom:4px;font-size:1.2rem}
 
 /* footer: three even columns */
-footer {
-  border-top: 2px solid var(--line);
-  margin-top: 40px;
-  padding-top: 16px;
-  padding-bottom: 40px;
-  font-size: 1rem;
-  color: var(--muted);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px 48px;
-  align-items: start;
-}
-footer p {
-  margin: 0 0 6px;
-}
+footer{border-top:2px solid var(--line);margin-top:40px;padding-top:16px;padding-bottom:40px;font-size:1rem;color:var(--muted);display:grid;grid-template-columns:repeat(3,1fr);gap:8px 48px;align-items:start}
+footer p{margin:0 0 6px}
 
 /* responsive */
-@media (max-width: 1100px) {
-  #takeaways ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width:1100px){ #takeaways ul{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:900px){
+  .row.third,.band-inner,.row.main-side,.row.main-side.cart,.row.two,.row.three,footer{grid-template-columns:1fr}
 }
-@media (max-width: 900px) {
-  .row.third,
-  .band-inner,
-  .row.main-side,
-  .row.main-side.cart,
-  .row.two,
-  .row.three,
-  footer {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 640px) {
-  #takeaways ul {
-    grid-template-columns: 1fr;
-  }
-}
+@media (max-width:640px){ #takeaways ul{grid-template-columns:1fr} }
 
 /* notice band: replaces the tall side panels */
-.side.notice {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 32px;
-  margin: 0 0 18px;
-  padding: 12px 18px;
-}
-.side.notice h3 {
-  flex: 0 0 100%;
-  margin: 0;
-}
-.side.notice .pill {
-  flex: 0 0 260px;
-  margin: 0;
-}
-.side.notice ul {
-  flex: 1 1 420px;
-  margin: 0;
-  columns: 2;
-  column-gap: 32px;
-  font-size: 1.1rem;
-}
-.side.notice li {
-  break-inside: avoid;
-  margin-bottom: 6px;
-}
-@media (max-width: 900px) {
-  .side.notice ul {
-    columns: 1;
-  }
-  .side.notice .pill {
-    flex: 1 1 100%;
-  }
-}
+.side.notice{display:flex;flex-wrap:wrap;align-items:center;gap:8px 32px;margin:0 0 18px;padding:12px 18px}
+.side.notice h3{flex:0 0 100%;margin:0}
+.side.notice .pill{flex:0 0 260px;margin:0}
+.side.notice ul{flex:1 1 420px;margin:0;columns:2;column-gap:32px;font-size:1.1rem}
+.side.notice li{break-inside:avoid;margin-bottom:6px}
+@media (max-width:900px){ .side.notice ul{columns:1} .side.notice .pill{flex:1 1 100%} }
 
 /* bullets under each chart (like the sample page); ~60 characters per line */
-.block {
-  display: flex;
-  flex-direction: column;
-}
-.chart-desc {
-  margin: 12px 0 0;
-  padding-left: 1.2rem;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  max-width: 52ch;
-}
-.chart-desc li {
-  margin-bottom: 6px;
-  break-inside: avoid;
-}
-.row.one .chart-desc {
-  columns: 3;
-  column-gap: 48px;
-  max-width: none;
-}
-@media (max-width: 900px) {
-  .row.one .chart-desc {
-    columns: 1;
-    max-width: 52ch;
-  }
-}
+.block{display:flex;flex-direction:column}
+.chart-desc{margin:12px 0 0;padding-left:1.2rem;font-size:1.05rem;line-height:1.5;max-width:52ch}
+.chart-desc li{margin-bottom:6px;break-inside:avoid}
+.row.one .chart-desc{columns:3;column-gap:48px;max-width:none}
+@media (max-width:900px){ .row.one .chart-desc{columns:1;max-width:52ch} }

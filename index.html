@@ -7,7 +7,7 @@
   <meta name="description" content="FIT3179 Data Visualisation 2: nature-based tourism in Australia.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
@@ -19,12 +19,12 @@
       <div>
         <p class="eyebrow">FIT3179 &middot; Data Visualisation 2 &middot; Enn Qi Foo &middot; October 2026</p>
         <h1>Australia's Nature Tourism</h1>
-        <p class="sub">Is nature tourism back?</p>
+        <p class="sub">After COVID-19, Is Australia's nature tourism back?</p>
       </div>
       <div class="stats">
-        <div class="stat"><b>86.4M</b><span>regional trips in 2024</span></div>
+        <div class="stat"><b>86.4 million</b><span>regional trips in 2024</span></div>
         <div class="stat"><b>29 of 72</b><span>regions above 2019 levels</span></div>
-        <div class="stat"><b>+24%</b><span>NT spend per trip, 2026</span></div>
+        <div class="stat"><b>+24%</b><span>rise in Northern Territory spend per trip, 2026</span></div>
       </div>
     </div>
   </header>
@@ -32,61 +32,61 @@
   <main>
 
     <section class="act" id="act1">
-      <h2><span class="num">1</span>How big is it, and what happened?</h2>
+      <h2><span class="num">1</span>Every state fell in 2020&ndash;21, but only Queensland has fully recovered</h2>
       <p class="lede">COVID-19 lockdowns and border closures cut trips in every state in 2020&ndash;21. By 2024, only Queensland was back above its 2019 level.</p>
       <div class="row one">
-        <div class="block"><p class="tag">Trips against 2019, by state</p><div class="chart" id="vis01"></div><ul class="chart-desc"><li>Every state fell sharply in 2020&ndash;21.</li><li>Only Queensland is back above 2019, at 101.</li><li>The Northern Territory is furthest behind, at 84.</li></ul></div>
+        <div class="block"><p class="tag">Trips against 2019, by state</p><div class="chart" id="vis01"></div><ul class="chart-desc"><li>Every state fell together, so lockdowns were the cause.</li><li>Queensland is the only state above 2019 (index 101).</li><li>At 84, the Northern Territory is still 16% below 2019.</li></ul></div>
       </div>
       <div class="row two">
-        <div class="block"><p class="tag">Latest year: who grew, who fell</p><div class="chart" id="vis02"></div><ul class="chart-desc"><li>Queensland grew most: +1.4%, or 368,000 more trips.</li><li>The Northern Territory fell most: &minus;1.5%.</li><li>Every state moved by less than 2%.</li></ul></div>
-        <div class="block"><p class="tag">Where visitors stay</p><div class="chart" id="vis03"></div><ul class="chart-desc"><li>Rented homes rose from 42% to 46% of nights.</li><li>Friends' homes fell from 33% to 29%.</li><li>Hotels and motels stayed near 11%.</li></ul></div>
+        <div class="block"><p class="tag">Latest year: who grew, who fell</p><div class="chart" id="vis02"></div><ul class="chart-desc"><li>Queensland added 368,000 trips; the Northern Territory lost 15,000.</li><li>A small rise in a big state means many trips.</li><li>All states moved by less than 2%: steady, not a boom.</li></ul></div>
+        <div class="block"><p class="tag">Ranking of states</p><div class="chart" id="vis14"></div><ul class="chart-desc"><li>Queensland rose from 4th to 1st: the recovery leader.</li><li>Rank hides size: the Australian Capital Territory was 1st in 2023 but is tiny.</li><li>The Northern Territory fell from 6th to last: slowest to recover.</li></ul></div>
       </div>
     </section>
 
     <section class="act" id="act2">
-      <h2><span class="num">2</span>Where does it happen?</h2>
-      <p class="lede">Nature tourism is spread unevenly. These four maps show recovery, regional trips, international gateways and state size.</p>
+      <h2><span class="num">2</span>Trips are concentrated in the east, and remote regions are slowest to recover</h2>
+      <p class="lede">So where is it happening? Four maps show recovery, regional trips, international gateways and state size.</p>
       <div class="row two">
-        <div class="block"><p class="tag">Recovery by tourism region</p><div class="chart" id="vis05"></div><ul class="chart-desc"><li>Desert and outback regions are furthest behind 2019.</li><li>Kakadu is at 59% and Alice Springs at 67%.</li><li>29 of 72 regions are above 2019.</li></ul></div>
-        <div class="block"><p class="tag">Regional trips, 2024</p><div class="chart" id="vis07"></div><ul class="chart-desc"><li>Each dot is 100,000 trips.</li><li>NSW, Victoria and Queensland hold four in five dots.</li><li>The NT has only 7 dots, and two overlap.</li></ul></div>
+        <div class="block"><p class="tag">Recovery by tourism region</p><div class="chart" id="vis05"></div><ul class="chart-desc"><li>Remote desert regions are slowest to recover.</li><li>Kakadu has lost 41% of its trips; Alice Springs a third.</li><li>Only 29 of 72 regions beat 2019, so recovery is patchy.</li></ul></div>
+        <div class="block"><p class="tag">Regional trips, 2024</p><div class="chart" id="vis07"></div><ul class="chart-desc"><li>Four in five trips go to three eastern states.</li><li>So the nature market is concentrated on the east coast.</li><li>The Northern Territory has few dots but high spend per trip.</li></ul></div>
       </div>
       <div class="row two">
-        <div class="block"><p class="tag">International gateways</p><div class="chart" id="vis06"></div><ul class="chart-desc"><li>Sydney and Melbourne take the most international trips.</li><li>Sydney has 3.8 million trips and Melbourne 2.7 million.</li><li>The Gold Coast and Tropical North Queensland lead the regions.</li></ul></div>
-        <div class="block"><p class="tag">States resized by trips</p><div class="chart" id="vis08"></div><ul class="chart-desc"><li>Circle area shows trips, not land area.</li><li>NSW is the biggest, at 39.2 million trips.</li><li>Tiny Tasmania and the ACT stay visible.</li></ul></div>
+        <div class="block"><p class="tag">International gateways</p><div class="chart" id="vis06"></div><ul class="chart-desc"><li>Sydney and Melbourne are the main arrival gates.</li><li>Sydney&rsquo;s 3.8 million is 1.4 times Melbourne&rsquo;s 2.7 million.</li><li>The Gold Coast and Tropical North Queensland are the nature gateways.</li></ul></div>
+        <div class="block"><p class="tag">States resized by trips</p><div class="chart" id="vis08"></div><ul class="chart-desc"><li>New South Wales is biggest (39.2 million) but grew only 0.5%.</li><li>Queensland is only third in size, yet grew fastest.</li><li>The Northern Territory is tiny, so small changes look large.</li></ul></div>
       </div>
     </section>
 
     <section class="act" id="act3">
-      <h2><span class="num">3</span>Who is winning the recovery?</h2>
-      <p class="lede">Some regions have bounced back past 2019 while others keep falling. Visitors to remote places also spend more on each trip.</p>
+      <h2><span class="num">3</span>Tasmania and Victoria lead the rebound, but the Northern Territory earns the most per trip</h2>
+      <p class="lede">Next, who is winning? Some regions have bounced back past 2019 while others keep falling. Visitors to remote places also spend more on each trip, mostly on accommodation, flights and food.</p>
       <div class="row two">
-        <div class="block"><p class="tag">Biggest risers and fallers</p><div class="chart" id="vis09"></div><ul class="chart-desc"><li>Six regions grew and six fell between 2019 and 2024.</li><li>Tasmania's North West grew most, by 19.5%.</li><li>The Flinders Ranges fell most, by 25%.</li></ul></div>
-        <div class="block"><p class="tag">Regional rebound leaders</p><div class="chart" id="vis10"></div><ul class="chart-desc"><li>Tasmania's North West leads, up 19.5%.</li><li>Victoria's Lakes follows, up 17.3%.</li><li>Victoria has five of the top 15 regions.</li></ul></div>
+        <div class="block"><p class="tag">Biggest risers and fallers</p><div class="chart" id="vis09"></div><ul class="chart-desc"><li>Six regions beat 2019 while six fell: place matters.</li><li>Tasmania&rsquo;s North West gained nearly one in five trips.</li><li>The Flinders Ranges lost a quarter of its trips.</li></ul></div>
+        <div class="block"><p class="tag">Regional rebound leaders</p><div class="chart" id="vis10"></div><ul class="chart-desc"><li>Victoria holds five of the top 15, so its rebound is broad.</li><li>Tasmania&rsquo;s North West leads at 19.5%, then Victoria&rsquo;s Lakes at 17.3%.</li><li>These are gains over 2019, so they are real growth.</li></ul></div>
       </div>
       <div class="row two">
-        <div class="block"><p class="tag">Spend per trip</p><div class="chart" id="vis11"></div><ul class="chart-desc"><li>The NT spends the most per trip: $1,811.</li><li>That is up 24% on a year ago.</li><li>Queensland fell 6% and the ACT fell 13%.</li></ul></div>
-        <div class="block"><p class="tag">Ranking of states</p><div class="chart" id="vis14"></div><ul class="chart-desc"><li>Queensland climbed from 4th to 1st.</li><li>Tasmania is second, just behind Queensland.</li><li>The Northern Territory slid from 6th to last.</li></ul></div>
+        <div class="block"><p class="tag">Spend per trip</p><div class="chart" id="vis11"></div><ul class="chart-desc"><li>The Northern Territory earns the most per trip: $1,811, up 24%.</li><li>Remote trips are longer, so each visitor spends more.</li><li>Queensland fell 6%: more trips, but less spend on each.</li></ul></div>
+        <div class="block"><p class="tag">What visitors spend on</p><div class="chart" id="vis13"></div><ul class="chart-desc"><li>Accommodation takes 28% of each dollar, the biggest item.</li><li>Eating out matches flights at 15%, so local cafes benefit.</li><li>Three items make up 58%; the rest is spread thinly.</li></ul></div>
       </div>
     </section>
 
     <section class="act" id="act4">
-      <h2><span class="num">4</span>When, how and why do people travel?</h2>
-      <p class="lede">Seasons shape when people visit, from Tasmania's summer to the Top End's dry season. Holidays are the main reason to travel.</p>
+      <h2><span class="num">4</span>People come for holidays, stay in rented homes and follow the seasons</h2>
+      <p class="lede">Finally, how, when and why do people travel? Seasons shape visits, from Tasmania's summer to the Top End's dry season. Holidays are the main reason.</p>
       <div class="row one">
-        <div class="block"><p class="tag">Seasons</p><div class="chart" id="vis12"></div><ul class="chart-desc"><li>The NT peaks in the dry season: 130 in September.</li><li>Its wet-season low is 67 in March.</li><li>Tasmania peaks in summer, at 119 in March.</li></ul></div>
+        <div class="block"><p class="tag">Seasons</p><div class="chart" id="vis12"></div><ul class="chart-desc"><li>Top End visitors come in the dry season: 130 in September.</li><li>The wet season empties it: 67 in March.</li><li>Tasmania is the mirror: a summer peak of 119 in March.</li></ul></div>
       </div>
       <div class="row two">
-        <div class="block"><p class="tag">Why people travel</p><div class="chart" id="vis04"></div><ul class="chart-desc"><li>Holidays make up 46% of trips.</li><li>Visiting friends and relatives is 38%.</li><li>Business is only 8%.</li></ul></div>
-        <div class="block"><p class="tag">What visitors spend on</p><div class="chart" id="vis13"></div><ul class="chart-desc"><li>Accommodation is the biggest item, at 28% of spend.</li><li>Flights and eating out add 15% each.</li><li>Together these three make up 58% of spend.</li></ul></div>
+        <div class="block"><p class="tag">Where visitors stay</p><div class="chart" id="vis03"></div><ul class="chart-desc"><li>Rented homes rose while friends&rsquo; homes fell.</li><li>So visitors are shifting from free stays to paid ones.</li><li>Hotels stayed near 11%, so the shift is not hotel-led.</li></ul></div>
+        <div class="block"><p class="tag">Why people travel</p><div class="chart" id="vis04"></div><ul class="chart-desc"><li>Holidays and visiting friends make up 84% of trips.</li><li>Friends and family are nearly as big as holidays.</li><li>Business is only 8%: nature tourism is mostly leisure.</li></ul></div>
       </div>
     </section>
 
     <section id="takeaways">
       <h2>What it means</h2>
       <ul>
-        <li><strong>The recovery is uneven.</strong> Only Queensland is back above 2019 (101). The NT sits at 84, and 29 of 72 regions are above 2019.</li>
-        <li><strong>Nature tourism is concentrated.</strong> NSW, Victoria and Queensland take four in five regional trips. Tasmania's North West (+19.5%) leads the rebound.</li>
-        <li><strong>Remote places earn more per visitor.</strong> The NT's spend per trip ($1,811, up 24%) is the highest. Its visitors swing between 130 in the dry season and 67 in the wet.</li>
+        <li><strong>The recovery is uneven.</strong> Only Queensland is back above 2019 (101). The Northern Territory sits at 84, and 29 of 72 regions are above 2019.</li>
+        <li><strong>Nature tourism is concentrated.</strong> New South Wales, Victoria and Queensland take four in five regional trips. Tasmania's North West (+19.5%) leads the rebound.</li>
+        <li><strong>Remote places earn more per visitor.</strong> The Northern Territory's spend per trip ($1,811, up 24%) is the highest. Its visitors swing between 130 in the dry season and 67 in the wet.</li>
         <li><strong>Why people come.</strong> Holidays are 46% of trips. Accommodation, flights and eating out make up 58% of spending.</li>
       </ul>
     </section>
@@ -97,7 +97,7 @@
       <p><strong>Data sources</strong></p>
       <ol>
         <li>Tourism Research Australia (TRA): <a href="https://www.tra.gov.au/en/domestic/domestic-tourism-statistics" target="_blank" rel="noopener">National Visitor Survey and Domestic Tourism Statistics</a> (year ending December 2024; June quarter 2026) and the <a href="https://www.tra.gov.au/en/international/international-tourism-statistics" target="_blank" rel="noopener">International Visitor Survey</a> (June quarter 2026).</li>
-        <li>Australian Bureau of Statistics (ABS): <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3" target="_blank" rel="noopener">ASGS state boundaries</a> (CC BY 4.0), with TRA Tourism Region boundaries (2026).</li>
+        <li>Australian Bureau of Statistics (ABS): <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3" target="_blank" rel="noopener">Australian Statistical Geography Standard state boundaries</a> (CC BY 4.0), with Tourism Research Australia region boundaries (2026).</li>
       </ol>
     </div>
     <div>

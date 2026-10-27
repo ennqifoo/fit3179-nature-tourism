@@ -4,13 +4,14 @@
  "height": 520,
  "title": {
   "text": [
-   "Four in five regional nature trips go to NSW, Victoria and",
-   "Queensland; the Northern Territory has only 7 dots"
+   "Four in five regional nature trips go to New South",
+   "Wales, Victoria and Queensland; the Northern",
+   "Territory has only 7 dots"
   ],
   "subtitle": [
-   "Each dot = 100,000 overnight trips by Australian residents to a regional destination in",
-   "2024 (capital-city regions excluded). Dots are placed randomly inside each region;",
-   "two dots in tiny Alice Springs overlap."
+   "Each dot = 100,000 overnight trips by Australian residents to a regional",
+   "destination in 2024 (capital-city regions excluded). Dots are placed randomly",
+   "inside each region; two dots in tiny Alice Springs overlap."
   ],
   "anchor": "start"
  },
@@ -23,14 +24,14 @@
     "name": "State: ",
     "options": [
      "All",
-     "NSW",
-     "VIC",
-     "QLD",
-     "SA",
-     "WA",
-     "TAS",
-     "NT",
-     "ACT"
+     "New South Wales",
+     "Victoria",
+     "Queensland",
+     "South Australia",
+     "Western Australia",
+     "Tasmania",
+     "Northern Territory",
+     "Australian Capital Territory"
     ]
    }
   }
@@ -112,7 +113,7 @@
      },
      {
       "field": "region_trips_2024_000",
-      "title": "Region trips 2024 ('000)",
+      "title": "Region trips 2024 (thousands)",
       "format": ",.0f"
      }
     ]

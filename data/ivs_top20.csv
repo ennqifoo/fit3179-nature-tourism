@@ -1,21 +1,21 @@
 rank,region,state,capital,trips_2026,nights_2026,spend_2026,lon,lat
-1,Sydney,NSW,1,3844.9,88995.4,13742.1,150.851,-33.679
-2,Melbourne,VIC,1,2665.4,70146.3,9700.6,144.937,-37.785
-3,Brisbane,QLD,1,1339.0,33787.1,4199.9,152.853,-27.718
-4,Destination Perth,WA,1,1004.0,31498.4,2733.4,116.566,-32.183
-5,Adelaide,SA,1,404.1,11533.5,1471.7,138.627,-34.833
-6,Gold Coast,QLD,0,656.0,9667.6,1448.6,153.317,-27.985
-7,Tropical North Queensland,QLD,0,634.4,6300.7,1253.1,142.49,-16.581
-8,Canberra,ACT,1,178.5,4764.7,601.4,149.002,-35.489
-9,Sunshine Coast,QLD,0,277.8,3854.9,462.8,152.607,-26.28
-10,North Coast NSW,NSW,0,256.5,3778.4,283.9,152.708,-30.242
-11,Hunter,NSW,0,146.8,3272.0,251.0,151.09,-32.322
-12,Darwin,NT,1,145.7,3162.3,268.3,131.108,-12.531
-13,South Coast,NSW,0,147.2,3004.8,287.8,150.06,-35.907
-14,Australia's South West,WA,0,152.0,2682.4,234.3,117.229,-34.088
-15,Hobart and the South,TAS,0,219.9,2472.5,533.6,146.745,-42.665
-16,Queensland Country,QLD,0,42.7,2282.1,125.5,150.911,-27.374
-17,Central NSW,NSW,0,39.5,1656.1,124.6,148.345,-32.555
-18,Townsville,QLD,0,85.5,1592.9,123.0,145.931,-20.042
-19,Australia's North West,WA,0,45.8,1485.7,82.4,123.725,-20.049
-20,Whitsundays,QLD,0,177.0,1372.7,273.0,147.712,-20.706
+1,Sydney,New South Wales,1,3844.9,88995.4,13742.1,150.851,-33.679
+2,Melbourne,Victoria,1,2665.4,70146.3,9700.6,144.937,-37.785
+3,Brisbane,Queensland,1,1339.0,33787.1,4199.9,152.853,-27.718
+4,Destination Perth,Western Australia,1,1004.0,31498.4,2733.4,116.566,-32.183
+5,Adelaide,South Australia,1,404.1,11533.5,1471.7,138.627,-34.833
+6,Gold Coast,Queensland,0,656.0,9667.6,1448.6,153.317,-27.985
+7,Tropical North Queensland,Queensland,0,634.4,6300.7,1253.1,142.49,-16.581
+8,Canberra,Australian Capital Territory,1,178.5,4764.7,601.4,149.002,-35.489
+9,Sunshine Coast,Queensland,0,277.8,3854.9,462.8,152.607,-26.28
+10,North Coast NSW,New South Wales,0,256.5,3778.4,283.9,152.708,-30.242
+11,Hunter,New South Wales,0,146.8,3272.0,251.0,151.09,-32.322
+12,Darwin,Northern Territory,1,145.7,3162.3,268.3,131.108,-12.531
+13,South Coast,New South Wales,0,147.2,3004.8,287.8,150.06,-35.907
+14,Australia's South West,Western Australia,0,152.0,2682.4,234.3,117.229,-34.088
+15,Hobart and the South,Tasmania,0,219.9,2472.5,533.6,146.745,-42.665
+16,Queensland Country,Queensland,0,42.7,2282.1,125.5,150.911,-27.374
+17,Central NSW,New South Wales,0,39.5,1656.1,124.6,148.345,-32.555
+18,Townsville,Queensland,0,85.5,1592.9,123.0,145.931,-20.042
+19,Australia's North West,Western Australia,0,45.8,1485.7,82.4,123.725,-20.049
+20,Whitsundays,Queensland,0,177.0,1372.7,273.0,147.712,-20.706

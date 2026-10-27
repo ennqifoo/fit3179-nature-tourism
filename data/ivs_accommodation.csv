@@ -1,9 +1,9 @@
 type,year,nights_000,share,yorder
-Hotels and motels,Jun 2025,31921,10.6,0
-Hotels and motels,Jun 2026,34371,10.9,1
-All other types,Jun 2025,43319,14.4,0
-All other types,Jun 2026,44905,14.3,1
-Rented house or apartment,Jun 2025,125732,41.8,0
-Rented house or apartment,Jun 2026,144044,45.7,1
-Friends' or relatives' home,Jun 2025,100129,33.3,0
-Friends' or relatives' home,Jun 2026,91534,29.1,1
+Hotels and motels,June 2025,31921,10.6,0
+Hotels and motels,June 2026,34371,10.9,1
+All other types,June 2025,43319,14.4,0
+All other types,June 2026,44905,14.3,1
+Rented house or apartment,June 2025,125732,41.8,0
+Rented house or apartment,June 2026,144044,45.7,1
+Friends' or relatives' home,June 2025,100129,33.3,0
+Friends' or relatives' home,June 2026,91534,29.1,1

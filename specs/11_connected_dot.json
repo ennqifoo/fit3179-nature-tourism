@@ -1,15 +1,15 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 320,
+ "height": 395,
  "title": {
   "text": [
    "Northern Territory visitors now spend the most per trip,",
    "and 24% more than a year ago"
   ],
   "subtitle": [
-   "Regional spend per overnight trip ($), year ending June 2025 vs June 2026 (spend \u00f7",
-   "trips)"
+   "Regional spend per overnight trip ($), year ending June 2025 versus June 2026",
+   "(spend ÷ trips)"
   ],
   "anchor": "start"
  },
@@ -18,7 +18,7 @@
  },
  "transform": [
   {
-   "calculate": "datum.state=='NT' ? 'hl' : 'other'",
+   "calculate": "datum.state=='Northern Territory' ? 'hl' : 'other'",
    "as": "grp"
   },
   {
@@ -35,14 +35,14 @@
    "field": "state",
    "type": "nominal",
    "sort": [
-    "NT",
-    "WA",
-    "TAS",
-    "QLD",
-    "ACT",
-    "SA",
-    "NSW",
-    "VIC"
+    "Northern Territory",
+    "Western Australia",
+    "Tasmania",
+    "Queensland",
+    "Australian Capital Territory",
+    "South Australia",
+    "New South Wales",
+    "Victoria"
    ],
    "title": null
   }
@@ -186,5 +186,11 @@
     }
    }
   }
- ]
+ ],
+ "padding": {
+  "left": 5,
+  "right": 50,
+  "top": 5,
+  "bottom": 5
+ }
 }

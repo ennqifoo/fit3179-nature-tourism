@@ -4,13 +4,13 @@
  "height": 580,
  "title": {
   "text": [
-   "NSW is the biggest destination, but Queensland grew and",
-   "the Northern Territory shrank"
+   "New South Wales is the biggest destination, but",
+   "Queensland grew and the Northern Territory shrank"
   ],
   "subtitle": [
-   "Dorling cartogram: circle area = overnight trips, year ending June 2026; circles sit",
-   "near each state's real position",
-   "Orange = fastest growth / fastest fall in trips versus June 2025; others grey"
+   "Dorling cartogram: circle area = overnight trips, year ending June 2026; circles",
+   "sit near each state's real position. Orange = fastest growth and fastest fall in",
+   "trips versus June 2025; others grey."
   ],
   "anchor": "start"
  },
@@ -23,7 +23,7 @@
    "as": "sz"
   },
   {
-   "calculate": "datum.state=='QLD'||datum.state=='NT'",
+   "calculate": "datum.state=='Queensland'||datum.state=='Northern Territory'",
    "as": "hl"
   }
  ],
@@ -33,8 +33,8 @@
    "type": "quantitative",
    "scale": {
     "domain": [
-     50,
-     560
+     40,
+     480
     ]
    },
    "axis": null
@@ -44,8 +44,8 @@
    "type": "quantitative",
    "scale": {
     "domain": [
-     0,
-     420
+     35,
+     415
     ],
     "reverse": true
    },
@@ -89,12 +89,12 @@
      },
      {
       "field": "trips_000",
-      "title": "Trips ('000)",
+      "title": "Trips (thousands)",
       "format": ","
      },
      {
       "field": "change_pct",
-      "title": "Change vs June 2025 (%)",
+      "title": "Change versus June 2025 (%)",
       "format": "+.1f"
      }
     ]
@@ -114,17 +114,17 @@
    ]
   },
   {
+   "transform": [
+    {
+     "filter": "datum.r_px>50"
+    }
+   ],
    "mark": {
     "type": "text",
     "fontWeight": "bold",
     "fontSize": 13,
     "color": "#222"
    },
-   "transform": [
-    {
-     "filter": "datum.r_px>15"
-    }
-   ],
    "encoding": {
     "text": {
      "field": "state"
@@ -132,17 +132,100 @@
    }
   },
   {
+   "transform": [
+    {
+     "filter": "datum.state=='Western Australia'"
+    }
+   ],
    "mark": {
     "type": "text",
     "fontSize": 13,
     "color": "#222",
-    "dy": -22
+    "baseline": "bottom",
+    "align": "left",
+    "dx": -35,
+    "dy": -41
    },
+   "encoding": {
+    "text": {
+     "field": "state"
+    }
+   }
+  },
+  {
    "transform": [
     {
-     "filter": "datum.r_px<=15"
+     "filter": "datum.state=='South Australia'"
     }
    ],
+   "mark": {
+    "type": "text",
+    "fontSize": 13,
+    "color": "#222",
+    "baseline": "bottom",
+    "align": "center",
+    "dy": -37
+   },
+   "encoding": {
+    "text": {
+     "field": "state"
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.state=='Northern Territory'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 13,
+    "color": "#222",
+    "baseline": "bottom",
+    "align": "center",
+    "dy": -17
+   },
+   "encoding": {
+    "text": {
+     "field": "state"
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.state=='Tasmania'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 13,
+    "color": "#222",
+    "baseline": "middle",
+    "align": "left",
+    "dx": 25
+   },
+   "encoding": {
+    "text": {
+     "field": "state"
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.state=='Australian Capital Territory'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 13,
+    "color": "#222",
+    "baseline": "middle",
+    "align": "left",
+    "dx": 22
+   },
    "encoding": {
     "text": {
      "field": "state"

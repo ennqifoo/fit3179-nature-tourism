@@ -8,8 +8,8 @@
    "Tasmania's in summer"
   ],
   "subtitle": [
-   "Overnight trips by quarter as an index of each state's own 5-quarter average (=100),",
-   "June 2025 \u2013 June 2026"
+   "Overnight trips by quarter as an index of each state's own 5-quarter average",
+   "(=100), June 2025 \u2013 June 2026"
   ],
   "anchor": "start"
  },
@@ -33,14 +33,14 @@
    "field": "state",
    "type": "nominal",
    "sort": [
-    "NT",
-    "TAS",
-    "SA",
-    "WA",
-    "QLD",
-    "VIC",
-    "NSW",
-    "ACT"
+    "Northern Territory",
+    "Tasmania",
+    "South Australia",
+    "Western Australia",
+    "Queensland",
+    "Victoria",
+    "New South Wales",
+    "Australian Capital Territory"
    ],
    "title": null
   }
@@ -64,7 +64,7 @@
       ]
      },
      "legend": {
-      "title": "Index (state avg = 100)",
+      "title": "Index (state average = 100)",
       "orient": "bottom",
       "gradientLength": 260
      }
@@ -88,7 +88,7 @@
      },
      {
       "field": "trips_000",
-      "title": "Trips ('000)",
+      "title": "Trips (thousands)",
       "format": ",.0f"
      },
      {

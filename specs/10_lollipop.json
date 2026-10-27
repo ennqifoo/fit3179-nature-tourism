@@ -8,7 +8,7 @@
    "regional rebound"
   ],
   "subtitle": [
-   "Top 15 regional destinations by change in overnight trips, 2024 vs 2019 (%)"
+   "Top 15 regional destinations by change in overnight trips, 2024 versus 2019 (%)"
   ],
   "anchor": "start"
  },
@@ -127,12 +127,12 @@
      {
       "field": "trips_2019",
       "type": "quantitative",
-      "title": "2019 ('000)"
+      "title": "2019 (thousands)"
      },
      {
       "field": "trips_2024",
       "type": "quantitative",
-      "title": "2024 ('000)"
+      "title": "2024 (thousands)"
      },
      {
       "field": "change_pct",

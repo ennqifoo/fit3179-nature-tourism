@@ -35,8 +35,8 @@
      "type": "quantitative",
      "scale": {
       "domain": [
-       2019.3,
-       2024.7
+       2018.4,
+       2025.6
       ]
      },
      "axis": {
@@ -83,11 +83,11 @@
     "color": {
      "condition": [
       {
-       "test": "datum.state=='QLD'",
+       "test": "datum.state=='Queensland'",
        "value": "#08519c"
       },
       {
-       "test": "datum.state=='NT'",
+       "test": "datum.state=='Northern Territory'",
        "value": "#6baed6"
       }
      ],
@@ -101,7 +101,7 @@
        "value": 6
       },
       {
-       "test": "datum.state=='QLD'||datum.state=='NT'",
+       "test": "datum.state=='Queensland'||datum.state=='Northern Territory'",
        "value": 4
       }
      ],
@@ -115,7 +115,7 @@
        "value": 1
       },
       {
-       "test": "datum.state=='QLD'||datum.state=='NT'",
+       "test": "datum.state=='Queensland'||datum.state=='Northern Territory'",
        "value": 1
       }
      ],
@@ -183,11 +183,11 @@
     "color": {
      "condition": [
       {
-       "test": "datum.state=='QLD'",
+       "test": "datum.state=='Queensland'",
        "value": "#08519c"
       },
       {
-       "test": "datum.state=='NT'",
+       "test": "datum.state=='Northern Territory'",
        "value": "#6baed6"
       }
      ],
@@ -223,11 +223,11 @@
     "color": {
      "condition": [
       {
-       "test": "datum.state=='QLD'",
+       "test": "datum.state=='Queensland'",
        "value": "#08519c"
       },
       {
-       "test": "datum.state=='NT'",
+       "test": "datum.state=='Northern Territory'",
        "value": "#6baed6"
       }
      ],
