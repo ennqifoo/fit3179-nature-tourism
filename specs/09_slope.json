@@ -1,7 +1,7 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": "container",
- "height": 460,
+ "height": 625,
  "title": {
   "text": [
    "Regional winners and losers, 2019 versus 2024"
