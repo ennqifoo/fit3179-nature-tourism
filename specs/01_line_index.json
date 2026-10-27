@@ -78,7 +78,15 @@
        "axis": {
         "format": "d",
         "title": null,
-        "tickCount": 8
+        "values": [
+         2000,
+         2004,
+         2008,
+         2012,
+         2016,
+         2020,
+         2024
+        ]
        }
       },
       "y": {
@@ -221,7 +229,15 @@
        "axis": {
         "format": "d",
         "title": null,
-        "tickCount": 8
+        "values": [
+         2000,
+         2004,
+         2008,
+         2012,
+         2016,
+         2020,
+         2024
+        ]
        }
       },
       "text": {
@@ -237,12 +253,11 @@
      ],
      "mark": {
       "type": "text",
-      "align": "right",
-      "dx": -6,
+      "align": "left",
+      "dx": 9,
       "fontSize": 13,
       "fontWeight": "bold",
-      "clip": true,
-      "dy": -7
+      "clip": true
      },
      "encoding": {
       "x": {
@@ -256,7 +271,15 @@
        "axis": {
         "format": "d",
         "title": null,
-        "tickCount": 8
+        "values": [
+         2000,
+         2004,
+         2008,
+         2012,
+         2016,
+         2020,
+         2024
+        ]
        }
       },
       "y": {
@@ -274,7 +297,7 @@
         },
         {
          "test": "datum.grp=='second'",
-         "value": "#6baed6"
+         "value": "#2878b5"
         }
        ],
        "value": "#757575"
@@ -313,6 +336,12 @@
       "encodings": [
        "x"
       ]
+     },
+     "value": {
+      "x": [
+       2000,
+       2027
+      ]
      }
     }
    ],
@@ -330,7 +359,21 @@
      "axis": {
       "format": "d",
       "title": "Drag on this strip to zoom the chart above (all of Australia, trips, in thousands)",
-      "tickCount": 8
+      "values": [
+       2000,
+       2004,
+       2008,
+       2012,
+       2016,
+       2020,
+       2024
+      ]
+     },
+     "scale": {
+      "domain": [
+       2000,
+       2027
+      ]
      }
     },
     "y": {
