@@ -117,8 +117,17 @@
       ]
      },
      "legend": {
-      "orient": "bottom-left",
-      "symbolType": "square"
+      "orient": "none",
+      "legendX": 8,
+      "legendY": 8,
+      "title": "Trips as % of 2019",
+      "symbolType": "square",
+      "gradientLength": 130,
+      "gradientThickness": 14,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "padding": 6,
+      "fillColor": "rgba(255,255,255,0.0)"
      }
     },
     "stroke": {
